@@ -1,9 +1,9 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { UserState } from "../types/userTypes.ts";
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {UserState} from '../types/userTypes.ts';
 
-const initialState: UserState = { id: null };
+const initialState: UserState = {id: null};
 const userSlice = createSlice({
-	name: "user",
+	name: 'user',
 	initialState,
 	reducers: {
 		setId: (state, action: PayloadAction<number>) => {
@@ -12,5 +12,5 @@ const userSlice = createSlice({
 	},
 });
 
-export const { setId } = userSlice.actions;
+export const {setId} = userSlice.actions;
 export default userSlice.reducer;

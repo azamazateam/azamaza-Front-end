@@ -1,122 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url('./assets/fonts/HelveticaNeue-Thin.otf') format('opentype');
-  font-weight: 200;
-  font-style: normal;
+	font-family: 'HelveticaNeue';
+	src: url('./assets/fonts/HelveticaNeue-Thin.otf') format('opentype');
+	font-weight: 200;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url('./assets/fonts/HelveticaNeue-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
+	font-family: 'HelveticaNeue';
+	src: url('./assets/fonts/HelveticaNeue-Light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url('./assets/fonts/HelveticaNeue-Roman.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'HelveticaNeue';
+	src: url('./assets/fonts/HelveticaNeue-Roman.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url('./assets/fonts/HelveticaNeue-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
+	font-family: 'HelveticaNeue';
+	src: url('./assets/fonts/HelveticaNeue-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url('./assets/fonts/HelveticaNeue-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
+	font-family: 'HelveticaNeue';
+	src: url('./assets/fonts/HelveticaNeue-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
 }
-
 
 :root {
-  --Color-White: #ffffff;
-  --Color-Blue:  #006CE4;
+	--Color-White: #ffffff;
+	--Color-Blue: #006ce4;
+	--Font-Primary: 'HelveticaNeue';
+	--Font-Secondary: 'Onest';
 }
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :focus,
 :active {
-  outline: none;
+	outline: none;
 }
 
 a:focus,
 a:active {
-  outline: none;
+	outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-  display: block;
+	display: block;
 }
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  /*line-height: 1;*/
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	/*line-height: 1;*/
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 input,
 button,
 textarea {
-  font-family: inherit;
+	font-family: inherit;
 }
 input {
-  caret-color: initial;
+	caret-color: initial;
 }
 input::-ms-clear {
-  display: none;
+	display: none;
 }
 
 button {
-  cursor: pointer;
-  background: inherit;
+	cursor: pointer;
+	background: inherit;
 }
 
 button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+	padding: 0;
+	border: 0;
 }
 
 a,
 a:visited {
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 ul li {
-  list-style: none;
+	list-style: none;
 }
 
 img {
-  vertical-align: top;
+	vertical-align: top;
 }
 
 h1,
@@ -125,57 +126,55 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
-  font-weight: 400;
+	font-size: inherit;
+	font-weight: 400;
 }
 h1 {
-  font-family: 'HelveticaNeue',sans-serif;
-  font-size: 32px;
-  font-weight: 700;
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
 }
 h2 {
-  font-family: 'HelveticaNeue',sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
 }
 h3 {
-  font-family: 'HelveticaNeue',sans-serif;
-  font-size: 22px;
-  font-weight: 700;
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
 }
 h4 {
-  font-family: "Onest", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
+	font-family: 'Onest', sans-serif;
+	font-size: 22px;
+	font-weight: 500;
 }
 h5 {
-  font-family: "Onest", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+	font-family: 'Onest', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
 }
 h6 {
-  font-family: "Onest", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+	font-family: 'Onest', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
 }
 
 body {
-  max-width: 100%;
-  font-family: 'HelveticaNeue', "Onest", sans-serif;
-  caret-color: transparent;
-  background: var(--Color-White, #FFF);
+	max-width: 100%;
+	font-family: 'HelveticaNeue', 'Onest', sans-serif;
+	caret-color: transparent;
+	background: var(--Color-White, #fff);
 }
 
-[class*="__container"] {
+/*[class*="__container"] {
   position: relative;
   max-width: 550px;
   margin: 0 auto;
   padding: 0 12px;
-
-}
+}*/
 main {
-  flex: 1 1 auto;
-  margin-top: 57px;
-  min-height: 80vh;
-
+	flex: 1 1 auto;
+	/*margin-top: 57px;*/
+	min-height: 57vh;
 }

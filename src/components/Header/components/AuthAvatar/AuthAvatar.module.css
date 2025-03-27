@@ -1,0 +1,25 @@
+.container {
+
+}
+.authImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #D7D7D9;
+    & button img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+.buttonContainer {
+    min-width:62px;
+    min-height:22px;
+    & button {
+        font-size: 12px;
+    }
+}
