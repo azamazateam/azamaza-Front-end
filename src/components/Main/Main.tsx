@@ -1,21 +1,13 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import s from './main.module.css';
-import {Route, Routes} from 'react-router-dom';
-import Page404 from '../../pages/Page404/Page404.tsx';
-import Home from '../../pages/Home/Home.tsx';
-
-const Main: React.FC = () => {
+interface MainProps {
+	children: ReactNode;
+}
+const Main: React.FC<MainProps> = ({children}) => {
 	return (
-		<section className={s.pageWrapper}>
-			<Routes>
-				<Route path="/" element={<Home />} />
-				{/*<Route
-					path="/login"
-					element={<ProtectedRoute></ProtectedRoute>}
-				/>*/}
-				<Route path="*" element={<Page404 />} />
-			</Routes>
-		</section>
+		<main>
+			<section className={s.pageWrapper}>{children}</section>
+		</main>
 	);
 };
 

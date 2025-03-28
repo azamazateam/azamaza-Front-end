@@ -1,20 +1,18 @@
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import en from './en.json';
-import uk from './uk.json';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import {en} from './en.ts';
+import {uk} from './uk.ts';
+
 i18n
 	.use(LanguageDetector)
 	.use(initReactI18next)
 	.init({
 		resources: {
-			en: {
-				translation: en,
-			},
-			uk: {
-				translation: uk,
-			},
+			en: en,
+			uk: uk,
 		},
+		debug: false,
 		fallbackLng: 'en',
 		detection: {
 			order: ['localStorage', 'cookie', 'navigator'],
