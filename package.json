@@ -22,13 +22,15 @@
 		"react-redux": "^9.2.0",
 		"react-responsive": "^10.0.1",
 		"react-router-dom": "^7.4.0",
+		"react-select": "^5.10.1",
 		"redux": "^5.0.1",
 		"redux-persist": "^6.0.0",
+		"swiper": "^11.2.6",
 		"yup": "^1.6.1"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.21.0",
-		"@types/react": "^19.0.10",
+		"@types/react": "^19.0.12",
 		"@types/react-dom": "^19.0.4",
 		"@types/react-i18next": "^8.1.0",
 		"@types/react-router-dom": "^5.3.3",

@@ -55,3 +55,8 @@ position: relative;
     width: 100%;
     height: 50px;
 }
+/* Styles error in common*/
+/*
+.fieldContainer .error  {
+    margin-top: 5px;
+}*/

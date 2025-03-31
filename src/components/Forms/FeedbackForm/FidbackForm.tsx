@@ -1,13 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './FeedbackForm.module.css';
 import {useTranslation} from 'react-i18next';
 import {Field, Form, Formik, FormikHelpers, FormikValues} from 'formik';
-import ButtonYellow from '../../../ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../ButtonYellow/ButtonYellow.tsx';
+import {validationFeedbackForm} from '../../../assets/common/validationSchema.ts';
 
 const FeedbackForm: React.FC = () => {
 	const {t} = useTranslation();
-
-	const [count, setCount] = useState(0);
 	const initialValues = {
 		name: '',
 		email: '',
@@ -17,6 +16,7 @@ const FeedbackForm: React.FC = () => {
 		console.log(values);
 		helpers.resetForm();
 	};
+
 	return (
 		<div className={s.container}>
 			<div className={s.title}>
@@ -26,17 +26,24 @@ const FeedbackForm: React.FC = () => {
 			</div>
 			<Formik
 				enableReinitialize
+				validationSchema={validationFeedbackForm}
 				initialValues={initialValues}
 				onSubmit={handleSubmit}
 			>
-				{({values, handleSubmit, status, setFieldValue}) => {
+				{({values, handleSubmit, errors, touched, isValid, dirty}) => {
 					return (
 						<Form onSubmit={handleSubmit} className={s.formContainer}>
 							<div className={s.fieldContainer}>
 								<Field name={'name'} placeholder={t('Your name')} />
+								{errors.name && touched.name ? (
+									<div className={`${s.error} error`}>{errors.name ?? ''}</div>
+								) : null}
 							</div>
 							<div className={s.fieldContainer}>
 								<Field name={'email'} placeholder={t('Your email address')} />
+								{errors.email && touched.email ? (
+									<div className={`${s.error} error`}>{errors.email ?? ''}</div>
+								) : null}
 							</div>
 							<div className={`${s.fieldContainer}`}>
 								<Field
@@ -48,9 +55,18 @@ const FeedbackForm: React.FC = () => {
 								<div className={s.textareaCounter}>
 									{values.message.length} / 2500
 								</div>
+								{errors.message && touched.message ? (
+									<div className={`${s.error} error`}>
+										{errors.message ?? ''}
+									</div>
+								) : null}
 							</div>
 							<div className={s.buttonContainer}>
-								<ButtonYellow text={t('Send message')} type={'submit'} />
+								<ButtonYellow
+									text={t('Send message')}
+									type={'submit'}
+									disabled={!isValid || !dirty}
+								/>
 							</div>
 						</Form>
 					);

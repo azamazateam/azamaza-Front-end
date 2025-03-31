@@ -4,10 +4,16 @@ type Props = {
 	text: string;
 	callback?: () => void;
 	type: 'button' | 'submit' | 'reset';
+	disabled?: boolean;
 };
-const ButtonYellow: React.FC<Props> = ({text, type, callback}) => {
+const ButtonYellow: React.FC<Props> = ({text, type, callback, disabled}) => {
 	return (
-		<button onClick={callback && callback} type={type} className={s.button}>
+		<button
+			disabled={disabled}
+			onClick={callback && callback}
+			type={type}
+			className={s.button}
+		>
 			{text}
 		</button>
 	);

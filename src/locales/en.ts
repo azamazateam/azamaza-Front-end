@@ -2,6 +2,10 @@ export const en = {
 	translation: {
 		Login: 'Login',
 		About: 'About',
+		'Page not found': 'Page not found',
+		'Back home': 'Back home',
+		'Travel and meet, save and enjoy, rent, communicate, discover the world!':
+			'Travel and meet, save and enjoy, rent, communicate, discover the world!',
 		'Your name': 'Your name',
 		'Your email address': 'Your email address',
 		'Enter your message ...': 'Enter your message ...',

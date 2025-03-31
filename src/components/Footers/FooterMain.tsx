@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next';
 import SocialNetworkIcon from '../../assets/common/SocialNetworkIcon/SocialNetworkIcon.tsx';
 import BottomSectionMain from './components/BottomSectionMain.tsx';
 import DomainTitle from './components/DomainTitle.tsx';
-import FeedbackForm from './components/FeedbackForm/FidbackForm.tsx';
+import FeedbackForm from '../Forms/FeedbackForm/FidbackForm.tsx';
 import SectionsOfTheWebsite from './components/SectionsOfTheWebsite.tsx';
 
 const FooterMain: React.FC = () => {
