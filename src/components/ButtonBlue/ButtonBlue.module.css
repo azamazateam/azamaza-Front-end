@@ -1,0 +1,23 @@
+.button {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    /* Text/Button text */
+    font-family:var(--Font-Secondary),sans-serif;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: -0.408px;
+    border-radius: 20px;
+    background: var(--Color-Blue, #006CE4);
+    color:  #FFFFFF;
+    /* Text/Button text */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    &.active {
+        background: #FFFFFF;
+        box-shadow: none;
+        border: none;
+        color:#434447;
+    }
+}

@@ -15,6 +15,10 @@ import Advantages from './components/Advantages/Advantages.tsx';
 import ServiceAdvantages from './components/ServiceAdvantages/ServiceAdvantages.tsx';
 import ReferralsProgramCard from '../ReferralsProgram/components/ReferralsProgramCard/ReferralsProgramCard.tsx';
 import UniqueOffersForYou from './components/UniqueOffersForYou/UniqueOffersForYou.tsx';
+import TopFAQ from './components/TopFAQ/TopFAQ.tsx';
+import HowItWorks from './components/HowItWorks/HowItWorks.tsx';
+import ReferralsInfoBanner from '../ReferralsProgram/components/ReferralsInfoBanner/ReferralsInfoBanner.tsx';
+import OurSubscriptions from './components/OurSubscriptions/OurSubscriptions.tsx';
 
 const Home: React.FC = () => {
 	return (
@@ -28,7 +32,6 @@ const Home: React.FC = () => {
 				<div className={s.container}>
 					<MainSearchForm />
 				</div>
-
 				<div className={s.container}>
 					<LabelCarousel data={carouselData1} />
 					<LabelCarousel data={carouselData2} revers />
@@ -40,10 +43,22 @@ const Home: React.FC = () => {
 					<UniqueOffersForYou />
 				</div>
 				<div className={s.container}>
+					<HowItWorks />
+				</div>
+				<div className={s.container}>
 					<ReferralsProgramCard />
 				</div>
 				<div className={s.container}>
+					<OurSubscriptions />
+				</div>
+				<div className={s.container}>
+					<ReferralsInfoBanner />
+				</div>
+				<div className={s.container}>
 					<ServiceAdvantages />
+				</div>
+				<div className={s.container}>
+					<TopFAQ />
 				</div>
 			</Main>
 			<FooterMain />

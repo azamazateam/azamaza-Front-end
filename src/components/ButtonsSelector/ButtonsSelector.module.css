@@ -1,0 +1,15 @@
+.container {
+    width: 300px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    padding:0 3px;
+    border-radius: 24px;
+    border: 1px solid var(--Color-Blue, #006CE4);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.buttonContainer {
+    width: 150px;
+    height: 40px;
+}

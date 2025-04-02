@@ -16,7 +16,7 @@ const SliderWithPagination: React.FC<Props> = ({data}) => {
 				centeredSlides={true}
 				loop={true}
 				spaceBetween={10}
-				slidesPerView={1}
+				slidesPerView={'auto'}
 				modules={[Autoplay, Pagination]}
 				watchOverflow={true}
 				className={'sliderWithPagination'}
@@ -25,7 +25,7 @@ const SliderWithPagination: React.FC<Props> = ({data}) => {
 				}}
 			>
 				{data.map((item, index) => (
-					<SwiperSlide key={index + item.image}>
+					<SwiperSlide key={index + item.image} style={{maxWidth: '408px'}}>
 						<div
 							style={{backgroundImage: `url(${item.image})`}}
 							className={s.bannerContainer}

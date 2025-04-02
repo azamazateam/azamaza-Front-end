@@ -1,0 +1,70 @@
+.accordion {
+    width: 100%;
+    margin-bottom: 32px;
+}
+.value {
+    font-size: 16px;
+    color: #434447;
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 12px;
+    width: 273px;
+}
+.item {
+    border-top: 1px solid #AEB0B4;
+}
+.item:last-child {
+    border-bottom: 1px solid #AEB0B4;
+}
+.header {
+    width: 100%;
+    padding: 22px 12px;
+}
+
+.trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+.star {
+    color: #434447;
+}
+.valueContainer {
+    display: flex;
+    align-items: center;
+}
+.chevron {
+    transition: transform 0.3s ease;
+}
+[aria-expanded="true"] .chevron {
+    transform: rotate(90deg);
+    fill:#006CE4;
+}
+[aria-expanded="true"] .star {
+    fill:#006CE4;
+}
+
+.panel {
+    padding: 18px 0 ;
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #006CE4;
+    border-top: 1px solid #AEB0B4;
+    text-align: left;
+}
+
+[aria-expanded="true"]+ .panel {
+    transition: transform 0.3s ease;
+}
+.panel .descriptionList {
+
+    padding-top: 8px;
+    padding-left: 25px;
+}
+.panel .descriptionList li {
+    list-style: disc;
+}

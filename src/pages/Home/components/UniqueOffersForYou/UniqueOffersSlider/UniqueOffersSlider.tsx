@@ -21,9 +21,10 @@ const UniqueOffersSlider: React.FC<Props> = ({data}) => {
 	const {t} = useTranslation();
 	return (
 		<Swiper
+			centeredSlides={true}
 			loop={true}
-			spaceBetween={0}
-			slidesPerView={1}
+			spaceBetween={10}
+			slidesPerView={'auto'}
 			modules={[Autoplay, Pagination]}
 			watchOverflow={true}
 			className={'sliderWithPagination'}
@@ -32,7 +33,7 @@ const UniqueOffersSlider: React.FC<Props> = ({data}) => {
 			}}
 		>
 			{data.map((item, index) => (
-				<SwiperSlide key={index + item.title} style={{width: 'auto'}}>
+				<SwiperSlide key={index + item.title} style={{maxWidth: 408}}>
 					<div
 						style={{backgroundImage: `url(${item.image})`}}
 						className={s.slideImg}
