@@ -5,6 +5,16 @@ import Header from '../../components/Header/Header.tsx';
 import CategoriesSlider from '../Categories/CategoriesSlider/CategoriesSlider.tsx';
 import MainTitle from '../../components/MainTitle/MainTitle.tsx';
 import MainSearchForm from '../../components/Forms/MainSearchForm/MainSearchForm.tsx';
+import LabelCarousel from '../../components/LabelCarousel/LabelCarousel.tsx';
+import s from './Home.module.css';
+import {
+	carouselData1,
+	carouselData2,
+} from '../../components/LabelCarousel/carouselData1.ts';
+import Advantages from './components/Advantages/Advantages.tsx';
+import ServiceAdvantages from './components/ServiceAdvantages/ServiceAdvantages.tsx';
+import ReferralsProgramCard from '../ReferralsProgram/components/ReferralsProgramCard/ReferralsProgramCard.tsx';
+import UniqueOffersForYou from './components/UniqueOffersForYou/UniqueOffersForYou.tsx';
 
 const Home: React.FC = () => {
 	return (
@@ -12,8 +22,29 @@ const Home: React.FC = () => {
 			<Header />
 			<Main>
 				<CategoriesSlider />
-				<MainTitle />
-				<MainSearchForm />
+				<div className={s.container}>
+					<MainTitle />
+				</div>
+				<div className={s.container}>
+					<MainSearchForm />
+				</div>
+
+				<div className={s.container}>
+					<LabelCarousel data={carouselData1} />
+					<LabelCarousel data={carouselData2} revers />
+				</div>
+				<div className={s.container}>
+					<Advantages />
+				</div>
+				<div className={s.container}>
+					<UniqueOffersForYou />
+				</div>
+				<div className={s.container}>
+					<ReferralsProgramCard />
+				</div>
+				<div className={s.container}>
+					<ServiceAdvantages />
+				</div>
 			</Main>
 			<FooterMain />
 			{/*<FooterCommon />*/}

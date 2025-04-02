@@ -1,0 +1,21 @@
+/* Общие стили для всех изображений */
+
+.swiperCarousel {
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.swiperCarousel .carouselImage {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease; /* плавное увеличение */
+}
+
+/* Для центрального активного слайда */
+.swiperCarousel .swiper-slide-active .carouselImage {
+    transform: matrix(1.35, 0, 0, 1.35, 0, 0);
+}

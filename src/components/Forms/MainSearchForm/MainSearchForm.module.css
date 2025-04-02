@@ -14,25 +14,37 @@
     border-radius: 16px;
 }
 .fieldContainer {
+    width: 100%;
     position: relative;
-    & svg {
-        position: absolute;
-        top: 12px;
-        left: 12px;
-
-    }
+    color:#888A90;
 }
+.fieldContainer .fieldIconLeft {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.fieldContainer .fieldIconRight {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #64666B;
+}
+
 .fieldContainer input {
     width: 100%;
     height: 42px;
     border-radius: 8px;
     background: var(--Color-White, #FFF);
-    padding: 12px 12px 11px 38px;
-    color:#888A90;
+    padding: 12px 38px; /* Увеличил padding справа и слева, чтобы иконки не перекрывали текст */
+    color: #64666B;
     font-family: "Onest", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 120%; /* 19.2px */
+    line-height: 120%;
     letter-spacing: -0.408px;
 }
 .buttonContainer {
