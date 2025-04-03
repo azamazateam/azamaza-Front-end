@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 import ButtonsSelector from '../../../../components/ButtonsSelector/ButtonsSelector.tsx';
 import SubscriptionsCard from './components/SubscriptionsCard/SubscriptionsCard.tsx';
 import {ourSubscriptionsData} from './ourSubscriptionsData.ts';
+
 const OurSubscriptions: React.FC = () => {
 	const {t} = useTranslation();
 	return (
@@ -18,14 +19,17 @@ const OurSubscriptions: React.FC = () => {
 				)}
 			/>
 			<div className={s.imageContainer}>
-				<img src={header} alt="referal-header" />
+				<img src={header} alt="referal-header" loading="lazy" />
 			</div>
 			<div className={s.limitedOferContainer}>
 				<div className={s.limitedOfferHead}>
-					<div className={s.limitedOfferTitle}>{t('Limited Offer')}</div>
+					<div className={s.limitedOfferTitle}>
+						<Link to={`/limited-offer`}>{t('Limited Offer')}</Link>
+					</div>
 					<div className={s.limitedOfferDescription}>
-						Special price only for the <Link to={''}>first 10,000</Link>{' '}
-						subscribers who will receive unique bonuses and opportunities
+						Special price only for the{' '}
+						<Link to={'/limited-offer-counter'}>first 10,000</Link> subscribers
+						who will receive unique bonuses and opportunities
 					</div>
 				</div>
 				<div className={s.offerSelector}>

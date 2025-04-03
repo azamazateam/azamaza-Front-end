@@ -1,5 +1,6 @@
+export type CardType = 'Basic' | 'Premium' | 'Elite';
 export type OurSubscriptionsData = {
-	type: 'Basic' | 'Premium' | 'Elite';
+	type: CardType;
 	specialInfo: string | null;
 	infoList: string[];
 	mainPrice: string;

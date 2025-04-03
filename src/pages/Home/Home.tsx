@@ -5,12 +5,12 @@ import Header from '../../components/Header/Header.tsx';
 import CategoriesSlider from '../Categories/CategoriesSlider/CategoriesSlider.tsx';
 import MainTitle from '../../components/MainTitle/MainTitle.tsx';
 import MainSearchForm from '../../components/Forms/MainSearchForm/MainSearchForm.tsx';
-import LabelCarousel from '../../components/LabelCarousel/LabelCarousel.tsx';
+import LabelCarousel from '../../components/Sliders/LabelCarousel/LabelCarousel.tsx';
 import s from './Home.module.css';
 import {
 	carouselData1,
 	carouselData2,
-} from '../../components/LabelCarousel/carouselData1.ts';
+} from '../../components/Sliders/LabelCarousel/carouselData1.ts';
 import Advantages from './components/Advantages/Advantages.tsx';
 import ServiceAdvantages from './components/ServiceAdvantages/ServiceAdvantages.tsx';
 import ReferralsProgramCard from '../ReferralsProgram/components/ReferralsProgramCard/ReferralsProgramCard.tsx';
@@ -19,6 +19,7 @@ import TopFAQ from './components/TopFAQ/TopFAQ.tsx';
 import HowItWorks from './components/HowItWorks/HowItWorks.tsx';
 import ReferralsInfoBanner from '../ReferralsProgram/components/ReferralsInfoBanner/ReferralsInfoBanner.tsx';
 import OurSubscriptions from './components/OurSubscriptions/OurSubscriptions.tsx';
+import MostPopularServices from './components/MostPopularServices/MostPopularServices.tsx';
 
 const Home: React.FC = () => {
 	return (
@@ -44,6 +45,9 @@ const Home: React.FC = () => {
 				</div>
 				<div className={s.container}>
 					<HowItWorks />
+				</div>
+				<div className={s.container}>
+					<MostPopularServices />
 				</div>
 				<div className={s.container}>
 					<ReferralsProgramCard />

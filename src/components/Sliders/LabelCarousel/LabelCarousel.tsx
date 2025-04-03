@@ -28,12 +28,18 @@ const LabelCarousel: React.FC<Props> = ({data, revers}) => {
 				autoplay={{
 					delay: 3000,
 					reverseDirection: revers,
+					disableOnInteraction: false,
 				}}
 				className={'swiperCarousel'}
 			>
 				{data.map((item, index) => (
 					<SwiperSlide key={index + item.name}>
-						<img src={item.img} className={'carouselImage'} />
+						<img
+							loading="lazy"
+							src={item.img}
+							className={'carouselImage'}
+							alt={item.name}
+						/>
 					</SwiperSlide>
 				))}
 			</Swiper>

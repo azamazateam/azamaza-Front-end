@@ -19,7 +19,7 @@ const ButtonBlue: React.FC<Props> = ({
 			disabled={disabled}
 			onClick={callback && callback}
 			type={type}
-			className={`${s.button} ${active ? s.active : ''}`}
+			className={`${s.button} ${!active ? s.active : ''}`}
 		>
 			{text}
 		</button>
