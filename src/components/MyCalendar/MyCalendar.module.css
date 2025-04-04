@@ -1,0 +1,60 @@
+/*
+.calendarContainer {
+  width: 100%;
+}
+.calendarTile--active {
+  background-color:#F1D246 !important;
+  color:#F1D246 !important;
+}
+.dayCalendarContainer {
+  position: absolute;
+  z-index: 5;
+}*/
+.calendar {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+/* Навигация */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+/* Кнопки навигации */
+.navigation button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Дни */
+.tile {
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.tile:hover {
+  background-color: #F1D246;
+}
+
+/* Текущий день */
+.today {
+  background-color: #F1D246;
+  color:#FFFFFF;
+}
+
+/* Активный день (выбранная дата) */
+.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+}

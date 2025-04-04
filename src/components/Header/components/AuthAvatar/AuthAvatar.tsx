@@ -13,10 +13,7 @@ const AuthAvatar: React.FC = () => {
 		<div className={s.container}>
 			{auth ? (
 				<div className={s.authImageContainer} onClick={handleAuth}>
-					<button>
-						JS
-						{/*<img src={authImage} alt="avatar" onClick={handleAuth} />*/}
-					</button>
+					<button>MS</button>
 				</div>
 			) : (
 				<div className={s.buttonContainer}>

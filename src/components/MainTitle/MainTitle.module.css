@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    min-height: 130px;
+    height: 130px;
     display: flex;
     justify-content: center;
     background: url("../../assets/images/titleBackground.png");
@@ -8,6 +8,7 @@
 }
 .imageContainer {
     width: 100%;
+
     display: flex;
     justify-content: center;
     position: relative;

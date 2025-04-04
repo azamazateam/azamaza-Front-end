@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Footer.module.css';
 import {useTranslation} from 'react-i18next';
-import SocialNetworkIcon from '../../assets/common/SocialNetworkIcon/SocialNetworkIcon.tsx';
+import SocialNetworkIcon from '../../assets/images/SocialNetworkIcon/SocialNetworkIcon.tsx';
 import BottomSection from './components/BottomSection.tsx';
 import DomainTitle from './components/DomainTitle.tsx';
 

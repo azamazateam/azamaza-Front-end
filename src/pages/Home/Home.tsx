@@ -10,7 +10,7 @@ import s from './Home.module.css';
 import {
 	carouselData1,
 	carouselData2,
-} from '../../components/Sliders/LabelCarousel/carouselData1.ts';
+} from '../../components/Sliders/LabelCarousel/carouselData1.tsx';
 import Advantages from './components/Advantages/Advantages.tsx';
 import ServiceAdvantages from './components/ServiceAdvantages/ServiceAdvantages.tsx';
 import ReferralsProgramCard from '../ReferralsProgram/components/ReferralsProgramCard/ReferralsProgramCard.tsx';

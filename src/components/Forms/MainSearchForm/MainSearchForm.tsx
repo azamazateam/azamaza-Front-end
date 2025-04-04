@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './MainSearchForm.module.css';
 import {Field, Form, Formik, FormikValues} from 'formik';
 import {validationSearchForm} from '../../../assets/common/validationSchema.ts';
@@ -6,8 +6,11 @@ import {useTranslation} from 'react-i18next';
 import ButtonYellow from '../../ButtonYellow/ButtonYellow.tsx';
 import {BsCalendar3, BsGeoAlt, BsX} from 'react-icons/bs';
 import ServiceSelect from './ServiceSelect.tsx';
+import 'react-datepicker/dist/react-datepicker.css';
+import MyCalendar from '../../MyCalendar/MyCalendar.tsx';
 
 const MainSearchForm: React.FC = () => {
+	const [openCalendar, setOpenCalendar] = useState(false);
 	const {t} = useTranslation();
 	const initialValues = {
 		location: '',
@@ -17,6 +20,13 @@ const MainSearchForm: React.FC = () => {
 	const handleSubmit = (values: FormikValues) => {
 		console.log(values);
 	};
+	const handleCalendar = () => {
+		setOpenCalendar(!openCalendar);
+	};
+	const handleCloseCalendar = () => {
+		setOpenCalendar(false);
+	};
+
 	return (
 		<div className={s.container}>
 			<Formik
@@ -25,7 +35,7 @@ const MainSearchForm: React.FC = () => {
 				initialValues={initialValues}
 				onSubmit={handleSubmit}
 			>
-				{({handleSubmit}) => {
+				{({handleSubmit, setFieldValue}) => {
 					return (
 						<Form onSubmit={handleSubmit} className={s.formContainer}>
 							<div className={s.fieldContainer}>
@@ -60,16 +70,29 @@ const MainSearchForm: React.FC = () => {
 									</div>
 								) : null}*/}
 							</div>
+
 							<div className={s.fieldContainer}>
-								<BsCalendar3 size={18} className={s.fieldIconLeft} />
+								{openCalendar && (
+									<MyCalendar
+										closeCalendar={handleCloseCalendar}
+										setFieldValue={setFieldValue}
+										fieldName={'date'}
+									/>
+								)}
+								{!openCalendar && (
+									<BsCalendar3 size={18} className={s.fieldIconLeft} />
+								)}
 								<Field
+									onClick={handleCalendar}
 									name={'date'}
 									placeholder={t('Date or period of service registration')}
 								/>
+
 								{/*{errors.date && touched.date ? (*/}
 								{/*	<div className={`${s.error} error`}>{errors.date ?? ''}</div>*/}
 								{/*) : null}*/}
 							</div>
+
 							<div className={s.buttonContainer}>
 								<ButtonYellow text={t('Search')} type={'submit'} />
 							</div>
@@ -80,5 +103,4 @@ const MainSearchForm: React.FC = () => {
 		</div>
 	);
 };
-
 export default MainSearchForm;

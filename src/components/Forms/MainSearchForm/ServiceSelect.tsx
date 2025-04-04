@@ -33,6 +33,7 @@ const ServiceSelect: React.FC = () => {
 			height: '42px', // <-- иконки по высоте подгоняем
 		}),
 	};
+
 	const onChangeFn = (
 		newValue: SingleValue<Option> | MultiValue<Option> | null,
 	) => {
@@ -102,9 +103,8 @@ const ServiceSelect: React.FC = () => {
 					Menu,
 					Option,
 					Placeholder,
-					IndicatorSeparator: () => null /*<BsCaretDown size={18} />*/,
-					DropdownIndicator, //: () => <BsCaretDown size={18} />, // <BsSearch size={18} />,
-					//DropdownIndicator: () => <BsCaretDown size={18} />,
+					IndicatorSeparator: () => null,
+					DropdownIndicator,
 				}}
 			/>
 		</>

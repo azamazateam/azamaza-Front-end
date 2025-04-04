@@ -23,7 +23,7 @@ const UniqueOffersSlider: React.FC<Props> = ({data}) => {
 		<Swiper
 			centeredSlides={true}
 			loop={true}
-			spaceBetween={10}
+			spaceBetween={20}
 			slidesPerView={'auto'}
 			modules={[Autoplay, Pagination]}
 			watchOverflow={true}
