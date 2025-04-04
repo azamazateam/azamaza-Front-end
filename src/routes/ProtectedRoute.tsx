@@ -1,16 +1,16 @@
-import * as React from 'react';
+/*import * as React from 'react';
 
 const ProtectedRoute = ({children}: {children: React.ReactNode}) => {
 	//const isAuth = useSelector((state: RootState) => state.user.user);
 	//const dispatch = useDispatch();
 
-	/*useEffect(() => {
+	/!*useEffect(() => {
 		if (!isAuth) {
 			dispatch(setLoginPopup({ open: true, type: "login" }));
 		}
-	}, [isAuth, dispatch]);*/
+	}, [isAuth, dispatch]);*!/
 
 	return <></>; //isAuth ? <>{children}</> : <Navigate to="/" replace />;
 };
 
-export default ProtectedRoute;
+export default ProtectedRoute;*/
