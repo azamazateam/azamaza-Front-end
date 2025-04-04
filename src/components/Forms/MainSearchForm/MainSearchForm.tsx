@@ -6,7 +6,6 @@ import {useTranslation} from 'react-i18next';
 import ButtonYellow from '../../ButtonYellow/ButtonYellow.tsx';
 import {BsCalendar3, BsGeoAlt, BsX} from 'react-icons/bs';
 import ServiceSelect from './ServiceSelect.tsx';
-import 'react-datepicker/dist/react-datepicker.css';
 import MyCalendar from '../../MyCalendar/MyCalendar.tsx';
 
 const MainSearchForm: React.FC = () => {
