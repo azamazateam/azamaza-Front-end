@@ -50,3 +50,63 @@
     width: 100%;
     height: 42px;
 }
+/*--------React-Select----------*/
+.singleValueContainer {
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color:#434447;
+    text-align: center;
+    /* Text/Secondary/16 */
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.408px;
+    & svg {
+        color:black;
+    }
+}
+.dropdownIndicator {
+    padding-right: 2px;
+    color: #888A90;
+}
+.menu {
+    padding: 24px;
+
+   /* display: flex;
+    gap: 12px;*/
+
+}
+.option {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 24px;
+    color: #434447;
+    text-align: center;
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: -0.408px;
+    cursor: pointer;
+}
+.placeholder {
+    display: flex;
+    color: #888A90;
+    text-align: center;
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: -0.408px;
+    & svg {
+        color:black;
+        margin-right: 8px;
+    }
+}

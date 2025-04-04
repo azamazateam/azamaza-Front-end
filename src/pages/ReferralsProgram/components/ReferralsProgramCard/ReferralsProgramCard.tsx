@@ -3,7 +3,7 @@ import s from './ReferralsProgramCard.module.css';
 import {useTranslation} from 'react-i18next';
 import ButtonYellow from '../../../../components/ButtonYellow/ButtonYellow.tsx';
 import {Link} from 'react-router-dom';
-
+import image from '../../../../assets/images/19471649_6106303 1 1.png';
 const ReferralsProgramCard: React.FC = () => {
 	const {t} = useTranslation();
 	return (
@@ -22,8 +22,9 @@ const ReferralsProgramCard: React.FC = () => {
 						<ButtonYellow type={'button'} text={t('Invite friends')} />
 					</Link>
 				</div>
-
-				{/*<img src={background} alt="" />*/}
+			</div>
+			<div className={s.imageContainer}>
+				<img src={image} alt="" />
 			</div>
 		</div>
 	);

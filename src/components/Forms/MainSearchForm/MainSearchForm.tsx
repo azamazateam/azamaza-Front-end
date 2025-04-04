@@ -4,13 +4,8 @@ import {Field, Form, Formik, FormikValues} from 'formik';
 import {validationSearchForm} from '../../../assets/common/validationSchema.ts';
 import {useTranslation} from 'react-i18next';
 import ButtonYellow from '../../ButtonYellow/ButtonYellow.tsx';
-import {
-	BsCalendar3,
-	BsCaretDown,
-	BsGeoAlt,
-	BsSearch,
-	BsX,
-} from 'react-icons/bs';
+import {BsCalendar3, BsGeoAlt, BsX} from 'react-icons/bs';
+import ServiceSelect from './ServiceSelect.tsx';
 
 const MainSearchForm: React.FC = () => {
 	const {t} = useTranslation();
@@ -38,7 +33,6 @@ const MainSearchForm: React.FC = () => {
 								<button className={s.fieldIconRight}>
 									<BsX size={18} />
 								</button>
-
 								<Field
 									name={'location'}
 									placeholder={t('Destination, city, address')}
@@ -50,15 +44,15 @@ const MainSearchForm: React.FC = () => {
 								) : null}*/}
 							</div>
 							<div className={s.fieldContainer}>
-								{/*<ServiceSelect />*/}
-								<BsSearch size={18} className={s.fieldIconLeft} />
+								<ServiceSelect />
+								{/*<BsSearch size={18} className={s.fieldIconLeft} />
 								<button className={s.fieldIconRight}>
 									<BsCaretDown size={18} />
 								</button>
 								<Field
 									name={'service'}
 									placeholder={t('A service, a meeting, an offer')}
-								/>
+								/>*/}
 
 								{/*	{errors.service && touched.service ? (
 									<div className={`${s.error} error`}>
