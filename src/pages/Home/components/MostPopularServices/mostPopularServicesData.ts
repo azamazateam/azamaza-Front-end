@@ -1,13 +1,11 @@
 import image from '../../../../assets/images/productImages/image.jpg';
 import image1 from '../../../../assets/images/productImages/image1.jpg';
-
 import image3 from '../../../../assets/images/productImages/image3.jpg';
 import image4 from '../../../../assets/images/productImages/image4.jpg';
 import image5 from '../../../../assets/images/productImages/image5.jpg';
 import image6 from '../../../../assets/images/productImages/image6.jpg';
 import image7 from '../../../../assets/images/productImages/image7.jpg';
 import image8 from '../../../../assets/images/productImages/image8.jpg';
-import image9 from '../../../../assets/images/productImages/image9.jpg';
 import test from '../../../../assets/images/productImages/13.jpg';
 export type MostPopularServicesType = {
 	hot: 1 | 0;
@@ -120,7 +118,7 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '3 433',
 		oldPrice: 33,
 		newPrice: 190,
-	},
+	} /*
 	{
 		hot: 1,
 		favorite: 1,
@@ -131,7 +129,7 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '2 675',
 		oldPrice: 190,
 		newPrice: 110,
-	},
+	},*/,
 	{
 		hot: 1,
 		favorite: 1,
