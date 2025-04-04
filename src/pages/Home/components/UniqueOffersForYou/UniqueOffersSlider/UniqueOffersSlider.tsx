@@ -21,9 +21,9 @@ const UniqueOffersSlider: React.FC<Props> = ({data}) => {
 	const {t} = useTranslation();
 	return (
 		<Swiper
-			centeredSlides={true}
+			centeredSlides={false}
 			loop={true}
-			spaceBetween={20}
+			spaceBetween={14}
 			slidesPerView={'auto'}
 			modules={[Autoplay, Pagination]}
 			watchOverflow={true}

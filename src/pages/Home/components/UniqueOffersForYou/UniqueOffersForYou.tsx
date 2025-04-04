@@ -14,6 +14,7 @@ const UniqueOffersForYou: React.FC = () => {
 					'Promotions, discounts and special offers that you will receive only from us',
 				)}
 			/>
+
 			<div className={s.slider}>
 				<UniqueOffersSlider data={uniqueOffersSlideData} />
 			</div>

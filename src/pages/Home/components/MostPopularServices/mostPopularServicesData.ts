@@ -6,7 +6,7 @@ import image5 from '../../../../assets/images/productImages/image5.jpg';
 import image6 from '../../../../assets/images/productImages/image6.jpg';
 import image7 from '../../../../assets/images/productImages/image7.jpg';
 import image8 from '../../../../assets/images/productImages/image8.jpg';
-import test from '../../../../assets/images/productImages/13.jpg';
+//import test from '../../../../assets/images/productImages/13.jpg';
 export type MostPopularServicesType = {
 	hot: 1 | 0;
 	favorite: 1 | 0;
@@ -130,7 +130,7 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		oldPrice: 190,
 		newPrice: 110,
 	},*/,
-	{
+	/*{
 		hot: 1,
 		favorite: 1,
 		image: test,
@@ -140,5 +140,5 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '1 000 000 000',
 		oldPrice: 123456789,
 		newPrice: 12345667798,
-	},
+	},*/
 ];
