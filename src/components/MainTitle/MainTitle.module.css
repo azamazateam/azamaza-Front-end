@@ -1,7 +1,9 @@
 .container {
     width: 100%;
+    min-height: 130px;
     display: flex;
     justify-content: center;
+    background: url("../../assets/images/titleBackground.png");
     /*padding:45px 16px 24px;*/
 }
 .imageContainer {
@@ -9,6 +11,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+
 }
 .mainTitle {
     position: absolute;
@@ -16,7 +19,8 @@
     color: var(--Color-Blue, #006CE4);
     text-align: center;
     font-family:"Onest", sans-serif;
-    font-size: 32px;
+    /*font-size: 32px;*/
+    font-size: 7.3vw;
     font-weight: 700;
     line-height: 103%; /* 32.96px */
 }

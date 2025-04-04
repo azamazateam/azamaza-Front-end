@@ -1,6 +1,7 @@
 .container {
 	display: flex;
 	justify-content: space-between;
+	gap: 1rem;
 	width: 100%;
 	padding: 32px 16px 22px;
 	background: var(--Color-Blue, #006ce4);
@@ -11,9 +12,18 @@
 }
 .buttonsList {
 	display: flex;
-	gap: 24px;
+	/*gap: 24px;*/
+	gap: 1.7rem;
 	align-items: center;
 }
 .button {
 	color: #ffffff;
+}
+@media (max-width: 400px) {
+	.buttonsList {
+		display: flex;
+		/*gap: 24px;*/
+		gap: 1rem;
+		align-items: center;
+	}
 }

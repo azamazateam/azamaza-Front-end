@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     display: flex;
-    height: 723px;
+    /*height: 723px;*/
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -13,23 +13,33 @@
 }
 .imageContainer {
     height: 270px;
+    & img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
 }
 .buttonContainer {
     width: 100%;
     padding: 0 16px 40px 16px;
     display: flex;
     align-items: flex-end;
-    height: 453px;
+    height: 100%;
+    min-height: 453px;
 }
 .button {
     width: 100%;
     height: 50px;
 }
 .infoWindow {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 5px;
     /*height: 388px;*/
     position: absolute;
-    top: 30%;
+    /*top: 30%;*/
+    top: 50vw;
     display: inline-flex;
     padding: 32px 12px;
     flex-direction: column;

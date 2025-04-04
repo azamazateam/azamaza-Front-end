@@ -3,7 +3,8 @@
     overflow: hidden;
     color: var(--Color-Blue, #006CE4);
     font-family: "HelveticaNeue", "Arial", sans-serif;
-    font-size: 32px;
+    /*font-size: 32px;*/
+    font-size: 7vw;
     font-style: normal;
     font-weight: 700;
     line-height: 103%; /* 32.96px */
@@ -14,7 +15,9 @@
     color: #64666B;
     /* Text/Secondary/16 */
     font-family: "Onest", "Arial", sans-serif;
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 3.63vw;
+    /*font-size: 115%;*/
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 19.2px */

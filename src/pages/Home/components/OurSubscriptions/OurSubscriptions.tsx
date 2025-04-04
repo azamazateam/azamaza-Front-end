@@ -18,6 +18,7 @@ const OurSubscriptions: React.FC = () => {
 					'Travel, relax, communicate, meet, find friends, buy, rent, economize - do whatever you want with an Azamaza subscription',
 				)}
 			/>
+
 			<div className={s.imageContainer}>
 				<img src={header} alt="referal-header" loading="lazy" />
 			</div>

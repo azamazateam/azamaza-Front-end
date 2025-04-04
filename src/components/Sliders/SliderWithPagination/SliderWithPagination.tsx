@@ -25,7 +25,7 @@ const SliderWithPagination: React.FC<Props> = ({data}) => {
 				}}
 			>
 				{data.map((item, index) => (
-					<SwiperSlide key={index + item.image} style={{maxWidth: '408px'}}>
+					<SwiperSlide key={index + item.image} style={{maxWidth: 408}}>
 						<div
 							style={{backgroundImage: `url(${item.image})`}}
 							className={s.bannerContainer}

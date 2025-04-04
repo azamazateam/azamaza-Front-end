@@ -22,7 +22,8 @@
 }
 .topInfoTitle {
     font-family: "HelveticaNeue", Arial, sans-serif;
-    font-size: 22px;
+    /*font-size: 22px;*/
+    font-size:5vw;
     font-style: normal;
     font-weight: 700;
     line-height: 103%; /* 22.66px */
@@ -34,7 +35,8 @@
     padding: 4px 7px;
     text-align: center;
     font-family: "Onest", sans-serif;
-    font-size: 10px;
+    /*font-size: 10px;*/
+    font-size: 2.3vw;
     font-style: normal;
     font-weight: 600;
     line-height: 16px; /* 160% */
@@ -46,7 +48,8 @@
 .bottomInfo {
     color: var(--Color-Blue, #006CE4);
     font-family: "Onest", sans-serif;
-    font-size: 14px;
+    /*font-size: 14px;*/
+    font-size: 3.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 16.8px */
@@ -68,7 +71,8 @@
 .priceMain {
     color: #46BAF1;
     font-family: "Onest", sans-serif;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 4.57vw;
     font-style: normal;
     font-weight: 500;
     letter-spacing: -0.408px;
@@ -80,7 +84,8 @@
 .priceActual {
     color: var(--Color-Blue, #006CE4);
     font-family: "Onest", sans-serif;
-    font-size: 28px;
+    /*font-size: 28px;*/
+    font-size: 6.37vw;
     font-style: normal;
     font-weight: 600;
     letter-spacing: -0.408px;
@@ -91,7 +96,8 @@
 .month {
     color: #46BAF1;
     font-family:"Onest", sans-serif;
-    font-size: 14px;
+    /*font-size: 14px;*/
+    font-size: 3.2vw;
     font-style: normal;
     font-weight: 500;
     letter-spacing: -0.408px;

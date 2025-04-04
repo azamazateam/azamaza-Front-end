@@ -2,6 +2,7 @@ import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Autoplay} from 'swiper/modules';
 import './swiperCarousel.css';
+import {useMediaQuery} from 'react-responsive';
 
 export type CarouselDataType = {
 	name: string;
@@ -14,13 +15,14 @@ type Props = {
 };
 
 const LabelCarousel: React.FC<Props> = ({data, revers}) => {
+	const isSmall = useMediaQuery({maxWidth: 400});
 	return (
 		<div>
 			<Swiper
 				spaceBetween={22}
 				centeredSlides
 				navigation={false}
-				slidesPerView={5}
+				slidesPerView={isSmall ? 4 : 5}
 				loopAdditionalSlides={1}
 				loop={true}
 				modules={[Autoplay]}
@@ -35,7 +37,7 @@ const LabelCarousel: React.FC<Props> = ({data, revers}) => {
 				{data.map((item, index) => (
 					<SwiperSlide key={index + item.name}>
 						<img
-							loading="lazy"
+							/*loading="lazy"*/
 							src={item.img}
 							className={'carouselImage'}
 							alt={item.name}
