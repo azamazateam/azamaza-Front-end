@@ -109,6 +109,7 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		oldPrice: 26,
 		newPrice: 12,
 	},
+
 	{
 		hot: 1,
 		favorite: 1,
