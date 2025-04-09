@@ -3,37 +3,37 @@ import {CategoriesIconsType} from './CategoriesIcons.tsx';
 export const categories: {
 	name: string;
 	icon: CategoriesIconsType;
-	link: string;
+	link: string | null;
 }[] = [
 	{
 		name: 'all',
 		icon: 'all',
-		link: '/categories/all',
+		link: null,
 	},
 	{
 		name: 'excursion',
 		icon: 'excursion',
-		link: '/categories/excursion',
+		link: '/excursion',
 	},
 	{
 		name: 'photography',
 		icon: 'photography',
-		link: '/categories/photography',
+		link: '/photography',
 	},
 	{
 		name: 'meet',
 		icon: 'meet',
-		link: '/categories/meet',
+		link: '/meet',
 	},
 	{
 		name: 'app subscription',
 		icon: 'appSubscription',
-		link: '/categories/app-subscription',
+		link: '/app-subscription',
 	},
 	{
 		name: 'fueling',
 		icon: 'fueling',
-		link: '/categories/fueling',
+		link: '/fueling',
 	},
 	{
 		name: 'taxi',

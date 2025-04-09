@@ -1,0 +1,24 @@
+import React from 'react';
+import s from './UniqueOffersCard.module.css';
+import {Link} from 'react-router-dom';
+import ButtonYellow from '../../ButtonYellow/ButtonYellow.tsx';
+import {UniqueOffersSlideType} from '../../../pages/Home/components/UniqueOffersForYou/UniqueOffersSlider/UniqueOffersSlider.tsx';
+import {useTranslation} from 'react-i18next';
+
+type Props = {card: UniqueOffersSlideType};
+const UniqueOffersCard: React.FC<Props> = ({card}) => {
+	const {t} = useTranslation();
+	return (
+		<div style={{backgroundImage: `url(${card.image})`}} className={s.slideImg}>
+			<div className={s.cardTitle}>{card.title}</div>
+			<div className={s.cardPropose}>{card.propose}</div>
+			<div className={s.cardButton}>
+				<Link to={card.link}>
+					<ButtonYellow type={'button'} text={t('Book now')} />
+				</Link>
+			</div>
+		</div>
+	);
+};
+
+export default UniqueOffersCard;

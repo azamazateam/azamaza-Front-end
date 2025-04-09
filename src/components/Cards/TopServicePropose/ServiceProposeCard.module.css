@@ -1,0 +1,65 @@
+.container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Onest",sans-serif;
+    font-style: normal;
+    overflow: hidden;
+    border-radius: 16px;
+    background: rgba(0, 108, 228, 0.10);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 8px -2px rgba(0, 0, 0, 0.10), 0 0 20px 10px rgba(0, 108, 228, 0.10) inset;
+}
+.containerInfo {
+    flex: 1 1 50%;
+    padding: 24px 0 12px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.title {
+    color: #64666B;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px; /* 110% */
+    letter-spacing: -0.41px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price {
+    color: var(--Color-Blue, #006CE4);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px; /* 100% */
+    letter-spacing: 0.07px;
+}
+.button {
+    width: 140px;
+    height: 42px;
+}
+.containerImage {
+    position: relative;
+    flex: 1 1 50%;
+    width: 100%;
+    height: 100%;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(
+            5% 0%,   /* верхний левый срез */
+            100% 0%,  /* верхний правый */
+            100% 100%,/* нижний правый */
+            0% 100%   /* нижний левый */
+    );
+   /* border-radius: 20px;*/
+   border-radius: 50px 20px 20px 15px;
+
+}
+
+.discount {
+
+}

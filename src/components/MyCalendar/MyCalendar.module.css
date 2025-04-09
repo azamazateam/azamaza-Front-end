@@ -13,22 +13,24 @@
 .calendar {
   background-color: white;
   border-radius: 12px;
-  padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: fit-content;
 }
 
 /* Навигация */
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
   font-weight: bold;
+  color: #888A90;
+  /* Text/Secondary/16 */
+  font-family: "Onest",sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.408px;
 }
 
 /* Кнопки навигации */
 .navigation button {
-  background: none;
+  /*background: none;*/
   border: none;
   font-size: 16px;
   cursor: pointer;

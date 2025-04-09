@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-//import 'react-calendar/dist/Calendar.css';
+import 'react-calendar/dist/Calendar.css';
 
 import './MyCalendar.css';
 import s from './MyCalendar.module.css';
@@ -21,7 +21,7 @@ const MyCalendar: React.FC<Props> = ({
 	const [value, onChangeValue] = useState<Value>(new Date());
 
 	const handleChange = (newValue: any) => {
-		const dateObject = new Date(newValue);
+		const dateObject = new Date(newValue[0]);
 		const year = dateObject.getFullYear();
 		const month = (dateObject.getMonth() + 1).toString().padStart(2, '0');
 		const day = dateObject.getDate().toString().padStart(2, '0');
@@ -33,6 +33,7 @@ const MyCalendar: React.FC<Props> = ({
 	return (
 		<Calendar
 			className={s.calendar}
+			selectRange
 			navigationLabel={({label}) => <div className={s.navigation}>{label}</div>}
 			tileClassName={({date}) => {
 				const classes = [s.tile];

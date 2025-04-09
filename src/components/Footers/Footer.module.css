@@ -1,9 +1,11 @@
 .section {
+    margin-top: 40px;
     background: var(--Color-Blue);
     padding: 40px 16px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+
 }
 .containerTitle {
     width: 100%;

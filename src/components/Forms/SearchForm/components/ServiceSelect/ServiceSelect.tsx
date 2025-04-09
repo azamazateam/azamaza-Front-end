@@ -4,7 +4,7 @@ import {BsCaretDown, BsSearch} from 'react-icons/bs';
 import {components} from 'react-select';
 export type Option = {value: string; label: string; icon: ReactNode};
 export type Options = Option[];
-import s from './MainSearchForm.module.css';
+import s from '../../SearchForm.module.css';
 import {options} from './selectData.tsx';
 import {useTranslation} from 'react-i18next';
 

@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 100%;
+    width: 440px;
+    height: 100vh;
+    padding: 40px 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+.headPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    color: var(--Color-Grey-500, #434447);
+
+    /* Text/Helvetica/24 bolt */
+    font-family: "HelveticaNeue",sans-serif;
+    /*font-size: 24px;*/
+    font-size: 5.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103%; /* 24.72px */
+}
+.inputContainer {
+    margin-top: 40px;
+}
+.nextPosition {
+    margin-top: 12px;
+}
+.listTitle {
+    margin-top: 25px;
+    color: var(--Color-Grey-500, #434447);
+    font-family: "Onest", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    letter-spacing: -0.408px;
+}
+.popularOfferEl button {
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+}
+.nameContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+    font-style: normal;
+    font-family: "Onest", "HelveticaNeue",sans-serif;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+    letter-spacing: -0.408px;
+}
+.name {
+    color: var(--Color-Grey-500, #434447);
+    font-size: 3.7vw;
+    /*font-size: 16px;*/
+}
+.location {
+    color: var(--Color-Grey-300, #888A90);
+    /*font-size: 12px;*/
+    font-size: 2.8vw;
+
+}
+.submitButton {
+    flex: 0 0 50px;
+    margin-top: 24px;
+    height: 50px;
+}

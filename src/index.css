@@ -51,8 +51,12 @@
 :root {
 	--Color-White: #ffffff;
 	--Color-Blue: #006ce4;
+	--Color-Grey-500: #434447;
+	--Color-Grey-300: #888A90;
+	--Color-Gray-100: #D7D7D9;
 	--Font-Primary: 'HelveticaNeue';
 	--Font-Secondary: 'Onest';
+
 }
 * {
 	padding: 0;

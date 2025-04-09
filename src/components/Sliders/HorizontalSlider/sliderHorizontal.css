@@ -1,9 +1,9 @@
 /* Общие стили для контейнера точек */
-.sliderWithPagination {
+.sliderHorizontal {
     width: 100%;
     padding-bottom: 20px;
 }
-.sliderWithPagination .swiper-pagination {
+.sliderHorizontal .swiper-pagination {
     position: absolute;
     bottom: 0; /* Располагаем точки внизу */
     display: flex;
@@ -13,7 +13,7 @@
 }
 
 /* Обычные точки */
-.sliderWithPagination .swiper-pagination-bullet {
+.sliderHorizontal .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
     fill: #D7D7D9;
@@ -21,7 +21,7 @@
 }
 
 /* Активная точка - делаем её шире */
-.sliderWithPagination .swiper-pagination-bullet-active {
+.sliderHorizontal .swiper-pagination-bullet-active {
     width: 32px;
     height: 8px;
     border-radius: 12px;

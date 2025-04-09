@@ -12,7 +12,7 @@ import {
 	BsShopWindow,
 	BsTaxiFront,
 } from 'react-icons/bs';
-import CategoriesIcons from '../../../pages/Categories/CategoriesSlider/CategoriesIcons.tsx';
+import CategoriesIcons from '../../../../CategoriesSlider/CategoriesIcons.tsx';
 
 export const options: Options = [
 	{

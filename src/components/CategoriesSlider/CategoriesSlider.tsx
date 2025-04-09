@@ -1,18 +1,17 @@
 import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
+import s from './CategoriesSlider.module.css';
+import SliderButton from './SliderButton.tsx';
+import {categories} from './categoriesData.ts';
 // @ts-ignore
 import 'swiper/css';
 // @ts-ignore
 import 'swiper/css/navigation';
 // @ts-ignore
 import 'swiper/css/pagination';
-import s from './CategoriesSlider.module.css';
-import SliderButton from './SliderButton.tsx';
-import {categories} from './categoriesData.ts';
-
 const CategoriesSlider: React.FC = () => {
 	return (
-		<div className={s.container} style={{width: '100%'}}>
+		<div className={s.container}>
 			<Swiper
 				pagination={{clickable: true}}
 				spaceBetween={12}
@@ -24,7 +23,8 @@ const CategoriesSlider: React.FC = () => {
 							<SliderButton
 								name={category.name}
 								icon={category.icon}
-								link={category.link}
+								link={`/service${category.link}`}
+								disabled={category.link !== null}
 							/>
 						</div>
 					</SwiperSlide>

@@ -1,11 +1,16 @@
 import React from 'react';
-import SliderWithPagination from '../../../../components/Sliders/SliderWithPagination/SliderWithPagination.tsx';
-import {advantagesData} from './advantagesData.ts';
+import {advantagesData, AdvantagesDataType} from './advantagesData.ts';
+import HorizontalSlider from '../../../../components/Sliders/HorizontalSlider/HorizontalSlider.tsx';
+import AdvantagesCard from '../../../../components/Cards/AdvantagesCard/AdvantagesCard.tsx';
 
 const Advantages: React.FC = () => {
 	return (
 		<div>
-			<SliderWithPagination data={advantagesData} />
+			<HorizontalSlider pagination>
+				{advantagesData.map((advantage: AdvantagesDataType, index) => (
+					<AdvantagesCard card={advantage} key={`${index}Advantages`} />
+				))}
+			</HorizontalSlider>
 		</div>
 	);
 };

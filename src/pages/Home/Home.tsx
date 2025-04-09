@@ -2,15 +2,9 @@ import React from 'react';
 import FooterMain from '../../components/Footers/FooterMain.tsx';
 import Main from '../../components/Main/Main.tsx';
 import Header from '../../components/Header/Header.tsx';
-import CategoriesSlider from '../Categories/CategoriesSlider/CategoriesSlider.tsx';
+import CategoriesSlider from '../../components/CategoriesSlider/CategoriesSlider.tsx';
 import MainTitle from '../../components/MainTitle/MainTitle.tsx';
-import MainSearchForm from '../../components/Forms/MainSearchForm/MainSearchForm.tsx';
-import LabelCarousel from '../../components/Sliders/LabelCarousel/LabelCarousel.tsx';
 import s from './Home.module.css';
-import {
-	carouselData1,
-	carouselData2,
-} from '../../components/Sliders/LabelCarousel/carouselData1.tsx';
 import Advantages from './components/Advantages/Advantages.tsx';
 import ServiceAdvantages from './components/ServiceAdvantages/ServiceAdvantages.tsx';
 import ReferralsProgramCard from '../ReferralsProgram/components/ReferralsProgramCard/ReferralsProgramCard.tsx';
@@ -20,22 +14,30 @@ import HowItWorks from './components/HowItWorks/HowItWorks.tsx';
 import ReferralsInfoBanner from '../ReferralsProgram/components/ReferralsInfoBanner/ReferralsInfoBanner.tsx';
 import OurSubscriptions from './components/OurSubscriptions/OurSubscriptions.tsx';
 import MostPopularServices from './components/MostPopularServices/MostPopularServices.tsx';
+import LabelsCarousel from '../../components/LabelsCarousel/LabelsCarousel.tsx';
+import SearchForm from '../../components/Forms/SearchForm/SearchForm.tsx';
 
 const Home: React.FC = () => {
 	return (
 		<>
 			<Header />
 			<Main>
-				<CategoriesSlider />
+				<div className={s.categorySliderContainer}>
+					<CategoriesSlider />
+				</div>
 				<div className={s.container}>
 					<MainTitle />
 				</div>
 				<div className={s.container}>
-					<MainSearchForm />
+					<SearchForm
+						onSubmitFn={() => console.log('onSubmitMain')}
+						showLocation
+						showDate
+						showService
+					/>
 				</div>
 				<div className={s.container}>
-					<LabelCarousel data={carouselData1} />
-					<LabelCarousel data={carouselData2} revers />
+					<LabelsCarousel />
 				</div>
 				<div className={s.container}>
 					<Advantages />
