@@ -17,7 +17,7 @@ const Excursion: React.FC = () => {
 			<ServiceHead
 				size={342}
 				title={t('History, adventure, and discounts - together!')}
-				background={excursions}
+				background={excursions ?? 'transparent'}
 			/>
 			<div className={s.container24}>
 				<CategoriesSlider />
