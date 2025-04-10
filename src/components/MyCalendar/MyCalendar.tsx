@@ -4,21 +4,18 @@ import 'react-calendar/dist/Calendar.css';
 import './MyCalendar.css';
 import s from './MyCalendar.module.css';
 import Calendar from 'react-calendar';
+import {useFormikContext} from 'formik';
 
 export type ValuePiece = Date | null;
 export type Value = ValuePiece | [ValuePiece, ValuePiece];
 
 type Props = {
-	setFieldValue: any;
 	fieldName: string;
 	closeCalendar: () => void;
 };
-const MyCalendar: React.FC<Props> = ({
-	setFieldValue,
-	fieldName,
-	closeCalendar,
-}) => {
+const MyCalendar: React.FC<Props> = ({fieldName, closeCalendar}) => {
 	const [value, onChangeValue] = useState<Value>(new Date());
+	const {setFieldValue} = useFormikContext();
 
 	const handleChange = (newValue: any) => {
 		const dateObject = new Date(newValue[0]);

@@ -1,13 +1,13 @@
 import React from 'react';
 import s from './SearchForm.module.css';
 import {Field, Form, Formik, FormikValues} from 'formik';
-import {validationSearchForm} from '../../../assets/common/validationSchema.ts';
 import {useTranslation} from 'react-i18next';
 import ButtonYellow from '../../ButtonYellow/ButtonYellow.tsx';
-import {BsCalendar3, BsClock, BsPeople} from 'react-icons/bs';
+import {BsClock, BsPeople} from 'react-icons/bs';
 import ServiceSelect from './components/ServiceSelect/ServiceSelect.tsx';
 import ResetButton from './components/ResetButton.tsx';
 import SearchLocationField from './components/SearchLocationField/SearchLocationField.tsx';
+import ChangeDateField from './components/ChangeDateField/ChangeDateField.tsx';
 
 type SearchFormProps = {
 	showLocation?: boolean;
@@ -39,6 +39,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
 	const handleSubmit = (values: FormikValues) => {
 		if (onSubmitFn) {
 			onSubmitFn(values);
+			console.log(values);
 		} else {
 			console.log('error' + values);
 		}
@@ -48,33 +49,18 @@ const SearchForm: React.FC<SearchFormProps> = ({
 		<div className={s.container}>
 			<Formik
 				enableReinitialize
-				validationSchema={validationSearchForm}
 				initialValues={initialValues}
 				onSubmit={handleSubmit}
 			>
-				{({handleSubmit, values}) => (
+				{({handleSubmit}) => (
 					<Form onSubmit={handleSubmit} className={s.formContainer}>
-						{showLocation && <SearchLocationField value={values.location} />}
+						{showLocation && <SearchLocationField fieldName={'location'} />}
 						{showService && (
 							<div className={s.fieldContainer}>
-								<ServiceSelect />
+								<ServiceSelect fieldName={'service'} />
 							</div>
 						)}
-						{showDate && (
-							<div className={s.fieldContainer}>
-								<div className={s.containerInput} role={'button'} tabIndex={0}>
-									<div>
-										<BsCalendar3 size={18} />
-									</div>
-									<div className={s.calendarValue}>
-										{values.date
-											? values.date
-											: t('Date or period of service registration')}
-									</div>
-									<ResetButton fieldName={'date'} />
-								</div>
-							</div>
-						)}
+						{showDate && <ChangeDateField fieldName={'date'} />}
 						{approximateTime && (
 							<div className={s.fieldContainer}>
 								<BsClock size={18} className={s.fieldIconLeft} />

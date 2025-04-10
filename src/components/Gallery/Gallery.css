@@ -1,0 +1,10 @@
+
+.myGallery .image-gallery-slide-wrapper {
+    height: 300px; /* или любое другое значение */
+    overflow: hidden;
+}
+
+.myGallery .image-gallery-slide img {
+    object-fit: contain;
+    height: 100%;
+}

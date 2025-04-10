@@ -4,14 +4,26 @@ import FavoriteHeart from '../../FavoriteHeart/FavoriteHeart.tsx';
 import TopHotLabel from '../../TopHotLabel/TopHotLabel.tsx';
 import {MostPopularServicesType} from '../../../pages/Home/components/MostPopularServices/mostPopularServicesData.ts';
 import {useTranslation} from 'react-i18next';
+import {useNavigate} from 'react-router-dom';
 
 type Props = {
 	card: MostPopularServicesType;
 };
 const VerticalCard: React.FC<Props> = ({card}) => {
 	const {t} = useTranslation();
+	const navigate = useNavigate();
+
+	const handleCardClick = () => {
+		navigate(`/service-card/${card.id}`);
+	};
+
 	return (
-		<div className={s.container}>
+		<div
+			className={s.container}
+			onClick={handleCardClick}
+			role="button"
+			tabIndex={0}
+		>
 			<div className={s.imageContainer}>
 				<img src={card.image} alt={card.name} />
 			</div>

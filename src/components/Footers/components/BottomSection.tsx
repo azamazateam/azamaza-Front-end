@@ -1,12 +1,14 @@
 import React from 'react';
 import s from '../Footer.module.css';
 import {useTranslation} from 'react-i18next';
-
-const BottomSection: React.FC = () => {
+type Props = {
+	grey?: boolean;
+};
+const BottomSection: React.FC<Props> = ({grey}) => {
 	const {t} = useTranslation();
 
 	return (
-		<section className={s.sectionInfo}>
+		<section className={`${s.sectionInfo} ${grey ? s.grey : ''}`}>
 			<div className={s.infoContainer}>
 				<ul className={s.row}>
 					<li className={s.column}>

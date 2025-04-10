@@ -15,6 +15,8 @@ type Props = {
 const CardsSliderRecommend: React.FC<Props> = ({title}) => {
 	const {t} = useTranslation();
 	const photoCard: MostPopularServicesType = {
+		id: 11,
+		description: 'Photography, editing Photo video shooting',
 		hot: 1,
 		favorite: 1,
 		image: image,

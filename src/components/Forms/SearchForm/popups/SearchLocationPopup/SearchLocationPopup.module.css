@@ -73,3 +73,7 @@
     margin-top: 24px;
     height: 50px;
 }
+.popularOffers {
+    max-height: 400px;
+    overflow-y: scroll;
+}

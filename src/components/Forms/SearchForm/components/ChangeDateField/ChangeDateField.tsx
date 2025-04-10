@@ -1,19 +1,17 @@
 import React, {useState} from 'react';
 import s from '../../SearchForm.module.css';
-import {BsGeoAlt} from 'react-icons/bs';
+import {BsCalendar3} from 'react-icons/bs';
 import ResetButton from '../ResetButton.tsx';
-import SearchLocationPopup from '../../popups/SearchLocationPopup/SearchLocationPopup.tsx';
+import {useFormikContext} from 'formik';
 import {useTranslation} from 'react-i18next';
 import Modal from '../../../../Modal/Modal.tsx';
-import {useFormikContext} from 'formik';
-
+import CalendarPopup from '../../../../MyCalendar/CalendarPopup/CalendarPopup.tsx';
 type Props = {
 	fieldName: string;
 };
-const SearchLocationField: React.FC<Props> = ({fieldName}) => {
+const ChangeDateField: React.FC<Props> = ({fieldName}) => {
 	const {t} = useTranslation();
 	const {values} = useFormikContext<any>();
-
 	const [isOpenPopup, setIsOpenPopup] = useState<boolean>(false);
 
 	const handleClick = () => {
@@ -22,7 +20,6 @@ const SearchLocationField: React.FC<Props> = ({fieldName}) => {
 	const closeModal = () => {
 		setIsOpenPopup(false);
 	};
-
 	return (
 		<div className={s.fieldContainer}>
 			<div
@@ -32,20 +29,20 @@ const SearchLocationField: React.FC<Props> = ({fieldName}) => {
 				tabIndex={0}
 			>
 				<div>
-					<BsGeoAlt size={18} />
+					<BsCalendar3 size={18} />
 				</div>
 				<div className={s.calendarValue}>
 					{values[fieldName]
 						? values[fieldName]
-						: t('Destination, city, address')}
+						: t('Date or period of service registration')}
 				</div>
-				<ResetButton fieldName={'location'} />
+				<ResetButton fieldName={'date'} />
 			</div>
-			<Modal fullScreen isOpen={isOpenPopup} onClose={closeModal}>
-				<SearchLocationPopup closeModal={closeModal} fieldName={fieldName} />
+			<Modal isOpen={isOpenPopup} onClose={closeModal}>
+				<CalendarPopup closeModal={closeModal} fieldName={fieldName} />
 			</Modal>
 		</div>
 	);
 };
 
-export default SearchLocationField;
+export default ChangeDateField;

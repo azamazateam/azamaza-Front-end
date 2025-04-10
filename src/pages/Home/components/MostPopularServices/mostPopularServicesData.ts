@@ -8,6 +8,7 @@ import image7 from '../../../../assets/images/productImages/image7.jpg';
 import image8 from '../../../../assets/images/productImages/image8.jpg';
 //import test from '../../../../assets/images/productImages/13.jpg';
 export type MostPopularServicesType = {
+	id: number;
 	hot: 1 | 0;
 	favorite: 1 | 0;
 	image: string;
@@ -17,9 +18,11 @@ export type MostPopularServicesType = {
 	views: string;
 	oldPrice: number;
 	newPrice: number;
+	description: string;
 };
 export const mostPopularServicesData: MostPopularServicesType[] = [
 	{
+		id: 1,
 		hot: 1,
 		favorite: 1,
 		image: image,
@@ -29,8 +32,10 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '1649',
 		oldPrice: 170,
 		newPrice: 110,
+		description: "Carretera de L'Aldosa, 25, AD400 La Massana, Andorra",
 	},
 	{
+		id: 2,
 		hot: 1,
 		favorite: 1,
 		image: image1,
@@ -40,6 +45,7 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '11 649',
 		oldPrice: 200,
 		newPrice: 100,
+		description: 'description',
 	} /*
 	{
 		hot: 0,
@@ -53,6 +59,7 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		newPrice: 5,
 	},*/,
 	{
+		id: 3,
 		hot: 1,
 		favorite: 0,
 		image: image3,
@@ -62,8 +69,10 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '39 567',
 		oldPrice: 35,
 		newPrice: 20,
+		description: 'description',
 	},
 	{
+		id: 4,
 		hot: 1,
 		favorite: 1,
 		image: image4,
@@ -73,8 +82,10 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '22 567',
 		oldPrice: 25,
 		newPrice: 15,
+		description: 'description',
 	},
 	{
+		id: 5,
 		hot: 1,
 		favorite: 1,
 		image: image5,
@@ -84,8 +95,10 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '2 649',
 		oldPrice: 180,
 		newPrice: 100,
+		description: 'description',
 	},
 	{
+		id: 6,
 		hot: 1,
 		favorite: 1,
 		image: image6,
@@ -95,8 +108,10 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '12 569',
 		oldPrice: 175,
 		newPrice: 115,
+		description: 'description',
 	},
 	{
+		id: 7,
 		hot: 1,
 		favorite: 1,
 		image: image7,
@@ -106,9 +121,11 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '1 567',
 		oldPrice: 26,
 		newPrice: 12,
+		description: 'description',
 	},
 
 	{
+		id: 8,
 		hot: 1,
 		favorite: 1,
 		image: image8,
@@ -118,6 +135,7 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		views: '3 433',
 		oldPrice: 33,
 		newPrice: 190,
+		description: 'description',
 	} /*
 	{
 		hot: 1,
@@ -130,15 +148,4 @@ export const mostPopularServicesData: MostPopularServicesType[] = [
 		oldPrice: 190,
 		newPrice: 110,
 	},*/,
-	/*{
-		hot: 1,
-		favorite: 1,
-		image: test,
-		name: 'Odessa mama opera and ballet theatre ',
-		serviceName: 'Excursion',
-		rating: 10,
-		views: '1 000 000 000',
-		oldPrice: 123456789,
-		newPrice: 12345667798,
-	},*/
 ];

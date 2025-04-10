@@ -1,47 +1,28 @@
-import React, {ReactNode, useState} from 'react';
-import Select, {SingleValue} from 'react-select';
-import {BsCaretDown, BsSearch} from 'react-icons/bs';
-import {components} from 'react-select';
-export type Option = {value: string; label: string; icon: ReactNode};
-export type Options = Option[];
-import s from '../../SearchForm.module.css';
-import {options} from './selectData.tsx';
+import React, {useState} from 'react';
 import {useTranslation} from 'react-i18next';
-import {useFormikContext} from 'formik';
-
-type Props = {
-	fieldName: string;
+import Select, {components, MultiValue, SingleValue} from 'react-select';
+import {BsSearch} from 'react-icons/bs';
+import s from './SearchLocationSelect.module.css';
+export type Option = {
+	label: string;
+	value: string;
 };
-const ServiceSelect: React.FC<Props> = ({fieldName}) => {
-	const {setFieldValue} = useFormikContext();
+
+const SearchLocationSelect: React.FC = () => {
 	const {t} = useTranslation();
 	const [value, setValue] = useState<any>(undefined);
 	const customStyles = {
 		control: (base: any) => ({
 			...base,
-			minHeight: '42px', // <-- регулируешь высоту
-			height: '42px',
-			padding: '0px',
-		}),
-		valueContainer: (base: any) => ({
-			...base,
-			padding: '0px 8px', // <-- регулируешь отступ текста
-			height: '42px',
-		}),
-		input: (base: any) => ({
-			...base,
-			margin: '0px', // <-- убирает отступ внутри инпута
-			padding: '0px',
-		}),
-		indicatorsContainer: (base: any) => ({
-			...base,
-			height: '42px', // <-- иконки по высоте подгоняем
+			height: '50px',
+			paddingLeft: '16px',
 		}),
 	};
 
-	const onChangeFn = (newValue: SingleValue<Option> | null) => {
+	const onChangeFn = (
+		newValue: SingleValue<Option> | MultiValue<Option> | null,
+	) => {
 		setValue(newValue);
-		setFieldValue(fieldName, newValue?.value);
 	};
 	const Placeholder = (props: any) => {
 		return (
@@ -64,16 +45,6 @@ const ServiceSelect: React.FC<Props> = ({fieldName}) => {
 			</components.SingleValue>
 		);
 	};
-	const DropdownIndicator = (props: any) => {
-		return (
-			<components.DropdownIndicator {...props}>
-				<div className={s.dropdownIndicator}>
-					<BsCaretDown size={18} />
-					{props.children}
-				</div>
-			</components.DropdownIndicator>
-		);
-	};
 	const Menu = (props: any) => {
 		return (
 			<components.Menu {...props}>
@@ -91,9 +62,16 @@ const ServiceSelect: React.FC<Props> = ({fieldName}) => {
 			</div>
 		);
 	};
+	const options = [
+		{
+			value: '',
+			label: '',
+		},
+	];
 	return (
 		<>
 			<Select
+				className={s.select}
 				isClearable={false}
 				isSearchable={false}
 				onChange={onChangeFn}
@@ -108,11 +86,11 @@ const ServiceSelect: React.FC<Props> = ({fieldName}) => {
 					Option,
 					Placeholder,
 					IndicatorSeparator: () => null,
-					DropdownIndicator,
+					DropdownIndicator: () => null,
 				}}
 			/>
 		</>
 	);
 };
 
-export default ServiceSelect;
+export default SearchLocationSelect;

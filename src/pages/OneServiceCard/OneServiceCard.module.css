@@ -1,0 +1,65 @@
+.container {
+    padding: 0 16px;
+}
+.onMapButton {
+    margin-top: 12px;
+    & button {
+        color: var(--Color-Blue, #006CE4);
+        font-family: "Onest", sans-serif;
+        /*font-size: 18px;*/
+        font-size: 4.1vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 111.111% */
+        letter-spacing: -0.408px;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: auto;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+    }
+
+}
+.galleryContainer {
+    margin-top: 24px;
+}
+/*=========Rating==========*/
+.ratingPanel {
+    margin-top: 24px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.ratingContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ratingNumber {
+    padding: 4px 12px;
+    color: var(--Color-White, #FFF);
+    font-feature-settings: 'case' on;
+    /*font-size: 14px;*/
+    font-size:3.2vw;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.15px;
+    border-radius: 26px;
+    background: var(--Color-Blue, #006CE4);
+}
+.ratingText {
+    color: var(--Color-Blue, #006CE4);
+    font-size: 4.1vw;
+    line-height: 120%; /* 21.6px */
+    letter-spacing: -0.41px;
+}
+.views {
+    color: var(--Color-Grey-400, #64666B);
+    font-size: 18px;
+    line-height: 120%; /* 21.6px */
+    letter-spacing: -0.41px;
+}
