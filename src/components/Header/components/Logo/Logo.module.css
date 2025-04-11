@@ -1,4 +1,10 @@
+.logoContainer {
+
+}
 .logoContainer a {
+	display: flex;
+	align-items: center;
+	gap: 3px;
 	color: var(--Color-White, #fff);
 	text-align: center;
 	font-size: 18px;

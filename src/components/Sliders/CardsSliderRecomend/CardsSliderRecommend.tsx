@@ -1,19 +1,18 @@
 import React from 'react';
 import s from './CardsSliderRecommend.module.css';
-import {useTranslation} from 'react-i18next';
 import VerticalSlider from '../VerticalSlider/VerticalSlider.tsx';
 import {
 	mostPopularServicesData,
 	MostPopularServicesType,
-} from '../../../pages/Home/components/MostPopularServices/mostPopularServicesData.ts';
+} from '../../../pages/Home/components/MostPopularServices/mostPopularServicesData.tsx';
 import VerticalCard from '../../Cards/VerticalCard/VerticalCard.tsx';
 import image from '../../../assets/images/serviceBackgrounds/testCard.jpg';
+import ContainerSubTitle from '../../../pages/OneServiceCard/components/ContainerSubTitle.tsx';
 
 type Props = {
 	title: string;
 };
 const CardsSliderRecommend: React.FC<Props> = ({title}) => {
-	const {t} = useTranslation();
 	const photoCard: MostPopularServicesType = {
 		id: 11,
 		description: 'Photography, editing Photo video shooting',
@@ -26,18 +25,14 @@ const CardsSliderRecommend: React.FC<Props> = ({title}) => {
 		views: '11 649',
 		oldPrice: 170,
 		newPrice: 110,
+		serviceOptions: null,
 	};
 
 	return (
 		<div className={s.container}>
-			<div className={s.headPanel}>
-				<div className={s.title}>{title}</div>
-				<div className={s.button}>
-					<button>{t('Show more')}</button>
-				</div>
-			</div>
+			<ContainerSubTitle title={title} isShowMore />
 			<div className={s.sliderContainer}>
-				<VerticalSlider>
+				<VerticalSlider autoplay>
 					{[...mostPopularServicesData, photoCard].map((service, index) => (
 						<VerticalCard card={service} key={index + service.name} />
 					))}

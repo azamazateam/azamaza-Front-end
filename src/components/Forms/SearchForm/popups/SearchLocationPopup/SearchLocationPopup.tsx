@@ -5,9 +5,7 @@ import NextPositionButton from '../../../../NextPositionButton/NextPositionButto
 import ButtonYellow from '../../../../ButtonYellow/ButtonYellow.tsx';
 import SearchLocationRecommendList from './SearchLocationRecommendList.tsx';
 import PopupHeadLeft from './PopupHeadLeft.tsx';
-import GrayInput from '../../../../GrayInput/GrayInput.tsx';
-import {useFormikContext} from 'formik';
-//import SearchLocationSelect from '../../../../SearchLocationSelect/SearchLocationSelect.tsx';
+import SearchLocationSelect from '../../../../SearchLocationSelect/SearchLocationSelect.tsx';
 
 type Props = {
 	closeModal: () => void;
@@ -15,25 +13,11 @@ type Props = {
 };
 const SearchLocationPopup: React.FC<Props> = ({closeModal, fieldName}) => {
 	const {t} = useTranslation();
-	const {setFieldValue} = useFormikContext<any>();
+
 	const handleSubmit = () => {
 		closeModal();
 	};
-	const handleChange = (
-		event:
-			| React.ChangeEvent<HTMLInputElement>
-			| React.KeyboardEvent<HTMLInputElement>,
-	) => {
-		const value = event.currentTarget.value;
-		if ('key' in event && event.key === 'Enter') {
-			setFieldValue(fieldName, value);
-			closeModal();
-			return;
-		}
-		if (!('key' in event)) {
-			setFieldValue(fieldName, value);
-		}
-	};
+
 	return (
 		<div className={s.container}>
 			<div>
@@ -43,16 +27,15 @@ const SearchLocationPopup: React.FC<Props> = ({closeModal, fieldName}) => {
 				/>
 				<div className={s.inputContainer}>
 					<div className={s.input}>
-						{/*<SearchLocationSelect />*/}
-						<GrayInput fieldName={fieldName} callback={handleChange} />
+						<SearchLocationSelect fieldName={fieldName} />
 					</div>
 					<div className={s.nextPosition}>
 						<NextPositionButton callback={() => {}} />
 					</div>
 				</div>
 				<div className={s.listTitle}>{t('Popular offers in the region')}</div>
-				<SearchLocationRecommendList />
 			</div>
+			<SearchLocationRecommendList />
 			<div className={s.submitButton}>
 				<ButtonYellow
 					callback={handleSubmit}

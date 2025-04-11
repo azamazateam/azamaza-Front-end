@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next';
 import s from './MostPopularServices.module.css';
 import VerticalCard from '../../../../components/Cards/VerticalCard/VerticalCard.tsx';
 import VerticalSlider from '../../../../components/Sliders/VerticalSlider/VerticalSlider.tsx';
-import {mostPopularServicesData} from './mostPopularServicesData.ts';
+import {mostPopularServicesData} from './mostPopularServicesData.tsx';
 
 const MostPopularServices: React.FC = () => {
 	const {t} = useTranslation();
@@ -17,7 +17,7 @@ const MostPopularServices: React.FC = () => {
 				)}
 			/>
 			<div className={s.cardsContainer}>
-				<VerticalSlider>
+				<VerticalSlider autoplay>
 					{mostPopularServicesData.map((service, index) => (
 						<VerticalCard card={service} key={index + service.name} />
 					))}

@@ -4,13 +4,19 @@ import {useParams} from 'react-router-dom';
 import {
 	mostPopularServicesData,
 	MostPopularServicesType,
-} from '../Home/components/MostPopularServices/mostPopularServicesData.ts';
+} from '../Home/components/MostPopularServices/mostPopularServicesData.tsx';
 import Header from '../../components/Header/Header.tsx';
 import Main from '../../components/Main/Main.tsx';
 import FooterSmallGrey from '../../components/Footers/FooterSmallGrey.tsx';
 import OneServiceCardHead from './components/OneServiceCardHead/OneServiceCardHead.tsx';
 import {useTranslation} from 'react-i18next';
 import Gallery from '../../components/Gallery/Gallery.tsx';
+import ServiceOptions from './components/ServiceOptions/ServiceOptions.tsx';
+import CardsSliderRecommend from '../../components/Sliders/CardsSliderRecomend/CardsSliderRecommend.tsx';
+import Reviews from './components/Rewiews/Rewiews.tsx';
+import ExcellentRating from './components/Rewiews/components/ExcellentRating.tsx';
+import WhatGuestsLike from './components/WhatGuestsLike/WhatGuestsLike.tsx';
+import PlaceOrder from '../../components/PlaceOrder/PlaceOrder.tsx';
 
 const OneServiceCard: React.FC = () => {
 	const {id} = useParams();
@@ -39,19 +45,28 @@ const OneServiceCard: React.FC = () => {
 						<button>{t('Show on map')}</button>
 					</div>
 					<div className={s.container}>
-						<div className={s.ratingPanel}>
-							<div className={s.ratingContainer}>
-								<div className={s.ratingNumber}>{service.rating}</div>
-								<div className={s.ratingText}>{t('Excellent rating')}</div>
-							</div>
-							<div className={s.views}>
-								{service.views + ' '}
-								{t('reviews')}
-							</div>
-						</div>
+						<ExcellentRating service={service} />
 					</div>
 					<div className={s.galleryContainer}>
 						<Gallery images={service.image} />
+					</div>
+					<div className={s.container32}>
+						{service.serviceOptions && (
+							<ServiceOptions serviceOptions={service.serviceOptions} />
+						)}
+					</div>
+					<div className={s.container32}>
+						<Reviews service={service} />
+					</div>
+					<div className={s.container32}>
+						<WhatGuestsLike />
+					</div>
+					<PlaceOrder />
+					<div className={`${s.container32}`}>
+						<CardsSliderRecommend title={t('Also order with this')} />
+					</div>
+					<div className={`${s.container32}`}>
+						<CardsSliderRecommend title={t('Similar options')} />
 					</div>
 				</Main>
 				<FooterSmallGrey />

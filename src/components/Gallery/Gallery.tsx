@@ -24,15 +24,15 @@ type Props = {
 };
 const Gallery: React.FC<Props> = ({images}) => {
 	const updatedImages: ReactImageGalleryItem[] = [
-		...defoultImages,
 		{original: images, thumbnail: images},
+		...defoultImages,
 	];
 	return (
 		<div className={s.container}>
 			<ImageGallery
 				showIndex
-				showFullscreenButton={false}
-				showPlayButton={false}
+				showFullscreenButton
+				showPlayButton
 				additionalClass={'myGallery'}
 				renderLeftNav={(onClick, disabled) => (
 					<button

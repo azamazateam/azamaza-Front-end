@@ -1,6 +1,10 @@
 .container {
     padding: 0 16px;
 }
+.container32 {
+    margin-top: 32px;
+    padding: 0 16px;
+}
 .onMapButton {
     margin-top: 12px;
     & button {

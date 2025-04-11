@@ -1,10 +1,32 @@
-.singleValueContainer {
-    border-radius: 30px;
-    border: 1px solid var(--Color-Grey-300, #888A90);
-    background: var(--Color-Grey-100, #D7D7D9);
+
+.valueContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--Color-Grey-500, #434447);
+    font-family: "Onest",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.408px;
 }
-.placeholder {
-    & svg {
-        margin-right: 12px;
-    }
+.menu {
+    margin-top: 0;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+.option {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #434447;
+    text-align: center;
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: -0.408px;
+    cursor: pointer;
 }

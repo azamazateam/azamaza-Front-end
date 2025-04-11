@@ -9,7 +9,7 @@ const BottomSection: React.FC<Props> = ({grey}) => {
 
 	return (
 		<section className={`${s.sectionInfo} ${grey ? s.grey : ''}`}>
-			<div className={s.infoContainer}>
+			<div className={`${s.infoContainer} ${grey ? s.grey : ''}`}>
 				<ul className={s.row}>
 					<li className={s.column}>
 						<a href="#" target="_blank" rel="noopener noreferrer">
