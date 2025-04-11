@@ -1,5 +1,4 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
-import 'swiper/swiper-bundle.css';
 
 const RatingBar = ({rating, max}: {rating: any; max: number}) => {
 	const numberOfSlides = max;
