@@ -2,12 +2,12 @@ import React from 'react';
 import s from './VerticalCard.module.css';
 import FavoriteHeart from '../../FavoriteHeart/FavoriteHeart.tsx';
 import TopHotLabel from '../../TopHotLabel/TopHotLabel.tsx';
-import {MostPopularServicesType} from '../../../pages/Home/components/MostPopularServices/mostPopularServicesData.tsx';
 import {useTranslation} from 'react-i18next';
 import {useNavigate} from 'react-router-dom';
+import {PopularServicesType} from '../../../redux/types/homePageTypes.ts';
 
 type Props = {
-	card: MostPopularServicesType;
+	card: PopularServicesType;
 };
 const VerticalCard: React.FC<Props> = ({card}) => {
 	const {t} = useTranslation();
@@ -16,7 +16,7 @@ const VerticalCard: React.FC<Props> = ({card}) => {
 	const handleCardClick = () => {
 		navigate(`/service-card/${card.id}`);
 	};
-
+	const image = Array.isArray(card.image) ? card.image[0] : card.image;
 	return (
 		<div
 			className={s.container}
@@ -25,7 +25,7 @@ const VerticalCard: React.FC<Props> = ({card}) => {
 			tabIndex={0}
 		>
 			<div className={s.imageContainer}>
-				<img src={card.image} alt={card.name} />
+				<img src={image} alt={card.name} />
 			</div>
 			<div className={s.infoContainer}>
 				<div>

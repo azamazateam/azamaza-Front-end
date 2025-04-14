@@ -38,12 +38,12 @@ export const categories: {
 	{
 		name: 'taxi',
 		icon: 'taxi',
-		link: '/categories/taxi',
+		link: '/taxi',
 	},
 	{
 		name: 'restaurants',
 		icon: 'restaurants',
-		link: '/categories/restaurants',
+		link: '/restaurants',
 	},
 	{
 		name: 'transfer',

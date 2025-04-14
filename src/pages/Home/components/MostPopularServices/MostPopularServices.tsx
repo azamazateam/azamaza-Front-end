@@ -4,9 +4,13 @@ import {useTranslation} from 'react-i18next';
 import s from './MostPopularServices.module.css';
 import VerticalCard from '../../../../components/Cards/VerticalCard/VerticalCard.tsx';
 import VerticalSlider from '../../../../components/Sliders/VerticalSlider/VerticalSlider.tsx';
-import {mostPopularServicesData} from './mostPopularServicesData.tsx';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../../redux/store.ts';
 
 const MostPopularServices: React.FC = () => {
+	const mostPopularServices = useSelector(
+		(state: RootState) => state.homePage.mostPopularService,
+	);
 	const {t} = useTranslation();
 	return (
 		<div className={s.container}>
@@ -18,7 +22,7 @@ const MostPopularServices: React.FC = () => {
 			/>
 			<div className={s.cardsContainer}>
 				<VerticalSlider autoplay>
-					{mostPopularServicesData.map((service, index) => (
+					{mostPopularServices.map((service, index) => (
 						<VerticalCard card={service} key={index + service.name} />
 					))}
 				</VerticalSlider>

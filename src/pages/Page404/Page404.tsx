@@ -5,7 +5,7 @@ import Header from '../../components/Header/Header.tsx';
 import FooterGrey from '../../components/Footers/FooterGrey.tsx';
 import Main from '../../components/Main/Main.tsx';
 import {useTranslation} from 'react-i18next';
-import ButtonYellow from '../../components/ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../components/Buttons/ButtonYellow/ButtonYellow.tsx';
 import {useNavigate} from 'react-router-dom';
 
 const Page404: React.FC = () => {

@@ -1,0 +1,33 @@
+.container {
+    padding: 40px 24px;
+
+}
+.popupHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    color: var(--Color-Blue, #006CE4);
+    text-align: center;
+    font-family: "HelveticaNeue",sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103%; /* 32.96px */
+}
+.filtersButtonContainer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap:32px;
+}
+.categoriesButtonsContainer {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    row-gap: 24px;
+}

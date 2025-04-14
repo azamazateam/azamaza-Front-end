@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import s from './SubscriptionsCard.module.css';
-import {OurSubscriptionsData} from '../../ourSubscriptionsData.ts';
 import DropDownInfo from '../DropDownInfo/DropDownInfo.tsx';
 import {AnimatePresence} from 'framer-motion';
 import {backgroundsMap} from './backgroundsMap.ts';
+import {OurSubscriptionsData} from '../../../../../../redux/types/homePageTypes.ts';
 
 type Props = {
 	data: OurSubscriptionsData;

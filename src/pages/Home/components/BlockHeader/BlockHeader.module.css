@@ -23,3 +23,11 @@
     line-height: 120%; /* 19.2px */
     letter-spacing: -0.408px;
 }
+@media screen and (min-width: 800px) {
+    .title {
+        font-size: 52px;
+    }
+    .description {
+        font-size: 32px;
+    }
+}

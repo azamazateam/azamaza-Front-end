@@ -16,7 +16,7 @@
         letter-spacing: -0.408px;
         border-radius: 30px;
         border: 1px solid var(--Color-Grey-300, #888A90);
-        background: var(--Color-Gray-100, #D7D7D9);
+        background: var(--Color-Grey-100, #D7D7D9);
     }
     & svg {
         position: absolute;

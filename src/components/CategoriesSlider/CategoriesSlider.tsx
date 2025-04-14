@@ -9,7 +9,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 // @ts-ignore
 import 'swiper/css/pagination';
+import {setIsOpenPopup} from '../../redux/slices/categoriesSlice.ts';
+import {useDispatch} from 'react-redux';
+
 const CategoriesSlider: React.FC = () => {
+	const dispatch = useDispatch();
+	const handleOpenCategoriesPopup = () => {
+		dispatch(setIsOpenPopup(true));
+	};
 	return (
 		<div className={s.container}>
 			<Swiper
@@ -18,13 +25,14 @@ const CategoriesSlider: React.FC = () => {
 				slidesPerView="auto"
 			>
 				{categories.map((category) => (
-					<SwiperSlide key={category.name} style={{width: 'auto'}}>
+					<SwiperSlide key={`homePage${category.name}`} style={{width: 'auto'}}>
 						<div className={s.slideContainer}>
 							<SliderButton
 								name={category.name}
 								icon={category.icon}
 								link={`/service${category.link}`}
 								disabled={category.link !== null}
+								callbackAll={handleOpenCategoriesPopup}
 							/>
 						</div>
 					</SwiperSlide>

@@ -1,11 +1,11 @@
 import React from 'react';
 import s from './DropDownInfo.module.css';
-import ButtonYellow from '../../../../../../components/ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../../../../../components/Buttons/ButtonYellow/ButtonYellow.tsx';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
-import {CardType} from '../../ourSubscriptionsData.ts';
 import {dropDownInfoData} from './dropDownInfoData.tsx';
 import {motion} from 'framer-motion';
+import {CardType} from '../../../../../../redux/types/homePageTypes.ts';
 type Props = {
 	type: CardType;
 };

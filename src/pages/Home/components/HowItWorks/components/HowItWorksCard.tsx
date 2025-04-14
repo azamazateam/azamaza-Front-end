@@ -1,6 +1,6 @@
 import React from 'react';
 import s from '../HowItWorks.module.css';
-import {HowItWorksDataType} from '../howItWorksData.ts';
+import {HowItWorksDataType} from '../../../../../redux/types/homePageTypes.ts';
 
 type Props = {
 	data: HowItWorksDataType;

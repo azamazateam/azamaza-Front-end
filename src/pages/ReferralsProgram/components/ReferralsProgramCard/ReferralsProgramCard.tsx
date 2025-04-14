@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './ReferralsProgramCard.module.css';
 import {useTranslation} from 'react-i18next';
-import ButtonYellow from '../../../../components/ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../../../components/Buttons/ButtonYellow/ButtonYellow.tsx';
 import {Link} from 'react-router-dom';
 
 const ReferralsProgramCard: React.FC = () => {

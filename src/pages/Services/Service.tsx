@@ -5,6 +5,7 @@ import FooterCommon from '../../components/Footers/FooterCommon.tsx';
 import Header from '../../components/Header/Header.tsx';
 import Main from '../../components/Main/Main.tsx';
 import Photography from './Photography/Photography.tsx';
+import Restaurants from './Restaurants/Restaurants.tsx';
 
 const Service: React.FC = () => {
 	return (
@@ -14,6 +15,7 @@ const Service: React.FC = () => {
 				<Routes>
 					<Route path={`excursion`} element={<Excursion />} />
 					<Route path={`photography`} element={<Photography />} />
+					<Route path={`restaurants`} element={<Restaurants />} />
 				</Routes>
 			</Main>
 			<FooterCommon />

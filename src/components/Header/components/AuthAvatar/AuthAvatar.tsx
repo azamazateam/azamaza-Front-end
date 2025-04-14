@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import s from './AuthAvatar.module.css';
 import {useTranslation} from 'react-i18next';
-import ButtonYellow from '../../../ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../../Buttons/ButtonYellow/ButtonYellow.tsx';
 
 const AuthAvatar: React.FC = () => {
 	const {t} = useTranslation();

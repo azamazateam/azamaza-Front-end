@@ -9,7 +9,12 @@ import LabelsCarousel from '../../../components/LabelsCarousel/LabelsCarousel.ts
 import UniqueOffersForYou from '../../Home/components/UniqueOffersForYou/UniqueOffersForYou.tsx';
 import CardsSliderRecommend from '../../../components/Sliders/CardsSliderRecomend/CardsSliderRecommend.tsx';
 import SearchForm from '../../../components/Forms/SearchForm/SearchForm.tsx';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../redux/store.ts';
 const Photography: React.FC = () => {
+	const popularCard = useSelector(
+		(state: RootState) => state.homePage.mostPopularService,
+	);
 	const {t} = useTranslation();
 	return (
 		<div>
@@ -39,10 +44,18 @@ const Photography: React.FC = () => {
 				<UniqueOffersForYou />
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
-				<CardsSliderRecommend title={t('Also order with this')} />
+				<CardsSliderRecommend
+					title={t('Also order with this')}
+					data={popularCard}
+					isShowMore
+				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
-				<CardsSliderRecommend title={t('Similar options')} />
+				<CardsSliderRecommend
+					title={t('Similar options')}
+					data={popularCard}
+					isShowMore
+				/>
 			</div>
 		</div>
 	);

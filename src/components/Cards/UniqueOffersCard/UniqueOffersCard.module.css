@@ -38,3 +38,8 @@
     width: 172px;
     height: 42px;
 }
+@media screen and (min-width: 800px) {
+    .cardTitle {
+        font-size: 24px;
+    }
+}

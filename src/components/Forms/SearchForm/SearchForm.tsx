@@ -2,7 +2,7 @@ import React from 'react';
 import s from './SearchForm.module.css';
 import {Field, Form, Formik, FormikValues} from 'formik';
 import {useTranslation} from 'react-i18next';
-import ButtonYellow from '../../ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../Buttons/ButtonYellow/ButtonYellow.tsx';
 import {BsClock, BsPeople} from 'react-icons/bs';
 import ServiceSelect from './components/ServiceSelect/ServiceSelect.tsx';
 import ResetButton from './components/ResetButton.tsx';
@@ -10,6 +10,7 @@ import SearchLocationField from './components/SearchLocationField/SearchLocation
 import ChangeDateField from './components/ChangeDateField/ChangeDateField.tsx';
 
 type SearchFormProps = {
+	title?: string;
 	showLocation?: boolean;
 	showService?: boolean;
 	showDate?: boolean;
@@ -25,6 +26,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
 	approximateTime = false,
 	numberOfPeople = false,
 	onSubmitFn,
+	title,
 }) => {
 	const {t} = useTranslation();
 
@@ -47,6 +49,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
 
 	return (
 		<div className={s.container}>
+			<div className={s.title}>{title ?? ''}</div>
 			<Formik
 				enableReinitialize
 				initialValues={initialValues}

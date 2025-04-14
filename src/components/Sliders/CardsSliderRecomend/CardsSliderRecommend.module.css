@@ -7,6 +7,9 @@
     justify-content: space-between;
     overflow: hidden;
 }
+.titleContainer {
+
+}
 .title {
 
     color: var(--Color-Grey-500, #434447);
@@ -17,6 +20,16 @@
     font-style: normal;
     font-weight: 700;
     line-height: 103%; /* 24.72px */
+}
+.description {
+    margin-top: 4px;
+    color: var(--Color-Grey-400, #64666B);
+    font-family:var(--Font-Secondary),sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.408px;
 }
 .button {
     display: flex;

@@ -68,7 +68,6 @@ const Home: React.FC = () => {
 				</div>
 			</Main>
 			<FooterMain />
-			{/*<FooterCommon />*/}
 		</>
 	);
 };

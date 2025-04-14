@@ -9,9 +9,14 @@ import LabelsCarousel from '../../../components/LabelsCarousel/LabelsCarousel.ts
 import UniqueOffersForYou from '../../Home/components/UniqueOffersForYou/UniqueOffersForYou.tsx';
 import CardsSliderRecommend from '../../../components/Sliders/CardsSliderRecomend/CardsSliderRecommend.tsx';
 import SearchForm from '../../../components/Forms/SearchForm/SearchForm.tsx';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../redux/store.ts';
 
 const Excursion: React.FC = () => {
 	const {t} = useTranslation();
+	const tours = useSelector(
+		(state: RootState) => state.excursionPage.alsoOrderWith,
+	);
 	return (
 		<>
 			<ServiceHead
@@ -41,10 +46,18 @@ const Excursion: React.FC = () => {
 				<UniqueOffersForYou />
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
-				<CardsSliderRecommend title={t('Also order with this')} />
+				<CardsSliderRecommend
+					title={t('Also order with this')}
+					data={tours}
+					isShowMore
+				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
-				<CardsSliderRecommend title={t('Similar options')} />
+				<CardsSliderRecommend
+					title={t('Similar options')}
+					data={tours}
+					isShowMore
+				/>
 			</div>
 		</>
 	);

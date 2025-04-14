@@ -1,4 +1,3 @@
-import {CardType} from '../../ourSubscriptionsData.ts';
 import {
 	BsAlarm,
 	BsBarChartLine,
@@ -13,6 +12,7 @@ import {
 	BsReceipt,
 } from 'react-icons/bs';
 import {ReactNode} from 'react';
+import {CardType} from '../../../../../../redux/types/homePageTypes.ts';
 export type DropDownInfoData = {
 	icon: ReactNode;
 	description: string;

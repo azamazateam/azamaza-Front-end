@@ -25,9 +25,9 @@
     &.active {
         background-color: var(--Color-Blue);
     }
-    &.active .icon,
+    &.active .icon svg,
     &.active .name {
-        color:#FFFFFF /*var(--Color-White)*/;
+        color:var(--Color-White,#FFFFFF ) ;
     }
 }
 .icon,

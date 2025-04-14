@@ -10,7 +10,7 @@ const WhatGuestsLike: React.FC = () => {
 	return (
 		<div>
 			<ContainerSubTitle title={t('What guests like')} isShowMore={false} />
-			<VerticalSlider spaceBetween={5}>
+			<VerticalSlider spaceBetween={20} maxWidth={214}>
 				{fakeUsers.map((user) => (
 					<SomeUserProfileCard user={user} key={user.id} />
 				))}

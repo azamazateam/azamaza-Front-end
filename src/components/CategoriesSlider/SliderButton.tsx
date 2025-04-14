@@ -9,21 +9,33 @@ type Props = {
 	icon: CategoriesIconsType;
 	link: string;
 	disabled: boolean;
+	callbackAll?: () => void;
+	iconColor?: string;
+	callback?: () => void;
 };
-const SliderButton: React.FC<Props> = ({name, icon, link, disabled}) => {
+const SliderButton: React.FC<Props> = ({
+	name,
+	icon,
+	link,
+	disabled,
+	callback,
+	iconColor,
+	callbackAll,
+}) => {
 	const {t} = useTranslation();
 	return disabled ? (
 		<NavLink
 			to={link}
+			onClick={callback}
 			className={({isActive}) => `${s.slideButton} ${isActive ? s.active : ''}`}
 		>
-			<div className={s.icon}>
+			<div className={s.icon} style={{color: iconColor ?? ''}}>
 				<CategoriesIcons id={icon} />
 			</div>
 			<div className={s.name}>{t(name)}</div>
 		</NavLink>
 	) : (
-		<div className={s.slideButton}>
+		<div className={s.slideButton} role={'button'} onClick={callbackAll}>
 			<div className={s.icon}>
 				<CategoriesIcons id={icon} />
 			</div>

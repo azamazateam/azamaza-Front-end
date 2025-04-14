@@ -4,6 +4,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 
 type Props = {
 	children: ReactNode[] | ReactNode;
+	maxWidth?: number;
 	autoplay?: boolean;
 	spaceBetween?: number;
 };
@@ -12,6 +13,7 @@ const VerticalSlider: React.FC<Props> = ({
 	children,
 	autoplay,
 	spaceBetween,
+	maxWidth,
 }) => {
 	return (
 		<div>
@@ -34,7 +36,7 @@ const VerticalSlider: React.FC<Props> = ({
 				speed={6000}
 			>
 				{React.Children.map(children, (child, index) => (
-					<SwiperSlide key={index} style={{maxWidth: '236px'}}>
+					<SwiperSlide key={index} style={{maxWidth: maxWidth ?? 236}}>
 						{child}
 					</SwiperSlide>
 				))}

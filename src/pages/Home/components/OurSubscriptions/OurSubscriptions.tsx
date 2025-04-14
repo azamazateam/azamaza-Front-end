@@ -4,12 +4,16 @@ import BlockHeader from '../BlockHeader/BlockHeader.tsx';
 import {useTranslation} from 'react-i18next';
 import header from '../../../../assets/images/referal header.png';
 import {Link} from 'react-router-dom';
-import ButtonsSelector from '../../../../components/ButtonsSelector/ButtonsSelector.tsx';
+import ButtonsSelector from '../../../../components/Buttons/ButtonsSelector/ButtonsSelector.tsx';
 import SubscriptionsCard from './components/SubscriptionsCard/SubscriptionsCard.tsx';
-import {ourSubscriptionsData} from './ourSubscriptionsData.ts';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../../redux/store.ts';
 
 const OurSubscriptions: React.FC = () => {
 	const {t} = useTranslation();
+	const ourSubscriptionsData = useSelector(
+		(state: RootState) => state.homePage.ourSubscriptions,
+	);
 	return (
 		<div>
 			<BlockHeader

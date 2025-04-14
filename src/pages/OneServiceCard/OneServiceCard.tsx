@@ -1,10 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import s from './OneServiceCard.module.css';
 import {useParams} from 'react-router-dom';
-import {
-	mostPopularServicesData,
-	MostPopularServicesType,
-} from '../Home/components/MostPopularServices/mostPopularServicesData.tsx';
 import Header from '../../components/Header/Header.tsx';
 import Main from '../../components/Main/Main.tsx';
 import FooterSmallGrey from '../../components/Footers/FooterSmallGrey.tsx';
@@ -17,14 +13,23 @@ import Reviews from './components/Rewiews/Rewiews.tsx';
 import ExcellentRating from './components/Rewiews/components/ExcellentRating.tsx';
 import WhatGuestsLike from './components/WhatGuestsLike/WhatGuestsLike.tsx';
 import PlaceOrder from '../../components/PlaceOrder/PlaceOrder.tsx';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../redux/store.ts';
+import {PopularServicesType} from '../../redux/types/homePageTypes.ts';
 
 const OneServiceCard: React.FC = () => {
 	const {id} = useParams();
 	const {t} = useTranslation();
-	const [service, setService] = useState<MostPopularServicesType | null>(null);
+	const [service, setService] = useState<PopularServicesType | null>(null);
+	const mostPopularServices = useSelector(
+		(state: RootState) => state.homePage.mostPopularService,
+	);
+	const alsoOrderWith = useSelector(
+		(state: RootState) => state.excursionPage.alsoOrderWith,
+	);
 	useEffect(() => {
 		if (id) {
-			const foundedService = mostPopularServicesData.find(
+			const foundedService = alsoOrderWith?.find(
 				(service) => service.id === +id,
 			);
 			setService(foundedService ?? null);
@@ -63,10 +68,18 @@ const OneServiceCard: React.FC = () => {
 					</div>
 					<PlaceOrder />
 					<div className={`${s.container32}`}>
-						<CardsSliderRecommend title={t('Also order with this')} />
+						<CardsSliderRecommend
+							title={t('Also order with this')}
+							isShowMore
+							data={mostPopularServices}
+						/>
 					</div>
 					<div className={`${s.container32}`}>
-						<CardsSliderRecommend title={t('Similar options')} />
+						<CardsSliderRecommend
+							title={t('Similar options')}
+							isShowMore
+							data={mostPopularServices}
+						/>
 					</div>
 				</Main>
 				<FooterSmallGrey />

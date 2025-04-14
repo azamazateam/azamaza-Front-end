@@ -1,6 +1,6 @@
 import React from 'react';
-import {AdvantagesDataType} from '../../../pages/Home/components/Advantages/advantagesData.ts';
 import s from './AdvantagesCard.module.css';
+import {AdvantagesDataType} from '../../../redux/types/homePageTypes.ts';
 type Props = {
 	card: AdvantagesDataType;
 };

@@ -5,28 +5,17 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from 'react-icons/bs';
 import s from './Gallery.module.css';
 import './Gallery.css';
-const defoultImages = [
-	{
-		original: 'https://picsum.photos/id/1018/1000/600/',
-		thumbnail: 'https://picsum.photos/id/1018/250/150/',
-	},
-	{
-		original: 'https://picsum.photos/id/1015/1000/600/',
-		thumbnail: 'https://picsum.photos/id/1015/250/150/',
-	},
-	{
-		original: 'https://picsum.photos/id/1019/1000/600/',
-		thumbnail: 'https://picsum.photos/id/1019/250/150/',
-	},
-];
+
 type Props = {
-	images: string;
+	images: string | string[];
 };
 const Gallery: React.FC<Props> = ({images}) => {
-	const updatedImages: ReactImageGalleryItem[] = [
-		{original: images, thumbnail: images},
-		...defoultImages,
-	];
+	const updatedImages: ReactImageGalleryItem[] = Array.isArray(images)
+		? images.map((i: string) => ({
+				original: i,
+				thumbnail: i,
+			}))
+		: [{original: images, thumbnail: images}];
 	return (
 		<div className={s.container}>
 			<ImageGallery

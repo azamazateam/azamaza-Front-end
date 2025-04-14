@@ -2,7 +2,7 @@ import React from 'react';
 import {Autoplay, Pagination} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import s from '../UniqueOffersForYou.module.css';
-import ButtonYellow from '../../../../../components/ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../../../../components/Buttons/ButtonYellow/ButtonYellow.tsx';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 

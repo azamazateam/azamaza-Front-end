@@ -51,6 +51,7 @@
 :root {
 	--Color-White: #ffffff;
 	--Color-Blue: #006ce4;
+	--Color-Yellow: #F1D246;
 	--Color-Grey-500: #434447;
 	--Color-Grey-400: #64666B;
 	--Color-Grey-300: #888A90;
@@ -192,7 +193,7 @@ body {
 
 [class*="__container"] {
   position: relative;
-  /*max-width: 550px;*/
+  max-width: 1280px;
   margin: 0 auto;
 }
 main {

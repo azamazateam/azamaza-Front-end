@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './RatingLines.module.css';
-import {MostPopularServicesType} from '../../../../../Home/components/MostPopularServices/mostPopularServicesData.tsx';
 import RatingRow from './RatingRow.tsx';
+import {PopularServicesType} from '../../../../../../redux/types/homePageTypes.ts';
 type Props = {
-	service: MostPopularServicesType;
+	service: PopularServicesType;
 };
 const RatingLines: React.FC<Props> = ({service}) => {
 	return (

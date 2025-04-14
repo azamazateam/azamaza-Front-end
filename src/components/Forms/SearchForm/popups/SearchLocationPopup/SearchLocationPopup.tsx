@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './SearchLocationPopup.module.css';
 import {useTranslation} from 'react-i18next';
-import NextPositionButton from '../../../../NextPositionButton/NextPositionButton.tsx';
-import ButtonYellow from '../../../../ButtonYellow/ButtonYellow.tsx';
+import LocationBlueButton from '../../../../Buttons/NextPositionButton/LocationBlueButton.tsx';
+import ButtonYellow from '../../../../Buttons/ButtonYellow/ButtonYellow.tsx';
 import SearchLocationRecommendList from './SearchLocationRecommendList.tsx';
 import PopupHeadLeft from './PopupHeadLeft.tsx';
 import SearchLocationSelect from '../../../../SearchLocationSelect/SearchLocationSelect.tsx';
@@ -30,7 +30,10 @@ const SearchLocationPopup: React.FC<Props> = ({closeModal, fieldName}) => {
 						<SearchLocationSelect fieldName={fieldName} />
 					</div>
 					<div className={s.nextPosition}>
-						<NextPositionButton callback={() => {}} />
+						<LocationBlueButton
+							callback={() => {}}
+							text={t('Offer next to current position')}
+						/>
 					</div>
 				</div>
 				<div className={s.listTitle}>{t('Popular offers in the region')}</div>

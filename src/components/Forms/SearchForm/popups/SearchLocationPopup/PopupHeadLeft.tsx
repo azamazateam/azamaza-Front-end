@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './SearchLocationPopup.module.css';
-import CloseCross from '../../../../CloseCross/CloseCross.tsx';
+import CloseCross from '../../../../Buttons/CloseCross/CloseCross.tsx';
 
 type Props = {
 	closeModal: () => void;

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './ReferralsInfoBanner.module.css';
 import banner from '../../../../assets/images/refferal_main_banner.png';
-import ButtonYellow from '../../../../components/ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../../../components/Buttons/ButtonYellow/ButtonYellow.tsx';
 import {useTranslation} from 'react-i18next';
 import {BsCheckLg} from 'react-icons/bs';
 

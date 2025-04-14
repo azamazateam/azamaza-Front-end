@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './UniqueOffersCard.module.css';
 import {Link} from 'react-router-dom';
-import ButtonYellow from '../../ButtonYellow/ButtonYellow.tsx';
+import ButtonYellow from '../../Buttons/ButtonYellow/ButtonYellow.tsx';
 import {UniqueOffersSlideType} from '../../../pages/Home/components/UniqueOffersForYou/UniqueOffersSlider/UniqueOffersSlider.tsx';
 import {useTranslation} from 'react-i18next';
 
