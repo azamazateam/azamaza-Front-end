@@ -9,6 +9,7 @@ type Props = {
 	freeMode?: boolean;
 	autoplay?: boolean;
 	speed?: number;
+	loop?: boolean;
 };
 const HorizontalSlider: React.FC<Props> = ({
 	children,
@@ -16,11 +17,12 @@ const HorizontalSlider: React.FC<Props> = ({
 	freeMode,
 	autoplay,
 	speed,
+	loop = true,
 }) => {
 	return (
 		<div>
 			<Swiper
-				loop={true}
+				loop={loop}
 				spaceBetween={20}
 				slidesPerView={'auto'}
 				modules={[Autoplay, FreeMode, Pagination]}

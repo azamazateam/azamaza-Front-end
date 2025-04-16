@@ -17,7 +17,7 @@ const Hotels: React.FC = () => {
 	const dispatch = useDispatch();
 	const {t} = useTranslation();
 	const azamazaSelections = useSelector(
-		(state: RootState) => state.azamazaSelections.azamazaSelections,
+		(state: RootState) => state.azamazaSelectionsData.azamazaSelections,
 	);
 	const popularCards = useSelector(
 		(state: RootState) => state.homePage.mostPopularService,

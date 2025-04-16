@@ -7,6 +7,7 @@ import excursionReducer from './slices/excursionSlice.ts';
 import searchResultReducer from './slices/searchResultSlice.ts';
 import filtersReducer from './slices/filtersSlice.ts';
 import azamazaSelectionsReducer from './slices/azamazaSelectionsSlice.ts';
+import proposeReducer from './slices/proposeSlice.ts';
 export const store = configureStore({
 	reducer: {
 		user: userReducer,
@@ -16,7 +17,8 @@ export const store = configureStore({
 		excursionPage: excursionReducer,
 		searchResults: searchResultReducer,
 		filters: filtersReducer,
-		azamazaSelections: azamazaSelectionsReducer,
+		azamazaSelectionsData: azamazaSelectionsReducer,
+		proposeData: proposeReducer,
 	},
 });
 

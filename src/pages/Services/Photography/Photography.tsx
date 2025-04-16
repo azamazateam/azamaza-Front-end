@@ -19,6 +19,8 @@ import {setAzamazaSelection} from '../../../redux/slices/azamazaSelectionsSlice.
 import AzamazaSelections from '../../../components/AzamazaSelections/AzamazaSelections.tsx';
 import {uniqueOffers} from '../../../mocks/userData.ts';
 import {setUniqueOfferForYou} from '../../../redux/slices/userSlice.ts';
+import {setProposeList} from '../../../redux/slices/proposeSlice.ts';
+import {serviceProposeData} from '../../../mocks/serviceProposeData.ts';
 
 const Photography: React.FC = () => {
 	const dispatch = useDispatch();
@@ -29,10 +31,13 @@ const Photography: React.FC = () => {
 		(state: RootState) => state.filters.iconsSliderFilter,
 	);
 	const azamazaSelections = useSelector(
-		(state: RootState) => state.azamazaSelections.azamazaSelections,
+		(state: RootState) => state.azamazaSelectionsData.azamazaSelections,
 	);
 	const uniqueOfferForYou = useSelector(
 		(state: RootState) => state.user.uniqueOfferForYou,
+	);
+	const proposeList = useSelector(
+		(state: RootState) => state.proposeData.proposeList,
 	);
 	useEffect(() => {
 		const selectionData = azamazaSelectionsData.filter(
@@ -41,9 +46,13 @@ const Photography: React.FC = () => {
 		const uniqueOffersPhotography = uniqueOffers.filter(
 			(o) => o.serviceName === 'photography',
 		);
+		const proposeListPhotography = serviceProposeData.filter(
+			(p) => p.serviceName === 'photography',
+		);
 		dispatch(setAzamazaSelection(selectionData ?? null));
 		dispatch(setIconsSliderFilter(photographyFilterData));
 		dispatch(setUniqueOfferForYou(uniqueOffersPhotography));
+		dispatch(setProposeList(proposeListPhotography));
 	}, [dispatch]);
 	//const popularPartnersIcons =useSelector((state:RootState)=>state)
 	const {t} = useTranslation();
@@ -58,7 +67,7 @@ const Photography: React.FC = () => {
 				<CategoriesSlider />
 			</div>
 			<div className={`${s.container24} ${s.padding}`}>
-				<ServicePropose />
+				<ServicePropose data={proposeList} />
 			</div>
 			<div className={`${s.container24} ${s.padding}`}>
 				<SearchForm
@@ -72,7 +81,7 @@ const Photography: React.FC = () => {
 				</div>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
-				<IconSliderFilter filterData={iconsSliderFilter} loop={false} />
+				<IconSliderFilter filterData={iconsSliderFilter} />
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<AzamazaSelections

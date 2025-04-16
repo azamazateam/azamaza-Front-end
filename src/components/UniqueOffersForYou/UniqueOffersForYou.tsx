@@ -20,7 +20,7 @@ const UniqueOffersForYou: React.FC<Props> = ({data}) => {
 				)}
 			/>
 			<div className={s.slider}>
-				<HorizontalSlider pagination>
+				<HorizontalSlider pagination loop={false}>
 					{data?.map((item, index) => (
 						<UniqueOffersCard key={`${index}UniqueOffersCard`} card={item} />
 					))}

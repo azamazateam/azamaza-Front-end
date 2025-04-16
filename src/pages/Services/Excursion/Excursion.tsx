@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ServiceHead from '../components/ServiceHead/ServiceHead.tsx';
 import s from '../Service.module.css';
 import {useTranslation} from 'react-i18next';
@@ -8,11 +8,14 @@ import ServicePropose from '../components/ServicePropose/ServicePropose.tsx';
 import UniqueOffersForYou from '../../../components/UniqueOffersForYou/UniqueOffersForYou.tsx';
 import CardsSliderRecommend from '../../../components/Sliders/CardsSliderRecomend/CardsSliderRecommend.tsx';
 import SearchForm from '../../../components/Forms/SearchForm/SearchForm.tsx';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../../redux/store.ts';
 import PopularPartnersBrands from '../../../components/PopularPartnersBrands/PopularPartnersBrands.tsx';
+import {serviceProposeData} from '../../../mocks/serviceProposeData.ts';
+import {setProposeList} from '../../../redux/slices/proposeSlice.ts';
 
 const Excursion: React.FC = () => {
+	const dispatch = useDispatch();
 	const {t} = useTranslation();
 	const tours = useSelector(
 		(state: RootState) => state.excursionPage.alsoOrderWith,
@@ -23,6 +26,15 @@ const Excursion: React.FC = () => {
 	const uniqueOfferForYou = useSelector(
 		(state: RootState) => state.user.uniqueOfferForYou,
 	);
+	const proposeList = useSelector(
+		(state: RootState) => state.proposeData.proposeList,
+	);
+	useEffect(() => {
+		const proposeListExcursion = serviceProposeData.filter(
+			(p) => p.serviceName === 'excursion',
+		);
+		dispatch(setProposeList(proposeListExcursion));
+	}, [dispatch]);
 	return (
 		<>
 			<ServiceHead
@@ -34,7 +46,7 @@ const Excursion: React.FC = () => {
 				<CategoriesSlider />
 			</div>
 			<div className={`${s.container24} ${s.padding}`}>
-				<ServicePropose />
+				<ServicePropose data={proposeList} />
 			</div>
 			<div className={`${s.container24} ${s.padding}`}>
 				<SearchForm

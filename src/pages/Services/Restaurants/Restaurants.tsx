@@ -23,7 +23,7 @@ const Restaurants: React.FC = () => {
 		(state: RootState) => state.filters.iconsSliderFilter,
 	);
 	const azamazaSelections = useSelector(
-		(state: RootState) => state.azamazaSelections.azamazaSelections,
+		(state: RootState) => state.azamazaSelectionsData.azamazaSelections,
 	);
 	useEffect(() => {
 		const selectionData = azamazaSelectionsData.filter(

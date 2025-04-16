@@ -1,11 +1,11 @@
 import React from 'react';
 import s from './ServiceProposeCard.module.css';
-import {ServiceProposeData} from '../../../pages/Services/components/ServicePropose/serviceProposeData.ts';
 import ButtonYellow from '../../Buttons/ButtonYellow/ButtonYellow.tsx';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
+import {ServiceProposeType} from '../../../redux/slices/proposeSlice.ts';
 type Props = {
-	card: ServiceProposeData;
+	card: ServiceProposeType;
 };
 const ServiceProposeCard: React.FC<Props> = ({card}) => {
 	const {t} = useTranslation();

@@ -1,13 +1,16 @@
 import React from 'react';
 import HorizontalSlider from '../../../../components/Sliders/HorizontalSlider/HorizontalSlider.tsx';
 import ServiceProposeCard from '../../../../components/Cards/TopServicePropose/ServiceProposeCard.tsx';
-import {serviceProposeData} from './serviceProposeData.ts';
+import {ServiceProposeType} from '../../../../redux/slices/proposeSlice.ts';
 
-const ServicePropose: React.FC = () => {
+type Props = {
+	data: ServiceProposeType[] | null;
+};
+const ServicePropose: React.FC<Props> = ({data}) => {
 	return (
 		<div>
 			<HorizontalSlider pagination>
-				{serviceProposeData.map((item, index) => (
+				{data?.map((item, index) => (
 					<ServiceProposeCard key={`${index}${item.title}`} card={item} />
 				))}
 			</HorizontalSlider>
