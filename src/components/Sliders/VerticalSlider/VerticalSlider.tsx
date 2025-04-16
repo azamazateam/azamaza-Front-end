@@ -7,6 +7,7 @@ type Props = {
 	maxWidth?: number;
 	autoplay?: boolean;
 	spaceBetween?: number;
+	loop?: boolean;
 };
 
 const VerticalSlider: React.FC<Props> = ({
@@ -14,12 +15,13 @@ const VerticalSlider: React.FC<Props> = ({
 	autoplay,
 	spaceBetween,
 	maxWidth,
+	loop = true,
 }) => {
 	return (
 		<div>
 			<Swiper
 				/*centeredSlides={true}*/
-				loop={true}
+				loop={loop}
 				spaceBetween={spaceBetween ? spaceBetween : 20}
 				slidesPerView={'auto'}
 				modules={[Autoplay, FreeMode]}

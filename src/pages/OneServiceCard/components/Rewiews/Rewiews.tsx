@@ -3,9 +3,10 @@ import ContainerSubTitle from '../ContainerSubTitle.tsx';
 import {useTranslation} from 'react-i18next';
 import ExcellentRating from './components/ExcellentRating.tsx';
 import RatingLines from './components/RatingLines/RatingLines.tsx';
-import {PopularServicesType} from '../../../../redux/types/homePageTypes.ts';
+import {ServicesType} from '../../../../redux/types/commonTypes.ts';
+
 type Props = {
-	service: PopularServicesType;
+	service: ServicesType;
 };
 const Reviews: React.FC<Props> = ({service}) => {
 	const {t} = useTranslation();

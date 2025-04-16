@@ -4,7 +4,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 12px;
-    height: 390px;
+    /*height: 390px;*/
+    height: 100%;
     align-self: stretch;
     border-radius: 16px;
     overflow: hidden;
@@ -52,4 +53,34 @@
     width: 100%;
     text-align: center;
     height: 42px;
+}
+.locationContainer {
+    padding: 0 12px;
+}
+.actionOffersContainer {
+    padding: 0 12px;
+}
+.actionOffers {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: var(--Color-Green, #36B715);
+    color: var(--Color-White, #FFF);
+    /* Text/Secondary/14 */
+    font-family:var(--Font-Secondary),sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    letter-spacing: -0.41px;
+}
+.priceContainer {
+    padding: 0 12px;
+    color: var(--Color-Blue, #006CE4);
+    font-family:var(--Font-Secondary),sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 110% */
+    letter-spacing: -0.41px;
 }

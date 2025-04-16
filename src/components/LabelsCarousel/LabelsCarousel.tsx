@@ -1,19 +1,19 @@
 import React from 'react';
 import s from './LabelsCarousel.module.css';
 import LabelCarousel from '../Sliders/LabelCarousel/LabelCarousel.tsx';
-import {
-	carouselData1,
-	carouselData2,
-} from '../Sliders/LabelCarousel/carouselData1.tsx';
+import {IconsBrandsDataType} from '../../redux/types/commonTypes.ts';
+
 type Props = {
 	title?: string;
+	heightRow: IconsBrandsDataType[];
+	bottomRow: IconsBrandsDataType[];
 };
-const LabelsCarousel: React.FC<Props> = ({title}) => {
+const LabelsCarousel: React.FC<Props> = ({title, heightRow, bottomRow}) => {
 	return (
 		<div className={s.container}>
 			{title && <div className={s.title}>{title}</div>}
-			<LabelCarousel data={carouselData1} />
-			<LabelCarousel data={carouselData2} revers />
+			<LabelCarousel data={heightRow} />
+			<LabelCarousel data={bottomRow} revers />
 		</div>
 	);
 };

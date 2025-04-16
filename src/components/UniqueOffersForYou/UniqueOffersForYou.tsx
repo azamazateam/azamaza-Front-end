@@ -1,11 +1,15 @@
 import React from 'react';
 import s from './UniqueOffersForYou.module.css';
 import {useTranslation} from 'react-i18next';
-import {uniqueOffersSlideData} from './UniqueOffersSlider/uniqueOffersSlideData.ts';
-import BlockHeader from '../BlockHeader/BlockHeader.tsx';
-import HorizontalSlider from '../../../../components/Sliders/HorizontalSlider/HorizontalSlider.tsx';
-import UniqueOffersCard from '../../../../components/Cards/UniqueOffersCard/UniqueOffersCard.tsx';
-const UniqueOffersForYou: React.FC = () => {
+import BlockHeader from '../../pages/Home/components/BlockHeader/BlockHeader.tsx';
+import HorizontalSlider from '../Sliders/HorizontalSlider/HorizontalSlider.tsx';
+import UniqueOffersCard from '../Cards/UniqueOffersCard/UniqueOffersCard.tsx';
+import {UniqueOffersSlideType} from '../../redux/types/userTypes.ts';
+
+type Props = {
+	data: UniqueOffersSlideType[] | null;
+};
+const UniqueOffersForYou: React.FC<Props> = ({data}) => {
 	const {t} = useTranslation();
 	return (
 		<div className={s.container}>
@@ -17,7 +21,7 @@ const UniqueOffersForYou: React.FC = () => {
 			/>
 			<div className={s.slider}>
 				<HorizontalSlider pagination>
-					{uniqueOffersSlideData.map((item, index) => (
+					{data?.map((item, index) => (
 						<UniqueOffersCard key={`${index}UniqueOffersCard`} card={item} />
 					))}
 				</HorizontalSlider>

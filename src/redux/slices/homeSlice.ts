@@ -1,21 +1,20 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {
-	HomePageState,
-	HowItWorksDataType,
-	PopularServicesType,
-} from '../types/homePageTypes.ts';
+import {HomePageState, HowItWorksDataType} from '../types/homePageTypes.ts';
 import {
 	advantagesData,
 	howItWorksData,
-	mostPopularServicesData,
 	ourSubscriptionsData,
-} from '../data/HomePageData.tsx';
+} from '../../mocks/HomePageData.ts';
+import {allBrandsIconData} from '../../mocks/iconsBrandsData.ts';
+import {servicesListData} from '../../mocks/ServicesListData.ts';
+import {ServicesType} from '../types/commonTypes.ts';
 
 const initialState: HomePageState = {
 	howItWorks: howItWorksData,
-	mostPopularService: mostPopularServicesData,
+	mostPopularService: servicesListData,
 	advantage: advantagesData,
 	ourSubscriptions: ourSubscriptionsData,
+	popularPartnersIcons: allBrandsIconData,
 };
 
 const homeSlice = createSlice({
@@ -25,10 +24,7 @@ const homeSlice = createSlice({
 		setHowItWorks: (state, action: PayloadAction<HowItWorksDataType[]>) => {
 			state.howItWorks = action.payload;
 		},
-		setMostPopularService: (
-			state,
-			action: PayloadAction<PopularServicesType[]>,
-		) => {
+		setMostPopularService: (state, action: PayloadAction<ServicesType[]>) => {
 			state.mostPopularService = action.payload;
 		},
 	},

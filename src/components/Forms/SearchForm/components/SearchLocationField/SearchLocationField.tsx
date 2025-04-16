@@ -9,8 +9,9 @@ import {useFormikContext} from 'formik';
 
 type Props = {
 	fieldName: string;
+	border?: string;
 };
-const SearchLocationField: React.FC<Props> = ({fieldName}) => {
+const SearchLocationField: React.FC<Props> = ({fieldName, border}) => {
 	const {t} = useTranslation();
 	const {values} = useFormikContext<any>();
 
@@ -27,6 +28,7 @@ const SearchLocationField: React.FC<Props> = ({fieldName}) => {
 		<div className={s.fieldContainer}>
 			<div
 				className={s.containerInput}
+				style={{border: border ?? ''}}
 				onClick={handleClick}
 				role={'button'}
 				tabIndex={0}

@@ -1,9 +1,10 @@
 import React from 'react';
 import s from '../../../OneServiceCard.module.css';
 import {useTranslation} from 'react-i18next';
-import {PopularServicesType} from '../../../../../redux/types/homePageTypes.ts';
+import {ServicesType} from '../../../../../redux/types/commonTypes.ts';
+
 type Props = {
-	service: PopularServicesType;
+	service: ServicesType;
 };
 const ExcellentRating: React.FC<Props> = ({service}) => {
 	const {t} = useTranslation();

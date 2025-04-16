@@ -2,8 +2,8 @@ import React from 'react';
 import s from './UniqueOffersCard.module.css';
 import {Link} from 'react-router-dom';
 import ButtonYellow from '../../Buttons/ButtonYellow/ButtonYellow.tsx';
-import {UniqueOffersSlideType} from '../../../pages/Home/components/UniqueOffersForYou/UniqueOffersSlider/UniqueOffersSlider.tsx';
 import {useTranslation} from 'react-i18next';
+import {UniqueOffersSlideType} from '../../../redux/types/userTypes.ts';
 
 type Props = {card: UniqueOffersSlideType};
 const UniqueOffersCard: React.FC<Props> = ({card}) => {

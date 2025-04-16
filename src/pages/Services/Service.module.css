@@ -16,3 +16,8 @@
     flex-direction: column;
     gap: 32px;
 }
+.buttonContainer {
+    margin-top: 32px;
+    width: 100%;
+    height: 50px;
+}

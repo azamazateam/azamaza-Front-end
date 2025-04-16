@@ -1,10 +1,12 @@
 import React from 'react';
 import s from './FilterOfferCard.module.css';
-import {SelectionsData} from '../../../pages/Services/Restaurants/components/AzamazaSelections/SelectionsData.ts';
 import ButtonBlue from '../../Buttons/ButtonBlue/ButtonBlue.tsx';
 import {useTranslation} from 'react-i18next';
+import {AzamazaSelection} from '../../../redux/slices/azamazaSelectionsSlice.ts';
+import CardLocation from '../commonCardComponents/CardLocation.tsx';
+
 type Props = {
-	data: SelectionsData;
+	data: AzamazaSelection;
 };
 const FilterOfferCard: React.FC<Props> = ({data}) => {
 	const {t} = useTranslation();
@@ -16,6 +18,25 @@ const FilterOfferCard: React.FC<Props> = ({data}) => {
 			</div>
 			<div className={s.title}>{data.title}</div>
 			<div className={s.description}>{data.description}</div>
+			{data.location && (
+				<div className={s.locationContainer}>
+					<CardLocation location={data.location} size={18} />
+				</div>
+			)}
+			{data.actionOffers && (
+				<div className={s.actionOffersContainer}>
+					<div className={s.actionOffers}>
+						{data.actionOffers} {t('auction offers especially for you')}
+					</div>
+				</div>
+			)}
+			{data.price && (
+				<div className={s.priceContainer}>
+					<div
+						className={s.price}
+					>{`${t('From')} €${data.price} ${t('per night')}`}</div>
+				</div>
+			)}
 			<div className={s.buttonContainer}>
 				<ButtonBlue text={t('See offers')} type={'button'} active />
 			</div>

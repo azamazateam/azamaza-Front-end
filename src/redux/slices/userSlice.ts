@@ -1,7 +1,8 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {UserState} from '../types/userTypes.ts';
+import {UniqueOffersSlideType, UserState} from '../types/userTypes.ts';
 
-const initialState: UserState = {id: null};
+const initialState: UserState = {id: null, uniqueOfferForYou: null};
+
 const userSlice = createSlice({
 	name: 'user',
 	initialState,
@@ -9,8 +10,14 @@ const userSlice = createSlice({
 		setId: (state, action: PayloadAction<number>) => {
 			state.id = action.payload;
 		},
+		setUniqueOfferForYou: (
+			state,
+			action: PayloadAction<UniqueOffersSlideType[] | null>,
+		) => {
+			state.uniqueOfferForYou = action.payload;
+		},
 	},
 });
 
-export const {setId} = userSlice.actions;
+export const {setId, setUniqueOfferForYou} = userSlice.actions;
 export default userSlice.reducer;

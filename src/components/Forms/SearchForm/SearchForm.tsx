@@ -41,7 +41,6 @@ const SearchForm: React.FC<SearchFormProps> = ({
 	const handleSubmit = (values: FormikValues) => {
 		if (onSubmitFn) {
 			onSubmitFn(values);
-			console.log(values);
 		} else {
 			console.log('error' + values);
 		}

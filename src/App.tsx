@@ -17,7 +17,6 @@ function App() {
 	};
 	return (
 		<>
-			{/*<Mobile></Mobile>*/}
 			<AppRoutes />
 			<Modal
 				fullScreen
@@ -26,10 +25,6 @@ function App() {
 			>
 				<AllServicePopup />
 			</Modal>
-			{/*
-			<Desktop>
-				<h1>Desktop Version </h1>
-			</Desktop>*/}
 		</>
 	);
 }

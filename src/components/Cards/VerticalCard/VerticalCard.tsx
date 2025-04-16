@@ -3,24 +3,21 @@ import s from './VerticalCard.module.css';
 import FavoriteHeart from '../../FavoriteHeart/FavoriteHeart.tsx';
 import TopHotLabel from '../../TopHotLabel/TopHotLabel.tsx';
 import {useTranslation} from 'react-i18next';
-import {useNavigate} from 'react-router-dom';
-import {PopularServicesType} from '../../../redux/types/homePageTypes.ts';
+import useChangeProduct from '../../../hooks/useChangeProduct.tsx';
+import {ServicesType} from '../../../redux/types/commonTypes.ts';
 
 type Props = {
-	card: PopularServicesType;
+	card: ServicesType;
 };
 const VerticalCard: React.FC<Props> = ({card}) => {
 	const {t} = useTranslation();
-	const navigate = useNavigate();
+	const {handleClick} = useChangeProduct(card.id);
 
-	const handleCardClick = () => {
-		navigate(`/service-card/${card.id}`);
-	};
 	const image = Array.isArray(card.image) ? card.image[0] : card.image;
 	return (
 		<div
 			className={s.container}
-			onClick={handleCardClick}
+			onClick={handleClick}
 			role="button"
 			tabIndex={0}
 		>
@@ -43,7 +40,7 @@ const VerticalCard: React.FC<Props> = ({card}) => {
 					<div className={s.priceOld}>{card.oldPrice} €</div>
 					<div className={s.priceNew}>{card.newPrice} €</div>
 				</div>
-				<FavoriteHeart active={card.favorite === 1} />
+				<FavoriteHeart active={card.favorite === 1} side={'right'} />
 				<TopHotLabel active={card.hot === 1} />
 			</div>
 		</div>

@@ -48,31 +48,31 @@ export const categories: {
 	{
 		name: 'transfer',
 		icon: 'transfer',
-		link: '/categories/transfer',
+		link: '/transfer',
 	},
 	{
 		name: 'hotels',
 		icon: 'hotels',
-		link: '/categories/hotels',
+		link: '/hotels',
 	},
 	{
 		name: 'marketplaces',
 		icon: 'marketplaces',
-		link: '/categories/marketplaces',
+		link: '/marketplaces',
 	},
 	{
 		name: 'coupon',
 		icon: 'coupon',
-		link: '/categories/coupon',
+		link: '/coupon',
 	},
 	{
 		name: 'rent',
 		icon: 'rent',
-		link: '/categories/rent',
+		link: '/rent',
 	},
 	{
 		name: 'referral program',
 		icon: 'referralProgram',
-		link: '/categories/referral-program',
+		link: '/referral-program',
 	},
 ];

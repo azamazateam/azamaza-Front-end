@@ -5,17 +5,23 @@ import {useTranslation} from 'react-i18next';
 import CategoriesSlider from '../../../components/CategoriesSlider/CategoriesSlider.tsx';
 import excursions from '../../../assets/images/serviceBackgrounds/excursion.png';
 import ServicePropose from '../components/ServicePropose/ServicePropose.tsx';
-import LabelsCarousel from '../../../components/LabelsCarousel/LabelsCarousel.tsx';
-import UniqueOffersForYou from '../../Home/components/UniqueOffersForYou/UniqueOffersForYou.tsx';
+import UniqueOffersForYou from '../../../components/UniqueOffersForYou/UniqueOffersForYou.tsx';
 import CardsSliderRecommend from '../../../components/Sliders/CardsSliderRecomend/CardsSliderRecommend.tsx';
 import SearchForm from '../../../components/Forms/SearchForm/SearchForm.tsx';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../../redux/store.ts';
+import PopularPartnersBrands from '../../../components/PopularPartnersBrands/PopularPartnersBrands.tsx';
 
 const Excursion: React.FC = () => {
 	const {t} = useTranslation();
 	const tours = useSelector(
 		(state: RootState) => state.excursionPage.alsoOrderWith,
+	);
+	const popularPartnersIcons = useSelector(
+		(state: RootState) => state.excursionPage.popularPartnersIcons,
+	);
+	const uniqueOfferForYou = useSelector(
+		(state: RootState) => state.user.uniqueOfferForYou,
 	);
 	return (
 		<>
@@ -40,10 +46,13 @@ const Excursion: React.FC = () => {
 				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
-				<LabelsCarousel title={t('Choose the best!')} />
+				<PopularPartnersBrands
+					data={popularPartnersIcons}
+					title={t('Choose the best!')}
+				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
-				<UniqueOffersForYou />
+				<UniqueOffersForYou data={uniqueOfferForYou} />
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<CardsSliderRecommend

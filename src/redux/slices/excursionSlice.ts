@@ -1,16 +1,18 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {ExcursionStateType} from '../types/excursionTypes.ts';
-import {excursionData} from '../data/ExcursionData.ts';
-import {PopularServicesType} from '../types/homePageTypes.ts';
+import {servicesListData} from '../../mocks/ServicesListData.ts';
+import {excursionBrandsIconData} from '../../mocks/iconsBrandsData.ts';
+import {ServicesType} from '../types/commonTypes.ts';
 
 const initialState: ExcursionStateType = {
-	alsoOrderWith: excursionData,
+	alsoOrderWith: servicesListData,
+	popularPartnersIcons: excursionBrandsIconData,
 };
 const excursionSlice = createSlice({
 	name: 'excursion',
 	initialState,
 	reducers: {
-		setAlsoOrderWith: (state, action: PayloadAction<PopularServicesType[]>) => {
+		setAlsoOrderWith: (state, action: PayloadAction<ServicesType[]>) => {
 			state.alsoOrderWith = action.payload;
 		},
 	},

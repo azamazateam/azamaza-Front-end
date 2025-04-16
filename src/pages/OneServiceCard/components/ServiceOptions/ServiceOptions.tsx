@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './ServiceOptions.module.css';
-import {ServiceOptionsType} from '../../../../redux/types/homePageTypes.ts';
+
 import {
 	BsCamera,
 	BsCarFront,
@@ -23,6 +23,7 @@ import {
 } from 'react-icons/bs';
 import {FaFish, FaHiking} from 'react-icons/fa';
 import {TbSeeding} from 'react-icons/tb';
+import {ServiceOptionsType} from '../../../../redux/types/commonTypes.ts';
 
 type Props = {
 	serviceOptions: ServiceOptionsType[];

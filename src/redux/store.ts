@@ -4,6 +4,9 @@ import locationsReducer from './slices/userSlice.ts';
 import categoriesReducer from './slices/categoriesSlice.ts';
 import homePageReducer from './slices/homeSlice.ts';
 import excursionReducer from './slices/excursionSlice.ts';
+import searchResultReducer from './slices/searchResultSlice.ts';
+import filtersReducer from './slices/filtersSlice.ts';
+import azamazaSelectionsReducer from './slices/azamazaSelectionsSlice.ts';
 export const store = configureStore({
 	reducer: {
 		user: userReducer,
@@ -11,6 +14,9 @@ export const store = configureStore({
 		categories: categoriesReducer,
 		homePage: homePageReducer,
 		excursionPage: excursionReducer,
+		searchResults: searchResultReducer,
+		filters: filtersReducer,
+		azamazaSelections: azamazaSelectionsReducer,
 	},
 });
 

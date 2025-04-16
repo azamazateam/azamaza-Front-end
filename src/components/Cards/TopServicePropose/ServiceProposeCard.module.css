@@ -50,13 +50,13 @@
     background-size: cover;
     background-position: center;
     clip-path: polygon(
-            5% 0%,   /* верхний левый срез */
+            15% 0%,   /* верхний левый срез */
             100% 0%,  /* верхний правый */
             100% 100%,/* нижний правый */
             0% 100%   /* нижний левый */
     );
    /* border-radius: 20px;*/
-   border-radius: 50px 20px 20px 15px;
+   border-radius: 0 20px 20px 0;
 
 }
 

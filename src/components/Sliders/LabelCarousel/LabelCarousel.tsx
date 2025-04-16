@@ -34,7 +34,7 @@ const LabelCarousel: React.FC<Props> = ({data, revers}) => {
 				}}
 				className={'swiperCarousel'}
 			>
-				{data.map((item, index) => (
+				{data?.map((item, index) => (
 					<SwiperSlide key={index + item.name}>
 						<img
 							/*loading="lazy"*/

@@ -41,7 +41,7 @@ const ServiceSelect: React.FC<Props> = ({fieldName}) => {
 
 	const onChangeFn = (newValue: SingleValue<Option> | null) => {
 		setValue(newValue);
-		setFieldValue(fieldName, newValue?.value);
+		setFieldValue(fieldName, newValue?.value.toLocaleLowerCase());
 	};
 	const Placeholder = (props: any) => {
 		return (

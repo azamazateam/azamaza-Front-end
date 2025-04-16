@@ -1,12 +1,15 @@
-import discount from '../../../assets/images/serviceBackgrounds/discount.jpg';
-
-export type FoodFilterDataType = {
-	id: string;
-	icon: string;
-	text: string;
-};
-
-export const foodFilterData: FoodFilterDataType[] = [
+import {IconSliderFilterType} from '../redux/slices/filtersSlice.ts';
+import discount from '../assets/images/serviceBackgrounds/discount.jpg';
+/*=====Photography ===========*/
+import image1 from '../assets/images/Mock/Photography/Filter/1.jpg';
+import image2 from '../assets/images/Mock/Photography/Filter/2.jpg';
+import image3 from '../assets/images/Mock/Photography/Filter/3.jpg';
+import image4 from '../assets/images/Mock/Photography/Filter/4.jpg';
+import image5 from '../assets/images/Mock/Photography/Filter/5.jpg';
+import image6 from '../assets/images/Mock/Photography/Filter/6.jpg';
+import image7 from '../assets/images/Mock/Photography/Filter/7.jpg';
+import image8 from '../assets/images/Mock/Photography/Filter/8.jpg';
+export const foodFilterData: IconSliderFilterType[] = [
 	{
 		id: '123',
 		icon: discount,
@@ -32,5 +35,47 @@ export const foodFilterData: FoodFilterDataType[] = [
 		id: '12sdfsdftyj543',
 		icon: 'https://s3-alpha-sig.figma.com/img/f428/eabc/7abc470742889e789c13dc605c78a697?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BK6Eh5Qu-dlM-DtyUq7AkNAFa79s5GrNPslgetj6lsKIHuY6r8SwvJDqSdQs-BWJjhhyLrj0-ks6UNrQjE8hKByb5fj25DDk-gLcaAUsV-IW5ryQmSXx~Ug~1ESfBxU5sINmzeQNOdVTOs6TctuxLPFSEmvyPihhiQ76AP0xqNgtEOlKlxF7TNd4GgAaJI80SvvXaF~hMIMDhLX6aQJop46ufMploQ2S~-k3QXallDRPFvepxGSmiRoIZcaYf-1~Nd2Jm5yvHo7b4fGopsHxqktXMa6sapPpyNsmtt3AxhGwUU1~RVo7YRLZPSym47gw~oGNF8~otLob0X6vT6k1Qw__',
 		text: 'American food',
+	},
+];
+export const photographyFilterData: IconSliderFilterType[] = [
+	{
+		id: '123asasdas',
+		icon: image1,
+		text: 'Portrait photography',
+	},
+	{
+		id: '123asasdas',
+		icon: image2,
+		text: 'Family photo session',
+	},
+	{
+		id: '123asasdas',
+		icon: image3,
+		text: 'Wedding photo shoots',
+	},
+	{
+		id: '123asasdas',
+		icon: image4,
+		text: 'Model Portfolio',
+	},
+	{
+		id: '123asasdas',
+		icon: image5,
+		text: "Children's photo shoot",
+	},
+	{
+		id: '123asasdas',
+		icon: image6,
+		text: 'Reportage shooting',
+	},
+	{
+		id: '123asasdas',
+		icon: image7,
+		text: 'For food photography',
+	},
+	{
+		id: '123asasdas',
+		icon: image8,
+		text: 'Maternity photoshoot',
 	},
 ];

@@ -1,9 +1,10 @@
 import React from 'react';
 import s from './RatingLines.module.css';
 import RatingBar from './RatingBar.tsx';
-import {PopularServicesType} from '../../../../../../redux/types/homePageTypes.ts';
+import {ServicesType} from '../../../../../../redux/types/commonTypes.ts';
+
 type Props = {
-	service: PopularServicesType;
+	service: ServicesType;
 	ratingName: string;
 };
 const RatingRow: React.FC<Props> = ({service, ratingName}) => {

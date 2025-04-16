@@ -15,12 +15,12 @@ import WhatGuestsLike from './components/WhatGuestsLike/WhatGuestsLike.tsx';
 import PlaceOrder from '../../components/PlaceOrder/PlaceOrder.tsx';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../redux/store.ts';
-import {PopularServicesType} from '../../redux/types/homePageTypes.ts';
+import {ServicesType} from '../../redux/types/commonTypes.ts';
 
 const OneServiceCard: React.FC = () => {
 	const {id} = useParams();
 	const {t} = useTranslation();
-	const [service, setService] = useState<PopularServicesType | null>(null);
+	const [service, setService] = useState<ServicesType | null>(null);
 	const mostPopularServices = useSelector(
 		(state: RootState) => state.homePage.mostPopularService,
 	);

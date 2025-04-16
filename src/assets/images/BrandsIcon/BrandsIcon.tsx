@@ -1,7 +1,7 @@
 import React from 'react';
 
 type Props = {
-	id: string | 'vk' | 'h10' | 'viber' | 'telegram' | 'tiktok' | 'copyright';
+	id: string | 'vk' | 'viber' | 'telegram' | 'tiktok' | 'copyright';
 };
 const BrandsIcon: React.FC<Props> = ({id}) => {
 	switch (id) {
@@ -43,7 +43,7 @@ const BrandsIcon: React.FC<Props> = ({id}) => {
 					</defs>
 				</svg>
 			);
-		case 'h10':
+		/*case 'h10':
 			return (
 				<svg
 					width="60"
@@ -89,7 +89,7 @@ const BrandsIcon: React.FC<Props> = ({id}) => {
 						/>
 					</defs>
 				</svg>
-			);
+			);*/
 
 		case 'telegram':
 			return (

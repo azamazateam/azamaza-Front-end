@@ -1,10 +1,10 @@
 import React from 'react';
-import {FoodFilterDataType} from './foodFilterData.tsx';
-import s from './FoodFilter.module.css';
+import s from './IconSliderFilter.module.css';
+import {IconSliderFilterType} from '../../../redux/slices/filtersSlice.ts';
 type Props = {
-	data: FoodFilterDataType;
+	data: IconSliderFilterType;
 };
-const FoodElement: React.FC<Props> = ({data}) => {
+const IconSliderElement: React.FC<Props> = ({data}) => {
 	return (
 		<div className={s.elementContainer}>
 			<div className={s.imageContainer}>
@@ -15,4 +15,4 @@ const FoodElement: React.FC<Props> = ({data}) => {
 	);
 };
 
-export default FoodElement;
+export default IconSliderElement;

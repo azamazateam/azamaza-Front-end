@@ -3,7 +3,7 @@ import s from '../../../components/Sliders/CardsSliderRecomend/CardsSliderRecomm
 import {useTranslation} from 'react-i18next';
 type Props = {
 	title: string;
-	isShowMore: boolean;
+	isShowMore?: boolean;
 	description?: string;
 };
 const ContainerSubTitle: React.FC<Props> = ({

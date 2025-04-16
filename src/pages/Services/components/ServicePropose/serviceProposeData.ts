@@ -1,11 +1,11 @@
-import image from '../../../../assets/images/serviceBackgrounds/cardImage.jpg';
-import testImage from '../../../../assets/images/serviceBackgrounds/testCard.jpg';
+import image from '../../../../assets/images/serviceBackgrounds/image.jpg';
 export type ServiceProposeData = {
 	title: string;
 	image: string;
 	price: string;
 	discount: string;
 	link: string;
+	serviceName: string | null;
 };
 
 export const serviceProposeData: ServiceProposeData[] = [
@@ -15,12 +15,6 @@ export const serviceProposeData: ServiceProposeData[] = [
 		price: '69 €',
 		title: 'Tour of La Vella ski resorts',
 		link: '#',
-	},
-	{
-		image: testImage,
-		discount: '-315%',
-		price: '69999 €',
-		title: 'Test test test test',
-		link: '#',
+		serviceName: 'photography',
 	},
 ];
