@@ -9,11 +9,11 @@ i18n
 	.use(initReactI18next)
 	.init({
 		resources: {
-			en: en,
+			eng: en,
 			uk: uk,
 		},
 		debug: false,
-		fallbackLng: 'en',
+		fallbackLng: 'eng',
 		detection: {
 			order: ['localStorage', 'cookie', 'navigator'],
 			caches: ['localStorage', 'cookie'],

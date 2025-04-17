@@ -195,7 +195,7 @@ body {
 
 [class*="__container"] {
   position: relative;
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 main {

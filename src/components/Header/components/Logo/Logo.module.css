@@ -11,3 +11,16 @@
 	font-style: normal;
 	font-weight: 500;
 }
+@media (min-width: 600px) {
+	.logoContainer a {
+		gap: 12px;
+		color: var(--Color-White, #FFF);
+		font-family:var(--Font-Secondary),sans-serif;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 120%; /* 38.4px */
+		&:hover {
+			color: var(--Color-Grey-100, #FFF);
+		}
+	}
+}
