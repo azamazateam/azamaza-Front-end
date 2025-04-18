@@ -8,8 +8,8 @@ import {BsJustifyLeft} from 'react-icons/bs';
 import AuthAvatar from './components/AuthAvatar/AuthAvatar.tsx';
 import {useMediaQuery} from 'react-responsive';
 import {useTranslation} from 'react-i18next';
-import CurrencySelector from './components/CurrencySelector/CurrencySelector.tsx';
-import LanguageSelector from './components/LanguageSelector/LanguageSelector.tsx';
+import CurrencySelector from './components/HeaderSelectors/CurrencySelector/CurrencySelector.tsx';
+import LanguageSelector from './components/HeaderSelectors/LanguageSelector/LanguageSelector.tsx';
 
 const Header: React.FC = () => {
 	const isDesktop = useMediaQuery({minWidth: 600});

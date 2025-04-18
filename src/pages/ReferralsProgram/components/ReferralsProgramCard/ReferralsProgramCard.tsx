@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './ReferralsProgramCard.module.css';
 import {useTranslation} from 'react-i18next';
-import ButtonYellow from '../../../../components/Buttons/ButtonYellow/ButtonYellow.tsx';
+import Button from '../../../../components/Buttons/ButtonYellow/Button.tsx';
 import {Link} from 'react-router-dom';
 
 const ReferralsProgramCard: React.FC = () => {
@@ -19,7 +19,7 @@ const ReferralsProgramCard: React.FC = () => {
 				</div>
 				<div className={s.button}>
 					<Link to={'referral-program'}>
-						<ButtonYellow type={'button'} text={t('Invite friends')} />
+						<Button type={'button'} text={t('Invite friends')} />
 					</Link>
 				</div>
 			</div>

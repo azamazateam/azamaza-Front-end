@@ -3,7 +3,7 @@ import BlockHeader from '../../pages/Home/components/BlockHeader/BlockHeader.tsx
 import FilterOfferCard from '../Cards/FilterOfferCard/FilterOfferCard.tsx';
 import s from '../../pages/Services/Service.module.css';
 import {AzamazaSelection} from '../../redux/slices/azamazaSelectionsSlice.ts';
-import ButtonYellow from '../Buttons/ButtonYellow/ButtonYellow.tsx';
+import Button from '../Buttons/ButtonYellow/Button.tsx';
 
 type Props = {
 	data: AzamazaSelection[] | null;
@@ -27,7 +27,7 @@ const AzamazaSelections: React.FC<Props> = ({
 			</div>
 			{buttonText && (
 				<div className={s.buttonContainer}>
-					<ButtonYellow text={buttonText} type={'button'} />
+					<Button text={buttonText} type={'button'} />
 				</div>
 			)}
 		</div>

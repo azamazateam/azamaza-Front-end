@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './UniqueOffersCard.module.css';
 import {Link} from 'react-router-dom';
-import ButtonYellow from '../../Buttons/ButtonYellow/ButtonYellow.tsx';
+import Button from '../../Buttons/ButtonYellow/Button.tsx';
 import {useTranslation} from 'react-i18next';
 import {UniqueOffersSlideType} from '../../../redux/types/userTypes.ts';
 
@@ -14,7 +14,7 @@ const UniqueOffersCard: React.FC<Props> = ({card}) => {
 			<div className={s.cardPropose}>{card.propose}</div>
 			<div className={s.cardButton}>
 				<Link to={card.link}>
-					<ButtonYellow type={'button'} text={t('Book now')} />
+					<Button type={'button'} text={t('Book now')} />
 				</Link>
 			</div>
 		</div>

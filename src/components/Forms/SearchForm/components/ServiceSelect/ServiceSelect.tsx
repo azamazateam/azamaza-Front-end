@@ -22,20 +22,35 @@ const ServiceSelect: React.FC<Props> = ({fieldName}) => {
 			minHeight: '42px', // <-- регулируешь высоту
 			height: '42px',
 			padding: '0px',
+			'@media (min-width: 600px)': {
+				height: '64px',
+				borderRadius: '8px',
+			},
 		}),
 		valueContainer: (base: any) => ({
 			...base,
 			padding: '0px 8px', // <-- регулируешь отступ текста
 			height: '42px',
+			'@media (min-width: 600px)': {
+				fontSize: '20px',
+				fontWeight: 500,
+			},
 		}),
 		input: (base: any) => ({
 			...base,
 			margin: '0px', // <-- убирает отступ внутри инпута
 			padding: '0px',
+			'@media (min-width: 600px)': {
+				fontSize: '20px',
+				fontWeight: 500,
+			},
 		}),
 		indicatorsContainer: (base: any) => ({
 			...base,
 			height: '42px', // <-- иконки по высоте подгоняем
+			'@media (min-width: 600px)': {
+				height: '64px',
+			},
 		}),
 	};
 

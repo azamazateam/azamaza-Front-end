@@ -7,6 +7,7 @@ import {BsCheck} from 'react-icons/bs';
 import useChangeProduct from '../../../hooks/useChangeProduct.tsx';
 import {ServicesType} from '../../../redux/types/commonTypes.ts';
 import CardLocation from '../commonCardComponents/CardLocation.tsx';
+import UserStatusInProduct from '../../UserStatusInProduct/UserStatusInProduct.tsx';
 
 type Props = {
 	service: ServicesType;
@@ -20,7 +21,9 @@ const SearchResultCard: React.FC<Props> = ({service}) => {
 			<div className={s.imageContainer}>
 				<img src={service.image[0] ?? service.image} alt={service.name} />
 				<FavoriteHeart active={service.favorite === 1} side={'left'} />
-				<div className={s.shevron}></div>
+				<div className={s.chevronContainer}>
+					<UserStatusInProduct specialStatus={service.specialStatus} />
+				</div>
 			</div>
 			<div className={s.infoContainer}>
 				<div className={s.head}>

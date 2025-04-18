@@ -32,9 +32,7 @@ const ChangeDateField: React.FC<Props> = ({fieldName}) => {
 					<BsCalendar3 size={18} />
 				</div>
 				<div className={s.calendarValue}>
-					{values[fieldName]
-						? values[fieldName]
-						: t('Date or period of service registration')}
+					{values[fieldName] ? values[fieldName] : t('Date or period')}
 				</div>
 				<ResetButton fieldName={'date'} />
 			</div>

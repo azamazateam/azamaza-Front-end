@@ -6,11 +6,6 @@ export const categories: {
 	link: string | null;
 }[] = [
 	{
-		name: 'all',
-		icon: 'all',
-		link: null,
-	},
-	{
 		name: 'excursion',
 		icon: 'excursion',
 		link: '/excursion',

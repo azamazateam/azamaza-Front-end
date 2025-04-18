@@ -5,7 +5,7 @@ interface MainProps {
 }
 const Main: React.FC<MainProps> = ({children}) => {
 	return (
-		<main className="__container">
+		<main>
 			<section className={s.pageWrapper}>{children}</section>
 		</main>
 	);

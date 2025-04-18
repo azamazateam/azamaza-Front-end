@@ -1,11 +1,16 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {UniqueOffersSlideType, UserState} from '../types/userTypes.ts';
+import {
+	CurrencyType,
+	UniqueOffersSlideType,
+	UserState,
+} from '../types/userTypes.ts';
 
 const initialState: UserState = {
 	id: null,
 	uniqueOfferForYou: null,
-	currency: 'USD',
+	currency: 'usd',
 	avatar: null,
+	currencyList: null,
 };
 
 const userSlice = createSlice({
@@ -24,8 +29,20 @@ const userSlice = createSlice({
 		setUserAvatar: (state, action: PayloadAction<string | null>) => {
 			state.avatar = action.payload;
 		},
+		setCurrency: (state, action: PayloadAction<string | null>) => {
+			state.currency = action.payload;
+		},
+		setCurrencyList: (state, action: PayloadAction<CurrencyType[] | null>) => {
+			state.currencyList = action.payload;
+		},
 	},
 });
 
-export const {setId, setUniqueOfferForYou, setUserAvatar} = userSlice.actions;
+export const {
+	setId,
+	setUniqueOfferForYou,
+	setUserAvatar,
+	setCurrencyList,
+	setCurrency,
+} = userSlice.actions;
 export default userSlice.reducer;

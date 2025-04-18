@@ -3,20 +3,35 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import s from './CategoriesSlider.module.css';
 import SliderButton from './SliderButton.tsx';
 import {categories} from './categoriesData.ts';
-// @ts-ignore
 import 'swiper/css';
-// @ts-ignore
 import 'swiper/css/navigation';
-// @ts-ignore
 import 'swiper/css/pagination';
 import {setIsOpenPopup} from '../../redux/slices/categoriesSlice.ts';
 import {useDispatch} from 'react-redux';
+import {useMediaQuery} from 'react-responsive';
 
 const CategoriesSlider: React.FC = () => {
 	const dispatch = useDispatch();
+	const isMobile = useMediaQuery({maxWidth: 600});
+
 	const handleOpenCategoriesPopup = () => {
 		dispatch(setIsOpenPopup(true));
 	};
+	const categoriesToRender = isMobile ? categories : categories.slice(0, 6);
+	const renderAllCategoriesButton = () => (
+		<SwiperSlide style={{width: 'auto'}}>
+			<div className={`${s.slideContainer}`}>
+				<SliderButton
+					name={'all'}
+					icon={'all'}
+					link={'/'}
+					disabled={false}
+					callbackAll={handleOpenCategoriesPopup}
+				/>
+			</div>
+		</SwiperSlide>
+	);
+
 	return (
 		<div className={s.container}>
 			<Swiper
@@ -24,7 +39,9 @@ const CategoriesSlider: React.FC = () => {
 				spaceBetween={12}
 				slidesPerView="auto"
 			>
-				{categories.map((category) => (
+				{isMobile && renderAllCategoriesButton()}
+
+				{categoriesToRender.map((category) => (
 					<SwiperSlide key={`homePage${category.name}`} style={{width: 'auto'}}>
 						<div className={s.slideContainer}>
 							<SliderButton
@@ -37,6 +54,7 @@ const CategoriesSlider: React.FC = () => {
 						</div>
 					</SwiperSlide>
 				))}
+				{!isMobile && renderAllCategoriesButton()}
 			</Swiper>
 		</div>
 	);

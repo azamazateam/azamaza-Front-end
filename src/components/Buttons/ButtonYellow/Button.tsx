@@ -1,29 +1,29 @@
 import React from 'react';
-import s from './ButtonBlue.module.css';
+import s from './ButtonYellow.module.css';
 type Props = {
 	text: string;
 	callback?: () => void;
 	type: 'button' | 'submit' | 'reset';
+	color?: 'blue' | 'yellow';
 	disabled?: boolean;
-	active?: boolean;
 };
-const ButtonBlue: React.FC<Props> = ({
+const Button: React.FC<Props> = ({
 	text,
 	type,
 	callback,
 	disabled,
-	active,
+	color = 'yellow',
 }) => {
 	return (
 		<button
 			disabled={disabled}
 			onClick={callback && callback}
 			type={type}
-			className={`${s.button} ${!active ? s.active : ''}`}
+			className={`${s.button} ${s[color]}`}
 		>
 			{text}
 		</button>
 	);
 };
 
-export default ButtonBlue;
+export default Button;

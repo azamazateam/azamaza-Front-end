@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import s from './AuthAvatar.module.css';
 import {useTranslation} from 'react-i18next';
-import ButtonYellow from '../../../Buttons/ButtonYellow/ButtonYellow.tsx';
+import Button from '../../../Buttons/ButtonYellow/Button.tsx';
 import fakeProfile from '../../../../assets/images/fakeProfile.jpg';
 import {useMediaQuery} from 'react-responsive';
 import {useDispatch, useSelector} from 'react-redux';
@@ -43,11 +43,7 @@ const AuthAvatar: React.FC = () => {
 				</div>
 			) : (
 				<div className={s.buttonContainer}>
-					<ButtonYellow
-						text={t('Login')}
-						type={'button'}
-						callback={handleAuth}
-					/>
+					<Button text={t('Login')} type={'button'} callback={handleAuth} />
 				</div>
 			)}
 		</div>

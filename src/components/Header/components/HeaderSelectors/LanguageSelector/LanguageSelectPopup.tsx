@@ -1,8 +1,8 @@
 import React from 'react';
 import s from '../Selectors.module.css';
-import CloseCross from '../../../Buttons/CloseCross/CloseCross.tsx';
 import {useTranslation} from 'react-i18next';
 import LanguageSelectorList from './LanguageSelectorList.tsx';
+import SelectorsHead from '../SelectorsHead.tsx';
 
 type Props = {
 	closePopup: () => void;
@@ -25,12 +25,7 @@ const LanguageSelectPopup: React.FC<Props> = ({closePopup}) => {
 	];
 	return (
 		<div className={s.popupContainer}>
-			<div className={s.popupHead}>
-				<div className={s.title}>{t('Select language')}</div>
-				<div className={s.closeCross}>
-					<CloseCross closeFn={closePopup} size={32} />
-				</div>
-			</div>
+			<SelectorsHead closeFn={closePopup} title={t('Select language')} />
 			<div className={s.subTitleContainer}>{t('Recommended for you')}</div>
 			<LanguageSelectorList
 				list={flagsList}

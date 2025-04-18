@@ -1,6 +1,6 @@
 import React from 'react';
 import s from '../Selectors.module.css';
-import CountryFlagsIcons from '../../../../assets/common/CountryFlagsIcons.tsx';
+import CountryFlagsIcons from '../../../../../assets/common/CountryFlagsIcons.tsx';
 import {BsCheckLg} from 'react-icons/bs';
 import {useTranslation} from 'react-i18next';
 

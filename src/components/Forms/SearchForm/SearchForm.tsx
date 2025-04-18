@@ -2,12 +2,13 @@ import React from 'react';
 import s from './SearchForm.module.css';
 import {Field, Form, Formik, FormikValues} from 'formik';
 import {useTranslation} from 'react-i18next';
-import ButtonYellow from '../../Buttons/ButtonYellow/ButtonYellow.tsx';
+import Button from '../../Buttons/ButtonYellow/Button.tsx';
 import {BsClock, BsPeople} from 'react-icons/bs';
 import ServiceSelect from './components/ServiceSelect/ServiceSelect.tsx';
 import ResetButton from './components/ResetButton.tsx';
 import SearchLocationField from './components/SearchLocationField/SearchLocationField.tsx';
 import ChangeDateField from './components/ChangeDateField/ChangeDateField.tsx';
+import {useMediaQuery} from 'react-responsive';
 
 type SearchFormProps = {
 	title?: string;
@@ -29,7 +30,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
 	title,
 }) => {
 	const {t} = useTranslation();
-
+	const isMobile = useMediaQuery({maxWidth: 600});
 	const initialValues = {
 		location: '',
 		service: '',
@@ -47,7 +48,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
 	};
 
 	return (
-		<div className={s.container}>
+		<div className={`${s.container}`}>
 			<div className={s.title}>{title ?? ''}</div>
 			<Formik
 				enableReinitialize
@@ -84,7 +85,11 @@ const SearchForm: React.FC<SearchFormProps> = ({
 							</div>
 						)}
 						<div className={s.buttonContainer}>
-							<ButtonYellow text={t('Search')} type={'submit'} />
+							<Button
+								text={'Search'}
+								type={'submit'}
+								color={isMobile ? 'yellow' : 'blue'}
+							/>
 						</div>
 					</Form>
 				)}

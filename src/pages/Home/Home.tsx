@@ -46,49 +46,53 @@ const Home: React.FC = () => {
 		<>
 			<Header />
 			<Main>
-				<div className={s.categorySliderContainer}>
-					<CategoriesSlider />
+				<div className={`${s.blueBackground} `}>
+					<div className={`${s.categorySliderContainer} __container`}>
+						<CategoriesSlider />
+					</div>
+					<div className={`${s.container} __container`}>
+						<MainTitle />
+					</div>
+					<div className={s.container}>
+						<SearchForm
+							onSubmitFn={handleSearch}
+							showLocation
+							showDate
+							showService
+						/>
+					</div>
 				</div>
-				<div className={s.container}>
-					<MainTitle />
-				</div>
-				<div className={s.container}>
-					<SearchForm
-						onSubmitFn={handleSearch}
-						showLocation
-						showDate
-						showService
-					/>
-				</div>
-				<div className={s.container}>
-					<PopularPartnersBrands data={popularPartnersIcons} />
-				</div>
-				<div className={s.container}>
-					<Advantages />
-				</div>
-				<div className={s.container}>
-					<UniqueOffersForYou data={uniqueOfferForYou} />
-				</div>
-				<div className={s.container}>
-					<HowItWorks />
-				</div>
-				<div className={s.container}>
-					<MostPopularServices />
-				</div>
-				<div className={s.container}>
-					<ReferralsProgramCard />
-				</div>
-				<div className={s.container}>
-					<OurSubscriptions />
-				</div>
-				<div className={s.container}>
-					<ReferralsInfoBanner />
-				</div>
-				<div className={s.container}>
-					<ServiceAdvantages />
-				</div>
-				<div className={s.container}>
-					<TopFAQ />
+				<div className="__container">
+					<div className={s.container}>
+						<PopularPartnersBrands data={popularPartnersIcons} />
+					</div>
+					<div className={s.container}>
+						<Advantages />
+					</div>
+					<div className={s.container}>
+						<UniqueOffersForYou data={uniqueOfferForYou} />
+					</div>
+					<div className={s.container}>
+						<HowItWorks />
+					</div>
+					<div className={s.container}>
+						<MostPopularServices />
+					</div>
+					<div className={s.container}>
+						<ReferralsProgramCard />
+					</div>
+					<div className={s.container}>
+						<OurSubscriptions />
+					</div>
+					<div className={s.container}>
+						<ReferralsInfoBanner />
+					</div>
+					<div className={s.container}>
+						<ServiceAdvantages />
+					</div>
+					<div className={s.container}>
+						<TopFAQ />
+					</div>
 				</div>
 			</Main>
 			<FooterMain />

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './DropDownInfo.module.css';
-import ButtonYellow from '../../../../../../components/Buttons/ButtonYellow/ButtonYellow.tsx';
+import Button from '../../../../../../components/Buttons/ButtonYellow/Button.tsx';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 import {dropDownInfoData} from './dropDownInfoData.tsx';
@@ -32,7 +32,7 @@ const DropDownInfo: React.FC<Props> = ({type}) => {
 		>
 			<div className={s.container}>
 				<Link to={'/subscribe'} className={s.buttonContainer}>
-					<ButtonYellow type={'button'} text={t('Subscribe')} />
+					<Button type={'button'} text={t('Subscribe')} />
 				</Link>
 				<ul className={s.infoList}>
 					{filteredData.map((item, index) => (

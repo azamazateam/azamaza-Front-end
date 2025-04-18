@@ -2,7 +2,7 @@ import React from 'react';
 import s from './SearchLocationPopup.module.css';
 import {useTranslation} from 'react-i18next';
 import LocationBlueButton from '../../../../Buttons/NextPositionButton/LocationBlueButton.tsx';
-import ButtonYellow from '../../../../Buttons/ButtonYellow/ButtonYellow.tsx';
+import Button from '../../../../Buttons/ButtonYellow/Button.tsx';
 import SearchLocationRecommendList from './SearchLocationRecommendList.tsx';
 import PopupHeadLeft from './PopupHeadLeft.tsx';
 import SearchLocationSelect from '../../../../SearchLocationSelect/SearchLocationSelect.tsx';
@@ -40,11 +40,7 @@ const SearchLocationPopup: React.FC<Props> = ({closeModal, fieldName}) => {
 			</div>
 			<SearchLocationRecommendList />
 			<div className={s.submitButton}>
-				<ButtonYellow
-					callback={handleSubmit}
-					type={'button'}
-					text={t('Apply')}
-				/>
+				<Button callback={handleSubmit} type={'button'} text={t('Apply')} />
 			</div>
 		</div>
 	);

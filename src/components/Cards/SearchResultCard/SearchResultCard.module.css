@@ -24,7 +24,11 @@
     }
 
 }
-
+.chevronContainer {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
 .infoContainer {
     flex: 0 0 50%;
     padding: 20px 22px 12px 20px;

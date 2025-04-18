@@ -3,7 +3,6 @@ import {
 	HowItWorksDataType,
 	OurSubscriptionsData,
 } from '../redux/types/homePageTypes.ts';
-
 import qr from '../assets/images/HitW/qr.jpg';
 import curt from '../assets/images/HitW/curt.png';
 import settings from '../assets/images/HitW/settings.png';
@@ -16,6 +15,7 @@ import presents from '../assets/images/baners/presents.png';
 import onePresent from '../assets/images/baners/onePresent.png';
 import buls from '../assets/images/baners/buls.png';
 import approved from '../assets/images/baners/approved.png';
+import {CurrencyType} from '../redux/types/userTypes.ts';
 
 export const howItWorksData: HowItWorksDataType[] = [
 	{
@@ -113,5 +113,31 @@ export const ourSubscriptionsData: OurSubscriptionsData[] = [
 		infoList: ['Free until January 31, 2025', 'Subscription is for 2026'],
 		mainPrice: '€ 999',
 		quantityMonth: '12 month',
+	},
+];
+export const currencyData: CurrencyType[] = [
+	{
+		id: '4wer435dfhggfhtj',
+		description: 'US dollar',
+		icon: 'usd',
+		name: 'USD',
+	},
+	{
+		id: '443qw5dfqweqhggfhtj',
+		description: 'Гривня',
+		icon: 'grn',
+		name: 'GRN',
+	},
+	{
+		id: '4435dfhqweqggfhtj',
+		description: 'Euro',
+		icon: 'eur',
+		name: 'EUR',
+	},
+	{
+		id: '4435dfhggfhqwetj',
+		description: 'Crypto',
+		icon: 'btc',
+		name: 'Bitcoin',
 	},
 ];

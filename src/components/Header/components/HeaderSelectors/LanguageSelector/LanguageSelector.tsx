@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import s from '../Selectors.module.css';
 import {useTranslation} from 'react-i18next';
-import CountryFlagsIcons from '../../../../assets/common/CountryFlagsIcons.tsx';
-import Modal from '../../../Modal/Modal.tsx';
+import CountryFlagsIcons from '../../../../../assets/common/CountryFlagsIcons.tsx';
+import Modal from '../../../../Modal/Modal.tsx';
 import LanguageSelectPopup from './LanguageSelectPopup.tsx';
 
 const LanguageSelector: React.FC = () => {

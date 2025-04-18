@@ -126,6 +126,7 @@ export const servicesListData: ServicesType[] = [
 	{
 		id: 1,
 		hot: 1,
+		specialStatus: null,
 		favorite: 1,
 		image: [fFirst, i7, i2, i1, i3, i4, i5, i6],
 		name: 'Tour Vallnord Ski Resort',
@@ -164,6 +165,7 @@ export const servicesListData: ServicesType[] = [
 	{
 		id: 101,
 		hot: 1,
+		specialStatus: null,
 		favorite: 0,
 		image: [iFirst, e1, e2, e3, e4, e5],
 		name: 'Lake Engolasters',
@@ -183,6 +185,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 102,
+		specialStatus: null,
 		hot: 0,
 		favorite: 1,
 		image: [bFirst, e6, e7, e8, e9, e10],
@@ -204,6 +207,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 103,
+		specialStatus: null,
 		hot: 1,
 		favorite: 0,
 		image: [dFirst, e11, e12, e13, e14, e15],
@@ -224,6 +228,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 104,
+		specialStatus: null,
 		hot: 0,
 		favorite: 1,
 		image: [cFirst, e16, e17, e18, e19, e20],
@@ -245,6 +250,7 @@ export const servicesListData: ServicesType[] = [
 	// 📷 Photography
 	{
 		id: 201,
+		specialStatus: 1,
 		hot: 1,
 		favorite: 0,
 		image: [p1, p2, p3, p4, p5],
@@ -264,6 +270,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 202,
+		specialStatus: 2,
 		hot: 0,
 		favorite: 1,
 		image: [p6, p7, p8, p9, p10],
@@ -284,6 +291,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 203,
+		specialStatus: 3,
 		hot: 1,
 		favorite: 0,
 		image: [p11, p12, p13, p14, p15],
@@ -305,6 +313,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 204,
+		specialStatus: 4,
 		hot: 0,
 		favorite: 0,
 		image: [p16, p17, p18, p19, p20],
@@ -323,6 +332,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 205,
+		specialStatus: 5,
 		hot: 1,
 		favorite: 1,
 		image: [p21, p22, p23, p24, p25],
@@ -343,6 +353,7 @@ export const servicesListData: ServicesType[] = [
 	// Restaurants
 	{
 		id: 2050909089567,
+		specialStatus: null,
 		hot: 0,
 		favorite: 1,
 		image: [c1, c2, c3, c4, c5],
@@ -363,6 +374,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 2056734534534,
+		specialStatus: null,
 		hot: 0,
 		favorite: 1,
 		image: [b1, b2, b3, b4, b5],
@@ -383,6 +395,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 345345345205567,
+		specialStatus: null,
 		hot: 0,
 		favorite: 1,
 		image: [j1, j2, j3, j4, j5],
@@ -403,6 +416,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 234534534505567,
+		specialStatus: null,
 		hot: 0,
 		favorite: 1,
 		image: [l1, l2, l3, l4, l5],
@@ -423,6 +437,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 205534534534567,
+		specialStatus: null,
 		hot: 0,
 		favorite: 1,
 		image: [m1, m2, m3, m4, m5],
@@ -443,6 +458,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 20556573534567,
+		specialStatus: null,
 		hot: 0,
 		favorite: 1,
 		image: [k1, k2, k3, k4, k5],
@@ -466,6 +482,7 @@ export const servicesListData: ServicesType[] = [
 		id: 4505,
 		hot: 0,
 		favorite: 0,
+		specialStatus: null,
 		image: [a1, a2, a3, a4, a5],
 		name: 'Hotel La Mola',
 		serviceName: 'hotels',
@@ -485,6 +502,7 @@ export const servicesListData: ServicesType[] = [
 		id: 450895,
 		hot: 1,
 		favorite: 0,
+		specialStatus: null,
 		image: [ah1, ah2, ah3, ah4, ah5],
 		name: 'Hotel Cal Bonaire',
 		serviceName: 'hotels',
@@ -504,6 +522,8 @@ export const servicesListData: ServicesType[] = [
 		id: 45085675795,
 		hot: 1,
 		favorite: 0,
+		specialStatus: null,
+
 		image: [ay1, ay2, ay3, ay4, ay5],
 		name: 'Hotel Sant Julià',
 		serviceName: 'hotels',
@@ -522,6 +542,7 @@ export const servicesListData: ServicesType[] = [
 	{
 		id: 4508955675,
 		hot: 0,
+		specialStatus: null,
 		favorite: 1,
 		image: [at1, at2, at3, at4, at5],
 		name: 'Hotel Can Siscar',
@@ -540,6 +561,7 @@ export const servicesListData: ServicesType[] = [
 	},
 	{
 		id: 4508945555675,
+		specialStatus: null,
 		hot: 1,
 		favorite: 0,
 		image: [df1, df2, df3, df4, df5],

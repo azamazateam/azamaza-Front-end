@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './ReferralsInfoBanner.module.css';
 import banner from '../../../../assets/images/refferal_main_banner.png';
-import ButtonYellow from '../../../../components/Buttons/ButtonYellow/ButtonYellow.tsx';
+import Button from '../../../../components/Buttons/ButtonYellow/Button.tsx';
 import {useTranslation} from 'react-i18next';
 import {BsCheckLg} from 'react-icons/bs';
 
@@ -14,7 +14,7 @@ const ReferralsInfoBanner: React.FC = () => {
 			</div>
 			<div className={s.buttonContainer}>
 				<div className={s.button}>
-					<ButtonYellow type={'button'} text={t('Send a message')} />
+					<Button type={'button'} text={t('Send a message')} />
 				</div>
 			</div>
 			<div className={s.infoWindow}>
