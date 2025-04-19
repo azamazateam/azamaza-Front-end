@@ -1,19 +1,18 @@
-
 .lineContainer {
-    margin-top: 24px;
-    color: var(--Color-Grey-500, #434447);
-    font-family: "Onest",sans-serif;
-    /*font-size: 18px;*/
-    font-size: 4.2vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 21.6px */
-    letter-spacing: -0.41px;
+	margin-top: 24px;
+	color: var(--Color-Grey-500, #434447);
+	font-family: 'Onest', sans-serif;
+	/*font-size: 18px;*/
+	font-size: 4.2vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 21.6px */
+	letter-spacing: -0.41px;
 }
 
 .headPanel {
-    margin-bottom: 12px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+	margin-bottom: 12px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }

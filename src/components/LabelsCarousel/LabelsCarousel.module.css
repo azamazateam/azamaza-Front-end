@@ -1,14 +1,14 @@
 .container {
-    width: 100%;
-    text-align: start;
+	width: 100%;
+	text-align: start;
 }
 .title {
-    margin-bottom: 16px;
-    color: var(--Color-Blue, #006CE4);
-    /* Text/Heading/H1 */
-    font-family: "HelveticaNeue",sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 103%; /* 32.96px */
+	margin-bottom: 16px;
+	color: var(--Color-Blue, #006ce4);
+	/* Text/Heading/H1 */
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 103%; /* 32.96px */
 }

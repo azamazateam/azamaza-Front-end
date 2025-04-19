@@ -1,161 +1,161 @@
 .container {
-    width: 100%;
-    max-width: 408px;
-    height: 296px;
-    flex-shrink: 0;
-    display: flex;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.20);
-    background: var(--Color-White, #FFF);
-    box-shadow: 0 0 20px 3px rgba(0, 108, 228, 0.15) inset, 0 2px 4px -2px rgba(0, 0, 0, 0.06), 0 4px 8px -2px rgba(0, 0, 0, 0.10);
+	width: 100%;
+	max-width: 408px;
+	height: 296px;
+	flex-shrink: 0;
+	display: flex;
+	border-radius: 16px;
+	overflow: hidden;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background: var(--Color-White, #fff);
+	box-shadow:
+		0 0 20px 3px rgba(0, 108, 228, 0.15) inset,
+		0 2px 4px -2px rgba(0, 0, 0, 0.06),
+		0 4px 8px -2px rgba(0, 0, 0, 0.1);
 }
 
 .imageContainer {
-    flex: 0 0 50%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 16px;
+	flex: 0 0 50%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 16px;
 
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
 .chevronContainer {
-    position: absolute;
-    top: 12px;
-    right: 12px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
 }
 .infoContainer {
-    flex: 0 0 50%;
-    padding: 20px 22px 12px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	flex: 0 0 50%;
+	padding: 20px 22px 12px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .head {
-
-    font-family: var(--Font-Secondary), sans-serif;
-    overflow: hidden;
+	font-family: var(--Font-Secondary), sans-serif;
+	overflow: hidden;
 }
 
 .title {
-    color: var(--Color-Blue, #006CE4);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 103%; /* 18.54px */
-    letter-spacing: -0.408px;
+	color: var(--Color-Blue, #006ce4);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 103%; /* 18.54px */
+	letter-spacing: -0.408px;
 }
 
 .description {
-    margin-top:4px ;
-    color: var(--Color-Grey-300, #888A90);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 14.4px */
-    letter-spacing: -0.408px;
+	margin-top: 4px;
+	color: var(--Color-Grey-300, #888a90);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 14.4px */
+	letter-spacing: -0.408px;
 }
 
 .ratingContainer {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    overflow: hidden;
-    font-family: var(--Font-Secondary), sans-serif;
-    font-style: normal;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	overflow: hidden;
+	font-family: var(--Font-Secondary), sans-serif;
+	font-style: normal;
 }
 
 .rating {
-    padding: 4px 12px;
-    display: flex;
-    color: var(--Color-White, #FFF);
-    font-feature-settings: 'case' on;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px; /* 128.571% */
-    letter-spacing: -0.15px;
-    border-radius: 26px;
-    background: var(--Color-Blue, #006CE4);
-    overflow: hidden;
+	padding: 4px 12px;
+	display: flex;
+	color: var(--Color-White, #fff);
+	font-feature-settings: 'case' on;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px; /* 128.571% */
+	letter-spacing: -0.15px;
+	border-radius: 26px;
+	background: var(--Color-Blue, #006ce4);
+	overflow: hidden;
 }
 
 .views {
-    color: var(--Color-Grey-500, #434447);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 16.8px */
-    letter-spacing: -0.41px;
-    overflow: hidden;
+	color: var(--Color-Grey-500, #434447);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 16.8px */
+	letter-spacing: -0.41px;
+	overflow: hidden;
 }
 
 .locationContainer {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    color: var(--Color-Grey-300, #888A90);
-    font-family: var(--Font-Secondary), sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 14.4px */
-    letter-spacing: -0.408px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: var(--Color-Grey-300, #888a90);
+	font-family: var(--Font-Secondary), sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 14.4px */
+	letter-spacing: -0.408px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .specialInfoContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 8px;
-    max-height: 72px;
-    overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 8px;
+	max-height: 72px;
+	overflow: hidden;
 }
 .specialInfoElement {
-    display: flex;
-    gap: 4px;
-    color: var(--Color-Green, #36B715);
-    font-family: var(--Font-Secondary), sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 16.8px */
-    letter-spacing: -0.41px;
+	display: flex;
+	gap: 4px;
+	color: var(--Color-Green, #36b715);
+	font-family: var(--Font-Secondary), sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 16.8px */
+	letter-spacing: -0.41px;
 }
 
 .priceContainer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 8px;
-    font-family: var(--Font-Secondary), sans-serif;
-    font-style: normal;
-
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	gap: 8px;
+	font-family: var(--Font-Secondary), sans-serif;
+	font-style: normal;
 }
 
 .priceOld {
-    color: var(--Color-Red, #DE1E1E);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 16px; /* 100% */
-    letter-spacing: 0.035px;
-    text-decoration: line-through;
+	color: var(--Color-Red, #de1e1e);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 16px; /* 100% */
+	letter-spacing: 0.035px;
+	text-decoration: line-through;
 }
 
 .priceNew {
-    color: var(--Color-Blue, #006CE4);
-    font-size: 24px;
+	color: var(--Color-Blue, #006ce4);
+	font-size: 24px;
 
-    font-weight: 600;
-    line-height: 24px; /* 100% */
-    letter-spacing: 0.053px;
+	font-weight: 600;
+	line-height: 24px; /* 100% */
+	letter-spacing: 0.053px;
 }

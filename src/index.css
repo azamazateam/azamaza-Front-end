@@ -51,17 +51,16 @@
 :root {
 	--Color-White: #ffffff;
 	--Color-Blue: #006ce4;
-	--Color-Yellow: #F1D246;
+	--Color-Yellow: #f1d246;
 	--Color-Grey-500: #434447;
-	--Color-Grey-400: #64666B;
-	--Color-Grey-300: #888A90;
-	--Color-Grey-200: #AEB0B4;
-	--Color-Grey-100: #D7D7D9;
-	--Color-Red:  #DE1E1E;
-	--Color-Green: #36B715;
+	--Color-Grey-400: #64666b;
+	--Color-Grey-300: #888a90;
+	--Color-Grey-200: #aeb0b4;
+	--Color-Grey-100: #d7d7d9;
+	--Color-Red: #de1e1e;
+	--Color-Green: #36b715;
 	--Font-Primary: 'HelveticaNeue';
 	--Font-Secondary: 'Onest';
-
 }
 * {
 	padding: 0;
@@ -193,10 +192,10 @@ body {
 	background: var(--Color-White, #fff);
 }
 
-[class*="__container"] {
-  position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
+[class*='__container'] {
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 main {
 	flex: 1 1 auto;

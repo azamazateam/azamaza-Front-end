@@ -3,8 +3,11 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import s from './CategoriesSlider.module.css';
 import SliderButton from './SliderButton.tsx';
 import {categories} from './categoriesData.ts';
+// @ts-ignore
 import 'swiper/css';
+// @ts-ignore
 import 'swiper/css/navigation';
+// @ts-ignore
 import 'swiper/css/pagination';
 import {setIsOpenPopup} from '../../redux/slices/categoriesSlice.ts';
 import {useDispatch} from 'react-redux';

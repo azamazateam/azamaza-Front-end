@@ -1,53 +1,51 @@
 .container {
-    margin-top: 16px;
-
+	margin-top: 16px;
 }
 .buttonContainer {
-    display: block;
-    height: 50px;
-    width: 100%;
+	display: block;
+	height: 50px;
+	width: 100%;
 }
 .infoList {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    color:#64666B;
-    /* Text/Secondary/16 */
-    font-family: "Onest",sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 19.2px */
-    letter-spacing: -0.408px;
+	margin-top: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	color: #64666b;
+	/* Text/Secondary/16 */
+	font-family: 'Onest', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 19.2px */
+	letter-spacing: -0.408px;
 }
 .listElement {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
+	display: flex;
+	align-items: center;
+	gap: 12px;
 }
 .listElementIcon {
-    color: #006CE4;
+	color: #006ce4;
 }
 .infoText {
-margin-top: 32px;
-    margin-bottom: 16px;
+	margin-top: 32px;
+	margin-bottom: 16px;
 }
 .infoTextTitle {
-    color: #434447;
-    font-family: "HelveticaNeue",sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 103%; /* 22.66px */
+	color: #434447;
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 103%; /* 22.66px */
 }
 .infoTextDescription {
-    color:#64666B;
-    font-family: "Onest",sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 19.2px */
-    letter-spacing: -0.408px;
+	color: #64666b;
+	font-family: 'Onest', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 19.2px */
+	letter-spacing: -0.408px;
 }

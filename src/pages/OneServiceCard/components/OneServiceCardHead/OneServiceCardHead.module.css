@@ -1,32 +1,32 @@
 .container {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    overflow: hidden;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	overflow: hidden;
 }
 .title {
-    color: var(--Color-Grey-500, #434447);
-    /* Text/Heading/H1 */
-    font-family: "HelveticaNeue",sans-serif;
-    /*font-size: 32px;*/
-    font-size: 7.3vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 103%; /* 32.96px */
-    overflow: hidden;
-    text-overflow: ellipsis;
+	color: var(--Color-Grey-500, #434447);
+	/* Text/Heading/H1 */
+	font-family: 'HelveticaNeue', sans-serif;
+	/*font-size: 32px;*/
+	font-size: 7.3vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 103%; /* 32.96px */
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .description {
-    color: var(--Color-Grey-300, #888A90);
-    /* Text/Secondary/16 */
-    font-family: "Onest","Helvetica Neue",Helvetica,Arial,sans-serif;
-    /*font-size: 16px;*/
-    font-size: 3.7vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 19.2px */
-    letter-spacing: -0.408px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	color: var(--Color-Grey-300, #888a90);
+	/* Text/Secondary/16 */
+	font-family: 'Onest', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/*font-size: 16px;*/
+	font-size: 3.7vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 19.2px */
+	letter-spacing: -0.408px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }

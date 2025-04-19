@@ -1,23 +1,23 @@
-.container24{
-    margin-top: 24px;
+.container24 {
+	margin-top: 24px;
 }
-.container32{
-    margin-top: 32px;
+.container32 {
+	margin-top: 32px;
 }
-.container12{
-    margin-top: 12px;
+.container12 {
+	margin-top: 12px;
 }
-.padding{
-    padding: 0 16px;
+.padding {
+	padding: 0 16px;
 }
 .selectionCardsContainer {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
 }
 .buttonContainer {
-    margin-top: 32px;
-    width: 100%;
-    height: 50px;
+	margin-top: 32px;
+	width: 100%;
+	height: 50px;
 }

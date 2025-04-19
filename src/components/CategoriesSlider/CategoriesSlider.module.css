@@ -1,70 +1,69 @@
 .container {
-    width: 100%;
-    /*margin-top: 32px;*/
-    padding-left: 16px;
-    cursor: pointer;
+	width: 100%;
+	/*margin-top: 32px;*/
+	padding-left: 16px;
+	cursor: pointer;
 }
 .slideButton {
-    padding:0  16px;
-    display: flex;
-    height: 42px;
-    gap: 4px;
-    border-radius: 24px;
-    border: 1px solid #006CE4;
-    white-space: nowrap;
-    text-align: center;
-    /* Text/Button text */
-    font-family:var(--Font-Secondary),sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px; /* 137.5% */
-    letter-spacing: -0.408px;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
+	padding: 0 16px;
+	display: flex;
+	height: 42px;
+	gap: 4px;
+	border-radius: 24px;
+	border: 1px solid #006ce4;
+	white-space: nowrap;
+	text-align: center;
+	/* Text/Button text */
+	font-family: var(--Font-Secondary), sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px; /* 137.5% */
+	letter-spacing: -0.408px;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
 
-    &.active {
-        background-color: var(--Color-Blue);
-    }
-    &.active .icon svg,
-    &.active .name {
-        color:var(--Color-White,#FFFFFF ) ;
-    }
+	&.active {
+		background-color: var(--Color-Blue);
+	}
+	&.active .icon svg,
+	&.active .name {
+		color: var(--Color-White, #ffffff);
+	}
 }
 .icon,
 .name {
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
-    color: var(--Color-Blue, #006CE4);
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+	color: var(--Color-Blue, #006ce4);
 }
 @media (min-width: 600px) {
-    .slideButton {
-        border-radius: 24px;
-        border:none;
-        color: var(--Color-White, #FFF);
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px; /* 122.222% */
-        letter-spacing: -0.408px;
-        &.active {
-            /*background-color: var(--Color-Blue);*/
-            background-color:transparent;
-            color: var(--Color-Yellow, #F1D246);
-        }
-        &.active .icon svg,
-        &.active .name {
-        color:var(--Color-Yellow, #F1D246)
-        }
-    }
-    .icon,
-    .name {
-        display: flex;
-        align-items: center;
-        text-transform: capitalize;
-        color:var(--Color-White,#FFFFFF );
-    }
+	.slideButton {
+		border-radius: 24px;
+		border: none;
+		color: var(--Color-White, #fff);
+		text-align: center;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 22px; /* 122.222% */
+		letter-spacing: -0.408px;
+		&.active {
+			/*background-color: var(--Color-Blue);*/
+			background-color: transparent;
+			color: var(--Color-Yellow, #f1d246);
+		}
+		&.active .icon svg,
+		&.active .name {
+			color: var(--Color-Yellow, #f1d246);
+		}
+	}
+	.icon,
+	.name {
+		display: flex;
+		align-items: center;
+		text-transform: capitalize;
+		color: var(--Color-White, #ffffff);
+	}
 }
-

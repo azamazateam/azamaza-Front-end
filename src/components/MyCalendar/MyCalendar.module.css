@@ -11,52 +11,52 @@
   z-index: 5;
 }*/
 .calendar {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Навигация */
 .navigation {
-  font-weight: bold;
-  color: #888A90;
-  /* Text/Secondary/16 */
-  font-family: "Onest",sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 120%; /* 19.2px */
-  letter-spacing: -0.408px;
+	font-weight: bold;
+	color: #888a90;
+	/* Text/Secondary/16 */
+	font-family: 'Onest', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 120%; /* 19.2px */
+	letter-spacing: -0.408px;
 }
 
 /* Кнопки навигации */
 .navigation button {
-  /*background: none;*/
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+	/*background: none;*/
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 /* Дни */
 .tile {
-  padding: 10px;
-  text-align: center;
-  border-radius: 6px;
-  transition: background-color 0.3s;
+	padding: 10px;
+	text-align: center;
+	border-radius: 6px;
+	transition: background-color 0.3s;
 }
 
 .tile:hover {
-  background-color: #F1D246;
+	background-color: #f1d246;
 }
 
 /* Текущий день */
 .today {
-  background-color: #F1D246;
-  color:#FFFFFF;
+	background-color: #f1d246;
+	color: #ffffff;
 }
 
 /* Активный день (выбранная дата) */
 .active {
-  background-color: #007bff;
-  color: white;
-  border-radius: 6px;
+	background-color: #007bff;
+	color: white;
+	border-radius: 6px;
 }
