@@ -29,17 +29,15 @@ import {CurrencyType} from '../redux/types/userTypes.ts';
 export const howItWorksData: HowItWorksDataType[] = [
 	{
 		image: qr,
-		description:
-			'Sign up for the subscription that suits you in the "Our Subscriptions" section',
+		description: 'Register and buy a subscription',
 	},
 	{
 		image: curt,
-		description: 'Choose a service that suits you in all respects',
+		description: 'Choose the service that is right for you',
 	},
 	{
 		image: settings,
-		description:
-			'Get unique promotions, discounts and offers that no one else has',
+		description: 'Get unique upsell offers',
 	},
 ];
 export const advantagesData: AdvantagesDataType[] = [
