@@ -22,10 +22,14 @@ import {FormikValues} from 'formik';
 import {useNavigate} from 'react-router-dom';
 import {setUniqueOfferForYou} from '../../redux/slices/userSlice.ts';
 import {uniqueOffers} from '../../mocks/userData.ts';
+import {useMediaQuery} from 'react-responsive';
+import {useTranslation} from 'react-i18next';
 
 const Home: React.FC = () => {
 	const dispatch = useDispatch();
+	const {t} = useTranslation();
 	const navigate = useNavigate();
+	const isMobile = useMediaQuery({maxWidth: 600});
 	const popularPartnersIcons = useSelector(
 		(state: RootState) => state.homePage.popularPartnersIcons,
 	);
@@ -50,7 +54,7 @@ const Home: React.FC = () => {
 					<div className={`${s.categorySliderContainer} __container`}>
 						<CategoriesSlider />
 					</div>
-					<div className={`${s.container} __container`}>
+					<div className={`${s.containerMainTitle} __container`}>
 						<MainTitle />
 					</div>
 					<div className={s.container}>
@@ -62,35 +66,45 @@ const Home: React.FC = () => {
 						/>
 					</div>
 				</div>
-				<div className="__container">
-					<div className={s.container}>
-						<PopularPartnersBrands data={popularPartnersIcons} />
+				<div className={`${s.marginTop} __container`}>
+					<div className={s.container24}>
+						<PopularPartnersBrands
+							description={
+								isMobile
+									? undefined
+									: t(
+											'Our partners are leaders in the market of services and offers',
+										)
+							}
+							data={popularPartnersIcons}
+							title={isMobile ? undefined : t('We work with the best partners')}
+						/>
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<Advantages />
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<UniqueOffersForYou data={uniqueOfferForYou} />
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<HowItWorks />
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<MostPopularServices />
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<ReferralsProgramCard />
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<OurSubscriptions />
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<ReferralsInfoBanner />
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<ServiceAdvantages />
 					</div>
-					<div className={s.container}>
+					<div className={s.container32}>
 						<TopFAQ />
 					</div>
 				</div>

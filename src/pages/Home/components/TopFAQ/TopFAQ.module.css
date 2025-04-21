@@ -2,3 +2,12 @@
 	margin-top: 18px;
 	width: 100%;
 }
+.container {
+	width: 100%;
+	text-align: center;
+}
+@media (min-width: 600px) {
+	.accordionContainer {
+		margin-top: 40px;
+	}
+}

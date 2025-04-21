@@ -27,3 +27,30 @@
 	border-radius: 12px;
 	background: #888a90;
 }
+@media (min-width: 600px) {
+	/* Общие стили для контейнера точек */
+	.sliderHorizontal {
+		padding-bottom: 36px;
+	}
+	.sliderHorizontal .swiper-pagination {
+		position: absolute;
+		bottom: 0; /* Располагаем точки внизу */
+		display: flex;
+		justify-content: center;
+		gap: 23px; /* Отступ между точками */
+		z-index: 40;
+	}
+	.sliderHorizontal .swiper-pagination-bullet {
+		width: 16px;
+		height: 16px;
+		fill: #d7d7d9;
+		transition: all 0.3s ease;
+	}
+	.sliderHorizontal .swiper-pagination-bullet-active {
+		width: 64px;
+		height: 16px;
+		border-radius: 12px;
+		background: #888a90;
+	}
+
+}

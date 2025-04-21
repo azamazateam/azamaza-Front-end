@@ -12,3 +12,25 @@
 	font-weight: 700;
 	line-height: 103%; /* 32.96px */
 }
+.description {
+	color: var(--Color-Grey-500, #434447);
+	font-family: var(--Font-Secondary),sans-serif;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 38.4px */
+	letter-spacing: -0.41px;
+}
+@media (min-width: 600px) {
+	.title {
+		margin-bottom: 12px;
+		font-family: 'HelveticaNeue', sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 103%; /* 41.2px */
+	}
+	.description {
+		font-size: 32px;
+		margin-bottom: 24px;
+	}
+}

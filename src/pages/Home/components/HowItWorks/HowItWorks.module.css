@@ -60,14 +60,33 @@
 	background-repeat: no-repeat;
 	/*background-size: cover;*/
 }
-@media screen and (min-width: 800px) {
+@media (min-width: 600px) {
 	.cardsList {
+		justify-content: space-between;
 		flex-direction: row;
-	}
-	.descriptionContainer {
-		font-size: 16px;
+		gap: 24px;
 	}
 	.cardContainer {
+		flex: 0 0 60%;
+		display: flex;
+		justify-content: space-between;
 		height: 250px;
+		max-width: 464px;
+		border-radius: 16px;
+		background: var(--Color-White, #fff);
+	}
+	.imageContainer {
+		flex: 0 0 40%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.descriptionContainer {
+		color: var(--Color-Grey-400, #64666B);
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 28.8px */
+		letter-spacing: -0.702px;
 	}
 }

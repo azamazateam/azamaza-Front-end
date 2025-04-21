@@ -5,13 +5,20 @@ import {IconsBrandsDataType} from '../../redux/types/commonTypes.ts';
 
 type Props = {
 	title?: string;
+	description?: string;
 	heightRow: IconsBrandsDataType[];
 	bottomRow: IconsBrandsDataType[];
 };
-const LabelsCarousel: React.FC<Props> = ({title, heightRow, bottomRow}) => {
+const LabelsCarousel: React.FC<Props> = ({
+	title,
+	heightRow,
+	bottomRow,
+	description,
+}) => {
 	return (
 		<div className={s.container}>
 			{title && <div className={s.title}>{title}</div>}
+			{description && <div className={s.description}>{description}</div>}
 			<LabelCarousel data={heightRow} />
 			<LabelCarousel data={bottomRow} revers />
 		</div>

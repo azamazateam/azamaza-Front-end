@@ -5,6 +5,7 @@ import './sliderHorizontal.css';
 
 type Props = {
 	children: ReactNode[] | ReactNode;
+	slidesPerView?: number | 'auto';
 	pagination?: boolean;
 	freeMode?: boolean;
 	autoplay?: boolean;
@@ -17,6 +18,7 @@ const HorizontalSlider: React.FC<Props> = ({
 	freeMode,
 	autoplay,
 	speed,
+	slidesPerView = 'auto',
 	loop = true,
 }) => {
 	return (
@@ -24,7 +26,7 @@ const HorizontalSlider: React.FC<Props> = ({
 			<Swiper
 				loop={loop}
 				spaceBetween={20}
-				slidesPerView={'auto'}
+				slidesPerView={slidesPerView}
 				modules={[Autoplay, FreeMode, Pagination]}
 				watchOverflow={true}
 				className={'sliderHorizontal'}
@@ -39,11 +41,7 @@ const HorizontalSlider: React.FC<Props> = ({
 				speed={speed}
 			>
 				{React.Children.map(children, (child, index) => (
-					<SwiperSlide
-						key={`${index + Math.random()}`} /*style={{maxWidth: '236px'}}*/
-					>
-						{child}
-					</SwiperSlide>
+					<SwiperSlide key={`${index + Math.random()}`}>{child}</SwiperSlide>
 				))}
 			</Swiper>
 		</div>

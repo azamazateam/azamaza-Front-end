@@ -2,12 +2,42 @@
 	padding: 0 16px;
 	overflow: hidden;
 }
+.containerMainTitle {
+	padding: 0 16px;
+	margin-top: 24px;
+}
+.container32 {
+	margin-top: 32px;
+	padding: 0 16px;
+	overflow: hidden;
+}
+.container24 {
+	margin-top: 24px;
+	padding: 0 16px;
+	overflow: hidden;
+}
 .categorySliderContainer {
-	padding-top: 12px;
+	padding-top: 32px;
 }
 @media (min-width: 600px) {
+	.container32 {
+		margin-top: 90px;
+	}
+	.containerMainTitle {
+		margin-top: 0;
+	}
+	.categorySliderContainer {
+		padding-top: 24px;
+	}
 	.blueBackground {
 		position: relative;
 		background: var(--Color-Blue, #006ce4);
+	}
+	.gradientBackground {
+		fill: rgba(70, 186, 241, 0.30);
+		filter: blur(75px);
+	}
+	.marginTop {
+		margin-top: 96px;
 	}
 }

@@ -11,7 +11,7 @@
 	width: 90%;
 	overflow: hidden;
 	color: var(--Color-White, #fff);
-	font-family: 'Onest', 'Arial', sans-serif;
+	font-family:var(--Font-Secondary), 'Arial', sans-serif;
 	/*font-size: 24px;*/
 	font-size: 5.5vw;
 	font-style: normal;
@@ -24,8 +24,8 @@
 	margin-top: 4px;
 	width: 100%;
 	overflow: hidden;
-	color: #d7d7d9;
-	font-family: 'Onest', 'Arial', sans-serif;
+	color: var(--Color-Grey-100, #D7D7D9);
+	font-family:var(--Font-Secondary), 'Arial', sans-serif;
 	/*font-size: 18px;*/
 	font-size: 4.1vw;
 	font-style: normal;
@@ -42,5 +42,38 @@
 @media screen and (min-width: 800px) {
 	.cardTitle {
 		font-size: 24px;
+	}
+}
+@media (min-width: 600px) {
+	.slideImg {
+		max-width: 708px;
+		height: 344px;
+		border-radius: 16px;
+		padding: 20px 24px;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.cardTitle {
+		width: 90%;
+		overflow: hidden;
+		font-family:var(--Font-Secondary), 'Arial', sans-serif;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 120%; /* 48px */
+		letter-spacing: -0.708px;
+	}
+
+	.cardPropose {
+		margin-top: 4px;
+		width: 100%;
+		overflow: hidden;
+		font-family:var(--Font-Secondary), 'Arial', sans-serif;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 120%; /* 21.6px */
+		letter-spacing: -0.708px;
 	}
 }

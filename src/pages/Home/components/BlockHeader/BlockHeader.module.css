@@ -2,7 +2,7 @@
 	width: 90%;
 	overflow: hidden;
 	color: var(--Color-Blue, #006ce4);
-	font-family: 'HelveticaNeue', 'Arial', sans-serif;
+	font-family:var(--Font-Secondary), 'Arial', sans-serif;
 	/*font-size: 32px;*/
 	font-size: 7vw;
 	font-style: normal;
@@ -14,10 +14,9 @@
 	padding-top: 4px;
 	color: #64666b;
 	/* Text/Secondary/16 */
-	font-family: 'Onest', 'Arial', sans-serif;
+	font-family: var(--Font-Secondary), 'Arial', sans-serif;
 	/*font-size: 16px;*/
 	font-size: 3.63vw;
-	/*font-size: 115%;*/
 	font-style: normal;
 	font-weight: 400;
 	line-height: 120%; /* 19.2px */
@@ -29,5 +28,22 @@
 	}
 	.description {
 		font-size: 32px;
+	}
+}
+@media screen and (min-width: 600px) {
+	.title {
+		font-size: 52px;
+		color: var(--Color-Blue, #006CE4);
+		font-style: normal;
+		font-weight: 700;
+		line-height: 103%; /* 53.56px */
+	}
+	.description {
+		font-size: 32px;
+		color: var(--Color-Grey-500, #434447);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 38.4px */
+		letter-spacing: -0.41px;
 	}
 }

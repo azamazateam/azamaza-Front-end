@@ -15,7 +15,10 @@
 }
 .mainTitle {
 	position: absolute;
+	width: 100%;
 	top: 21px;
+	left: 50%;
+	transform: translate(-50%);
 	color: var(--Color-Blue, #006ce4);
 	text-align: center;
 	font-family: var(--Font-Secondary), sans-serif;
@@ -41,6 +44,7 @@
 	.titleContainer {
 		margin-top: 48px;
 		flex: 0 0 50%;
+
 	}
 	.mainTitle {
 		position: relative;
@@ -48,7 +52,7 @@
 		text-align: start;
 		font-weight: 700;
 		line-height: 103%; /* 32.96px */
-		font-size: 64px;
+		font-size: 54px;
 	}
 	.description {
 		padding-top: 18px;

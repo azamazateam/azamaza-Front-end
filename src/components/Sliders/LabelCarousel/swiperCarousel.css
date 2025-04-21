@@ -19,3 +19,6 @@
 .swiperCarousel .swiper-slide-active .carouselImage {
 	transform: matrix(1.35, 0, 0, 1.35, 0, 0);
 }
+@media (min-width: 600px) {
+
+}

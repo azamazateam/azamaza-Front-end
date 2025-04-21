@@ -3,9 +3,10 @@ import {IconsBrandsDataType, ServicesType} from './commonTypes.ts';
 export type HomePageState = {
 	howItWorks: HowItWorksDataType[];
 	mostPopularService: ServicesType[];
-	advantage: AdvantagesDataType[];
+	advantage: AdvantagesDataType[] | null;
 	ourSubscriptions: OurSubscriptionsData[];
 	popularPartnersIcons: IconsBrandsDataType[];
+	serviceAdvantages: AdvantagesDataType[] | null;
 };
 export type HowItWorksDataType = {
 	image: string;
