@@ -1,7 +1,8 @@
 import card from '../assets/images/card/card.png';
 import winter from '../assets/images/card/winter.png';
 import summer from '../assets/images/card/summer.png';
-import photography from '../assets/images/card/photography.jpg';
+import photography from '../assets/images/card/photography.png';
+import family from '../assets/images/card/family1.png';
 import {UniqueOffersSlideType} from '../redux/types/userTypes.ts';
 
 export const uniqueOffers: UniqueOffersSlideType[] = [
@@ -22,6 +23,13 @@ export const uniqueOffers: UniqueOffersSlideType[] = [
 	{
 		image: card,
 		title: 'Special winter offer',
+		link: '/',
+		propose: 'Andorra ski resorts - 40% booking rate',
+		serviceName: null,
+	},
+	{
+		image: family,
+		title: 'Special family offer',
 		link: '/',
 		propose: 'Andorra ski resorts - 40% booking rate',
 		serviceName: null,
