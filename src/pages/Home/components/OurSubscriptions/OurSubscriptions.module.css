@@ -16,7 +16,7 @@
 .limitedOfferTitle {
 	color: var(--Color-Blue, #006ce4);
 	text-align: center;
-	font-family: 'Onest', sans-serif;
+	font-family:var(--Font-Secondary), sans-serif;
 	/*font-size: 32px;*/
 	font-size: 6.8vw;
 	font-style: normal;
@@ -35,7 +35,7 @@
 	color: #64666b;
 	text-align: center;
 	/* Text/Secondary/18 */
-	font-family: 'Onest', sans-serif;
+	font-family:var(--Font-Secondary), sans-serif;
 	/*font-size: 18px;*/
 	font-size: 3.8299vw;
 	font-style: normal;
@@ -58,7 +58,7 @@
 	color: #434447;
 	text-align: center;
 	/* Text/Heading/H1 */
-	font-family: 'HelveticaNeue', sans-serif;
+	font-family:var(--Font-Primary), sans-serif;
 	/* font-size: 32px;*/
 	font-size: 6.81vw;
 	font-style: normal;
@@ -77,4 +77,75 @@
 	flex-direction: column;
 	gap: 16px;
 	padding-bottom: 10px;
+}
+@media (min-width: 600px) {
+	.limitedOfferContainer {
+		margin-top: 24px;
+		padding: 60px 48px;
+		border-radius: 32px;
+		border: 2px solid rgba(0, 0, 0, 0.20);
+		background: var(--Color-White, #FFF);
+		box-shadow: 0 0 28.983px 4.347px rgba(0, 108, 228, 0.15) inset, 0 2.898px 5.797px -2.898px rgba(0, 0, 0, 0.06), 0 5.797px 11.593px -2.898px rgba(0, 0, 0, 0.10);
+	}
+	.limitedOfferHead {
+		margin-top: 24px;
+		text-align: center;
+	}
+	.limitedOfferTitle {
+		font-family: var(--Font-Secondary), sans-serif;
+		font-size: 60px;
+		font-weight: 700;
+
+	}
+	.limitedOfferDescription {
+		margin-top: 24px;
+		padding: 0 20%;
+		text-align: center;
+		/* Text/Secondary/18 */
+		font-family:var(--Font-Secondary), sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 21.6px */
+		letter-spacing: -0.41px;
+		color: var(--Color-Grey-400, #64666B);
+		font-size: 24px;
+		& a {
+			color: #006ce4;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+			letter-spacing: -0.41px;
+
+		}
+	}
+	.offerSelector {
+		font-size: 22px;
+		margin-top: 32px;
+		color: #434447;
+		text-align: center;
+		/* Text/Heading/H1 */
+		font-family:var(--Font-Primary), sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 103%; /* 32.96px */
+
+
+	}
+	.offerSelectorButtons {
+		margin-top: 16px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		color: var(--Color-White, #FFF);
+		text-align: center;
+
+	}
+	.cardsContainer {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: row;
+		gap: 24px;
+		padding-bottom: 10px;
+	}
 }

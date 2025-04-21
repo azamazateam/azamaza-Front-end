@@ -6,6 +6,8 @@ import SearchLocationPopup from '../../popups/SearchLocationPopup/SearchLocation
 import {useTranslation} from 'react-i18next';
 import Modal from '../../../../Modal/Modal.tsx';
 import {useFormikContext} from 'formik';
+import {useMediaQuery} from 'react-responsive';
+import {Desktop, Mobile} from '../../../../../assets/utils/responsive.tsx';
 
 type Props = {
 	fieldName: string;
@@ -14,7 +16,7 @@ type Props = {
 const SearchLocationField: React.FC<Props> = ({fieldName, border}) => {
 	const {t} = useTranslation();
 	const {values} = useFormikContext<any>();
-
+	const isMobile = useMediaQuery({maxWidth: 600});
 	const [isOpenPopup, setIsOpenPopup] = useState<boolean>(false);
 
 	const handleClick = () => {
@@ -43,9 +45,16 @@ const SearchLocationField: React.FC<Props> = ({fieldName, border}) => {
 				</div>
 				<ResetButton fieldName={'location'} />
 			</div>
-			<Modal fullScreen isOpen={isOpenPopup} onClose={closeModal}>
-				<SearchLocationPopup closeModal={closeModal} fieldName={fieldName} />
-			</Modal>
+			<Mobile>
+				<Modal fullScreen={isMobile} isOpen={isOpenPopup} onClose={closeModal}>
+					<SearchLocationPopup closeModal={closeModal} fieldName={fieldName} />
+				</Modal>
+			</Mobile>
+			<Desktop>
+				{isOpenPopup && (
+					<SearchLocationPopup closeModal={closeModal} fieldName={fieldName} />
+				)}
+			</Desktop>
 		</div>
 	);
 };

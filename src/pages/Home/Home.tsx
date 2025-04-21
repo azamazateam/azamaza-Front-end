@@ -24,6 +24,9 @@ import {setUniqueOfferForYou} from '../../redux/slices/userSlice.ts';
 import {uniqueOffers} from '../../mocks/userData.ts';
 import {useMediaQuery} from 'react-responsive';
 import {useTranslation} from 'react-i18next';
+import {Desktop, Mobile} from '../../assets/utils/responsive.tsx';
+import ReferralsProgramBanner from '../ReferralsProgram/components/ReferralsProgramBanner/ReferralsProgramBanner.tsx';
+import FooterDesktop from '../../components/Footers/FooterDesktop.tsx';
 
 const Home: React.FC = () => {
 	const dispatch = useDispatch();
@@ -92,12 +95,19 @@ const Home: React.FC = () => {
 					<div className={s.container32}>
 						<MostPopularServices />
 					</div>
-					<div className={s.container32}>
-						<ReferralsProgramCard />
-					</div>
+					<Mobile>
+						<div className={s.container32}>
+							<ReferralsProgramCard />
+						</div>
+					</Mobile>
 					<div className={s.container32}>
 						<OurSubscriptions />
 					</div>
+					<Desktop>
+						<div className={s.container32}>
+							<ReferralsProgramBanner />
+						</div>
+					</Desktop>
 					<div className={s.container32}>
 						<ReferralsInfoBanner />
 					</div>
@@ -109,7 +119,12 @@ const Home: React.FC = () => {
 					</div>
 				</div>
 			</Main>
-			<FooterMain />
+			<Mobile>
+				<FooterMain />
+			</Mobile>
+			<Desktop>
+				<FooterDesktop />
+			</Desktop>
 		</>
 	);
 };

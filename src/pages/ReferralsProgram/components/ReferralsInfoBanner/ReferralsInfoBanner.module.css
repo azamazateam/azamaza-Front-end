@@ -15,12 +15,21 @@
 		0 4px 8px -2px rgba(0, 0, 0, 0.1);
 }
 .imageContainer {
-	height: 270px;
+	width: 100%;
+	height: auto;
 	& img {
 		max-width: 100%;
 		max-height: 100%;
-		object-fit: contain;
+		object-fit: cover;
 	}
+}
+.infoContainer {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .buttonContainer {
 	width: 100%;
@@ -37,11 +46,11 @@
 .infoWindow {
 	width: 100%;
 	max-width: 360px;
-	margin: 0 5px;
 	/*height: 388px;*/
 	position: absolute;
-	/*top: 30%;*/
-	top: 50vw;
+	top:-60px;
+	left: 50%;
+	transform: translateX(-50%);
 	display: inline-flex;
 	padding: 32px 12px;
 	flex-direction: column;
@@ -77,4 +86,74 @@
 	font-weight: 400;
 	line-height: 120%; /* 21.6px */
 	letter-spacing: -0.41px;
+}
+@media (min-width: 600px) {
+	.container {
+		margin-top: 24px;
+		width: 100%;
+		display: flex;
+		height: 480px;
+		flex-direction: row;
+		align-items: center;
+		position: static;
+		border-radius: 24px;
+		border: 2px solid rgba(0, 0, 0, 0.20);
+		background: var(--Color-White, #fff);
+		overflow: hidden;
+		box-shadow:
+				0 0 20px 3px rgba(0, 108, 228, 0.15) inset,
+				0 2px 4px -2px rgba(0, 0, 0, 0.06),
+				0 4px 8px -2px rgba(0, 0, 0, 0.1);
+	}
+	.imageContainer {
+		height: 480px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	.infoContainer {
+		padding: 32px;
+		height: 100%;
+	}
+	.buttonContainer {
+		margin-top: 54px;
+		width: 342px;
+		min-height: 0;
+		/*padding: 0 32px 32px 16px;*/
+		display: flex;
+		align-items: flex-end;
+
+	}
+	.button {
+		width: 100%;
+		height: 60px;
+	}
+	.desktopInfo {
+
+	}
+	.desktopTitle {
+		color: var(--Color-Grey-400, #64666B);
+		font-family: var(--Font-Primary),sans-serif;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 103%; /* 32.96px */
+	}
+	.desktopInfoList {
+		margin: 24px 0;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	.infoElement {
+		color: var(--Color-Grey-400, #64666B);
+		font-family:var(--Font-Secondary),sans-serif;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 28.8px */
+		letter-spacing: -0.41px;
+	}
 }

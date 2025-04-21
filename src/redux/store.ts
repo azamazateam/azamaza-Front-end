@@ -8,6 +8,7 @@ import searchResultReducer from './slices/searchResultSlice.ts';
 import filtersReducer from './slices/filtersSlice.ts';
 import azamazaSelectionsReducer from './slices/azamazaSelectionsSlice.ts';
 import proposeReducer from './slices/proposeSlice.ts';
+import swiperReducer from './slices/swiperSlice.ts';
 export const store = configureStore({
 	reducer: {
 		user: userReducer,
@@ -19,6 +20,7 @@ export const store = configureStore({
 		filters: filtersReducer,
 		azamazaSelectionsData: azamazaSelectionsReducer,
 		proposeData: proposeReducer,
+		swiper: swiperReducer,
 	},
 });
 

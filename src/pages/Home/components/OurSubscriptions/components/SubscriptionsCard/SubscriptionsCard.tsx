@@ -4,15 +4,18 @@ import DropDownInfo from '../DropDownInfo/DropDownInfo.tsx';
 import {AnimatePresence} from 'framer-motion';
 import {backgroundsMap} from './backgroundsMap.ts';
 import {OurSubscriptionsData} from '../../../../../../redux/types/homePageTypes.ts';
+import {useMediaQuery} from 'react-responsive';
 
 type Props = {
 	data: OurSubscriptionsData;
 };
 
 const SubscriptionsCard: React.FC<Props> = ({data}) => {
-	const [open, setOpen] = useState<boolean>(false);
+	const isMobile = useMediaQuery({maxWidth: 600});
+	const [open, setOpen] = useState<boolean>(!isMobile);
+
 	const onOpenMenu = () => {
-		setOpen(!open);
+		/*isMobile &&*/ setOpen(!open);
 	};
 	const backgroundFounder = () => {
 		const background = backgroundsMap.find((b) => b.type === data.type);
@@ -20,7 +23,7 @@ const SubscriptionsCard: React.FC<Props> = ({data}) => {
 	};
 
 	return (
-		<>
+		<div className={s.flex}>
 			<div
 				className={`${s.container}`}
 				style={{background: open ? backgroundFounder() : 'none'}}
@@ -58,7 +61,7 @@ const SubscriptionsCard: React.FC<Props> = ({data}) => {
 			<AnimatePresence>
 				{open && <DropDownInfo type={data.type} />}
 			</AnimatePresence>
-		</>
+		</div>
 	);
 };
 

@@ -19,7 +19,7 @@
 		0 0 20px 10px rgba(0, 108, 228, 0.1) inset;
 }
 .infoContainer {
-	flex: 0 0 200px;
+	flex: 0 0 50%;
 	padding: 12px 0 12px 12px;
 }
 .numberContainer {
@@ -58,7 +58,7 @@
 	width: 194px;
 	height: 100%;
 	background-repeat: no-repeat;
-	/*background-size: cover;*/
+	background-size: cover;
 }
 @media (min-width: 600px) {
 	.cardsList {
@@ -67,16 +67,16 @@
 		gap: 24px;
 	}
 	.cardContainer {
-		flex: 0 0 60%;
+		flex: 0 0 464px;
 		display: flex;
 		justify-content: space-between;
 		height: 250px;
-		max-width: 464px;
+		/*max-width: 464px;*/
 		border-radius: 16px;
 		background: var(--Color-White, #fff);
 	}
 	.imageContainer {
-		flex: 0 0 40%;
+		flex: 0 0 50%;
 		height: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;

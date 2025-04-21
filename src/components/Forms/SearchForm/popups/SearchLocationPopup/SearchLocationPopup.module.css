@@ -16,9 +16,8 @@
 }
 .title {
 	color: var(--Color-Grey-500, #434447);
-
 	/* Text/Helvetica/24 bolt */
-	font-family: 'HelveticaNeue', sans-serif;
+	font-family: var(--Font-Primary), sans-serif;
 	/*font-size: 24px;*/
 	font-size: 5.5vw;
 	font-style: normal;
@@ -34,7 +33,7 @@
 .listTitle {
 	margin-top: 25px;
 	color: var(--Color-Grey-500, #434447);
-	font-family: 'Onest', sans-serif;
+	font-family: var(--Font-Secondary), sans-serif;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
@@ -75,4 +74,48 @@
 .popularOffers {
 	max-height: 100%;
 	overflow-y: scroll;
+}
+@media (min-width: 600px) {
+	.container {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-width: 100%;
+		width: 400px;
+		height: 620px;
+		padding: 40px 24px 24px 24px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		overflow-y: auto;
+		background-color: var(--Color-White, #434447);
+		z-index: 50;
+	}
+	.title {
+		color: var(--Color-Grey-500, #434447);
+		font-size: 21.818px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 103%; /* 22.473px */
+	}
+	.listTitle {
+		color: var(--Color-Grey-500, #434447);
+		font-size: 16.364px;
+	}
+	.name {
+		color: var(--Color-Grey-500, #434447);
+		text-align: center;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 17.455px */
+		letter-spacing: -0.371px;
+	}
+	.location {
+		color: var(--Color-Grey-300, #888A90);
+		font-size: 11px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 13.091px */
+		letter-spacing: -0.371px;
+	}
 }

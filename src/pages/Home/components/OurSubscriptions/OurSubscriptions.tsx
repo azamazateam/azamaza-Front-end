@@ -8,6 +8,7 @@ import ButtonsSelector from '../../../../components/Buttons/ButtonsSelector/Butt
 import SubscriptionsCard from './components/SubscriptionsCard/SubscriptionsCard.tsx';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../../../redux/store.ts';
+import {Mobile} from '../../../../assets/utils/responsive.tsx';
 
 const OurSubscriptions: React.FC = () => {
 	const {t} = useTranslation();
@@ -22,11 +23,12 @@ const OurSubscriptions: React.FC = () => {
 					'Travel, relax, communicate, meet, find friends, buy, rent, economize - do whatever you want with an Azamaza subscription',
 				)}
 			/>
-
-			<div className={s.imageContainer}>
-				<img src={header} alt="referal-header" loading="lazy" />
-			</div>
-			<div className={s.limitedOferContainer}>
+			<Mobile>
+				<div className={s.imageContainer}>
+					<img src={header} alt="referal-header" loading="lazy" />
+				</div>
+			</Mobile>
+			<div className={s.limitedOfferContainer}>
 				<div className={s.limitedOfferHead}>
 					<div className={s.limitedOfferTitle}>
 						<Link to={`/limited-offer`}>{t('Limited Offer')}</Link>
@@ -38,7 +40,9 @@ const OurSubscriptions: React.FC = () => {
 					</div>
 				</div>
 				<div className={s.offerSelector}>
-					<div className={s.offerSelectorTitle}>{t('Select Plan')}</div>
+					<Mobile>
+						<div className={s.offerSelectorTitle}>{t('Select Plan')}</div>
+					</Mobile>
 					<div className={s.offerSelectorButtons}>
 						<ButtonsSelector />
 					</div>

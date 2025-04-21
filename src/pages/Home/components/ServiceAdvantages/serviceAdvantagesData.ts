@@ -67,42 +67,42 @@ export const serviceAdvantagesDataMobile: AdvantagesDataType[] = [
 		description:
 			'Exclusive offers only for our users. Get the best deals on everything you need!',
 		image: bagMob,
-		title: null,
+		title: 'Exclusive offers from partners only for our users',
 	},
 	{
 		description:
 			'Book, vacation, shop, make friends and have an unforgettable experience - all in one service',
 		image: mulimediaCubMob,
-		title: null,
+		title: 'Booking, vacations, shopping, friends',
 	},
 	{
 		description:
 			'Only verified partners and the best terms and conditions, and their services are vetted before publication',
 		image: guardMob,
-		title: null,
+		title: 'Only verified partners and the best terms',
 	},
 	{
 		description:
 			'Get cashback and bonuses for shopping, inviting friends and being active on the platform',
 		image: moneyPhoneMob,
-		title: null,
+		title: 'Get cashback and bonuses for shopping',
 	},
 	{
 		description:
 			'Quick booking with no hidden fees, plan and pay for your vacation in minutes',
 		image: phoneSearchMob,
-		title: null,
+		title: 'Fast booking with no hidden fees',
 	},
 	{
 		description:
 			'Premium access to unique discounts, events and services, special conditions for all services',
 		image: greenGoodMob,
-		title: null,
+		title: 'Fast booking with no hidden fees',
 	},
 	{
 		description:
 			'Bringing together people with common interests - recreation, sports, travel or business and more',
 		image: campWoodMob,
-		title: null,
+		title: 'Bringing together people with common interests',
 	},
 ];

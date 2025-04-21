@@ -3,8 +3,7 @@
 	border-radius: 24px;
 	outline: none;
 	display: flex;
-	/*padding: 3px;*/
-	padding: 0.7vw;
+	padding: 3px;
 	/*width: 300px;*/
 
 	/*height: 46px;*/
@@ -25,4 +24,21 @@
 	height: 40px;
 	outline: none;
 	-webkit-tap-highlight-color: transparent;
+}
+@media (min-width: 600px) {
+	.container {
+		padding: 3px;
+	}
+	.buttonContainer button {
+		font-family:var(--Font-Secondary), sans-serif;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30.609px; /* 137.5% */
+		letter-spacing: -0.568px;
+		width: 209px;
+		height: 56px;
+		outline: none;
+		-webkit-tap-highlight-color: transparent;
+	}
 }
