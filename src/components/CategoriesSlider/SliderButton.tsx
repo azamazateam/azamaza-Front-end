@@ -11,14 +11,12 @@ type Props = {
 	disabled: boolean;
 	callbackAll?: () => void;
 	iconColor?: string;
-	callback?: () => void;
 };
 const SliderButton: React.FC<Props> = ({
 	name,
 	icon,
 	link,
 	disabled,
-	callback,
 	iconColor,
 	callbackAll,
 }) => {
@@ -26,7 +24,9 @@ const SliderButton: React.FC<Props> = ({
 	return disabled ? (
 		<NavLink
 			to={link}
-			onClick={callback}
+			onClick={(event) => {
+				console.log(event);
+			}}
 			className={({isActive}) => `${s.slideButton} ${isActive ? s.active : ''}`}
 		>
 			<div className={s.icon} style={{color: iconColor ?? ''}}>

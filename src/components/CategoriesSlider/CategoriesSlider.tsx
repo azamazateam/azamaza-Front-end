@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import s from './CategoriesSlider.module.css';
 import SliderButton from './SliderButton.tsx';
@@ -12,11 +12,12 @@ import 'swiper/css/pagination';
 import {setIsOpenPopup} from '../../redux/slices/categoriesSlice.ts';
 import {useDispatch} from 'react-redux';
 import {useMediaQuery} from 'react-responsive';
+import {useLocation} from 'react-router-dom';
 
 const CategoriesSlider: React.FC = () => {
 	const dispatch = useDispatch();
 	const isMobile = useMediaQuery({maxWidth: 600});
-
+	const location = useLocation();
 	const handleOpenCategoriesPopup = () => {
 		dispatch(setIsOpenPopup(true));
 	};
@@ -34,16 +35,32 @@ const CategoriesSlider: React.FC = () => {
 			</div>
 		</SwiperSlide>
 	);
+	const [swiperInstance, setSwiperInstance] = useState<any>(null);
+	useEffect(() => {
+		if (!swiperInstance) return;
 
+		const activeSlide = document
+			.querySelector(`.${s.active}`)
+			?.closest('.swiper-slide');
+		const allSlides = swiperInstance.slides;
+
+		if (activeSlide) {
+			const index = Array.from(allSlides).indexOf(activeSlide);
+			if (index >= 0) {
+				swiperInstance.slideTo(index, 300); // Прокрутка с анимацией
+			}
+		}
+	}, [swiperInstance, location.pathname]);
 	return (
 		<div className={s.container}>
 			<Swiper
+				onSwiper={setSwiperInstance}
 				pagination={{clickable: true}}
 				spaceBetween={12}
 				slidesPerView="auto"
+				className={'swiper-category'}
 			>
 				{isMobile && renderAllCategoriesButton()}
-
 				{categoriesToRender.map((category) => (
 					<SwiperSlide key={`homePage${category.name}`} style={{width: 'auto'}}>
 						<div className={s.slideContainer}>

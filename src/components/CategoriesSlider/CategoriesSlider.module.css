@@ -4,6 +4,11 @@
 	padding-left: 16px;
 	cursor: pointer;
 }
+/* CategoriesSlider.module.css */
+.slideContainer:focus,
+.slideContainer:focus-within {
+	outline: none;
+}
 .slideButton {
 	padding: 0 16px;
 	display: flex;
@@ -55,8 +60,8 @@
 		line-height: 22px; /* 122.222% */
 		letter-spacing: -0.408px;
 		&.active {
-			/*background-color: var(--Color-Blue);*/
-			background-color: transparent;
+			/*background-color: var(--Color-Blue);
+			background-color: transparent;*/
 			color: var(--Color-Yellow, #f1d246);
 		}
 		&.active .icon svg,
