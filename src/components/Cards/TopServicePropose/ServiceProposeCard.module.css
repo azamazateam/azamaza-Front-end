@@ -75,7 +75,7 @@
 	align-items: center;
 	color: var(--Color-White, #FFF);
 	font-family: var(--Font-Secondary), sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 32px; /* 177.778% */
