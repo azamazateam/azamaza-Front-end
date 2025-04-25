@@ -19,11 +19,12 @@ import {setAzamazaSelection} from '../../../redux/slices/azamazaSelectionsSlice.
 const Restaurants: React.FC = () => {
 	const {t} = useTranslation();
 	const dispatch = useDispatch();
-	const iconsSliderFilter = useSelector(
-		(state: RootState) => state.filters.iconsSliderFilter,
-	);
+
 	const azamazaSelections = useSelector(
 		(state: RootState) => state.azamazaSelectionsData.azamazaSelections,
+	);
+	const popularCards = useSelector(
+		(state: RootState) => state.homePage.mostPopularService,
 	);
 	useEffect(() => {
 		const selectionData = azamazaSelectionsData.filter(
@@ -31,10 +32,8 @@ const Restaurants: React.FC = () => {
 		);
 		dispatch(setAzamazaSelection(selectionData ?? null));
 		dispatch(setIconsSliderFilter(foodFilterData));
-	}, []);
-	const popularCards = useSelector(
-		(state: RootState) => state.homePage.mostPopularService,
-	);
+	}, [dispatch]);
+
 	return (
 		<div>
 			<ServiceHead
@@ -57,7 +56,7 @@ const Restaurants: React.FC = () => {
 					<LocationBlueButton text={t('Near the current location')} />
 				</div>
 				<div className={s.container32}>
-					<IconSliderFilter filterData={iconsSliderFilter} />
+					<IconSliderFilter />
 				</div>
 				<div className={s.container32}>
 					<AzamazaSelections

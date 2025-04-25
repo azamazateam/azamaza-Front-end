@@ -32,7 +32,7 @@ const CountryFlagsIcons: React.FC<Props> = ({id}) => {
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<g clip-path="url(#clip0_1258_764)">
+					<g clipPath="url(#clip0_1258_764)">
 						<rect width="24" height="24" rx="12" fill="#1A47B8" />
 						<path
 							fillRule="evenodd"
@@ -166,7 +166,7 @@ const CountryFlagsIcons: React.FC<Props> = ({id}) => {
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<g clip-path="url(#clip0_1250_2183)">
+					<g clipPath="url(#clip0_1250_2183)">
 						<rect width="24" height="24" rx="12" fill="white" />
 						<path
 							fillRule="evenodd"
@@ -197,7 +197,7 @@ const CountryFlagsIcons: React.FC<Props> = ({id}) => {
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<g clip-path="url(#clip0_1250_2188)">
+					<g clipPath="url(#clip0_1250_2188)">
 						<rect width="24" height="24" rx="12" fill="#1A47B8" />
 						<path
 							fillRule="evenodd"
@@ -228,7 +228,7 @@ const CountryFlagsIcons: React.FC<Props> = ({id}) => {
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<g clip-path="url(#clip0_1250_2159)">
+					<g clipPath="url(#clip0_1250_2159)">
 						<rect x="0.666504" width="24" height="24" rx="12" fill="white" />
 						<path
 							fillRule="evenodd"
@@ -259,7 +259,7 @@ const CountryFlagsIcons: React.FC<Props> = ({id}) => {
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<g clip-path="url(#clip0_1258_758)">
+					<g clipPath="url(#clip0_1258_758)">
 						<rect x="0.666504" width="24" height="24" rx="12" fill="#F93939" />
 						<path
 							fillRule="evenodd"

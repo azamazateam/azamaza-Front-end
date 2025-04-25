@@ -12,8 +12,8 @@ const FooterCommon: React.FC = () => {
 	const year = date.getFullYear();
 
 	return (
-		<footer>
-			<section className={s.section}>
+		<footer className={s.footer}>
+			<section className={`${s.section} __container`}>
 				<DomainTitle />
 				<div className={s.containerTitle}>
 					<h3>{t('More information about the project')}</h3>

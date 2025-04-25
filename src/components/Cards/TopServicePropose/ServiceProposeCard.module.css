@@ -3,7 +3,7 @@
 	height: 200px;
 	display: flex;
 	justify-content: space-between;
-	font-family: 'Onest', sans-serif;
+	font-family:var(--Font-Secondary), sans-serif;
 	font-style: normal;
 	overflow: hidden;
 	border-radius: 16px;
@@ -22,7 +22,7 @@
 	overflow: hidden;
 }
 .title {
-	color: #64666b;
+	color: var(--Color-Grey-400, #64666B);
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 22px; /* 110% */
@@ -63,4 +63,22 @@
 }
 
 .discount {
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+  	width: 50px;
+	height: 50px;
+	background: #46BAF1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--Color-White, #FFF);
+	font-family: var(--Font-Secondary), sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px; /* 177.778% */
+	letter-spacing: 0.04px;
+
 }

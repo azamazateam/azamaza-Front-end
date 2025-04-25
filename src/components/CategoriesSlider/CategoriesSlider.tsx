@@ -50,7 +50,11 @@ const CategoriesSlider: React.FC = () => {
 							<SliderButton
 								name={category.name}
 								icon={category.icon}
-								link={`/service${category.link}`}
+								link={
+									category.disabled === 0
+										? `/service${category.link}`
+										: `/service/in-development`
+								}
 								disabled={category.link !== null}
 								callbackAll={handleOpenCategoriesPopup}
 							/>

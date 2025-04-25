@@ -1,0 +1,90 @@
+.container40 {
+	margin-top: 40px;
+	padding: 0 20px;
+}.container32 {
+	margin-top: 32px;
+	padding: 0 16px;
+	& h1 {
+		color: var(--Color-Grey-500, #434447);
+	}
+	& h2 {
+		color: var(--Color-Grey-500, #434447);
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 103%; /* 24.72px */
+	}
+}.container24 {
+	margin-top: 24px;
+	padding: 0 16px;
+}.galleryContainer {
+	margin-top: 24px;
+
+}
+.info {
+	margin-top: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--Color-Grey-400, #64666B);
+	/* Text/Secondary/20 semibolt */
+	font-family: var(--Font-Secondary),sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 22px; /* 110% */
+	letter-spacing: -0.41px;
+}
+.rating {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.views {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.price {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-family: var(--Font-Secondary), sans-serif;
+}
+.oldPrice {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: var(--Color-Red, #DE1E1E);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px; /* 125% */
+	letter-spacing: -0.408px;
+	text-decoration: line-through solid black;
+}
+.newPrice {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: var(--Color-Blue, #006CE4);
+	font-size: 42px;
+	font-weight: 600;
+	line-height: 60px; /* 142.857% */
+	letter-spacing: -0.408px;
+}
+.description {
+	color: var(--Color-Grey-400, #64666B);
+	font-family: var(--Font-Secondary), sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 19.2px */
+	letter-spacing: -0.408px;
+}
+.buttonContainer {
+	padding: 0 16px;
+	width: 100%;
+	height: 42px;
+	margin: 40px 0;
+}

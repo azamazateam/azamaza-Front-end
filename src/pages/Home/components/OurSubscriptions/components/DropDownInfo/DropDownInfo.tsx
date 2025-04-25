@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './DropDownInfo.module.css';
-import Button from '../../../../../../components/Buttons/ButtonYellow/Button.tsx';
+import Button from '../../../../../../components/Buttons/Button/Button.tsx';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 import {dropDownInfoData} from './dropDownInfoData.tsx';

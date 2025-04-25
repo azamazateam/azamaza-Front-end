@@ -3,7 +3,7 @@ import s from './PlaceOrder.module.css';
 import ContainerSubTitle from '../../pages/OneServiceCard/components/ContainerSubTitle.tsx';
 import {useTranslation} from 'react-i18next';
 import EasyInput from '../Inputs/EasyInput/EasyInput.tsx';
-import Button from '../Buttons/ButtonYellow/Button.tsx';
+import Button from '../Buttons/Button/Button.tsx';
 const PlaceOrder: React.FC = () => {
 	const {t} = useTranslation();
 	return (

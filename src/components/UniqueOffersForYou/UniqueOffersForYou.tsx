@@ -21,13 +21,8 @@ const UniqueOffersForYou: React.FC<Props> = ({data}) => {
 					'Promotions, discounts and special offers that you will receive only from us',
 				)}
 			/>
-
 			<div className={s.slider}>
-				<HorizontalSlider
-					pagination
-					loop={false}
-					slidesPerView={isMobile ? 'auto' : 2}
-				>
+				<HorizontalSlider pagination slidesPerView={isMobile ? 'auto' : 2}>
 					{data?.map((item, index) => (
 						<UniqueOffersCard key={`${index}UniqueOffersCard`} card={item} />
 					))}

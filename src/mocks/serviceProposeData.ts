@@ -2,7 +2,8 @@ import image from '../assets/images/Mock/Propose/image.jpg';
 import i1 from '../assets/images/Mock/Propose/i1.jpg';
 import i2 from '../assets/images/Mock/Propose/i2.jpg';
 import {ServiceProposeType} from '../redux/slices/proposeSlice.ts';
-
+import marketplaces from '../assets/images/Mock/Propose/marketplaces.png';
+import rent from '../assets/images/Mock/Propose/rent.png';
 export const serviceProposeData: ServiceProposeType[] = [
 	{
 		image: image,
@@ -27,5 +28,21 @@ export const serviceProposeData: ServiceProposeType[] = [
 		title: 'Mountain tour',
 		link: '#',
 		serviceName: 'excursion',
+	},
+	{
+		image: marketplaces,
+		discount: '-50%',
+		price: '170 €',
+		title: 'Tefal Aerogrill with 8 built-in modes',
+		link: '#',
+		serviceName: 'marketplaces',
+	},
+	{
+		image: rent,
+		discount: '-25%',
+		price: '17 €',
+		title: 'Any car at any time of the year',
+		link: '#',
+		serviceName: 'rent',
 	},
 ];

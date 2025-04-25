@@ -6,25 +6,27 @@ import {
 import qr from '../assets/images/HitW/qr.jpg';
 import curt from '../assets/images/HitW/curt.png';
 import settings from '../assets/images/HitW/settings.png';
-import specialOffer from '../assets/images/baners/specialOffer.png';
-import specialOfferMobile from '../assets/images/baners/specialOfferMob.png';
-import fly from '../assets/images/baners/fly.png';
-import flyMob from '../assets/images/baners/flyMob.png';
-import family from '../assets/images/baners/family.png';
-import familyMob from '../assets/images/baners/familyMob.png';
-import mobilePhone from '../assets/images/baners/mobilePhone.png';
-import mobilePhoneMob from '../assets/images/baners/mobilePhoneMob.png';
-import mediaPhone from '../assets/images/baners/mediaPhone.png';
-import mediaPhoneMob from '../assets/images/baners/mediaPhoneMob.png';
-import presents from '../assets/images/baners/presents.png';
-import presentsMob from '../assets/images/baners/presentsMob.png';
-import onePresent from '../assets/images/baners/onePresent.png';
-import onePresentMob from '../assets/images/baners/onePresentMob.png';
-import buls from '../assets/images/baners/buls.png';
-import bulsMob from '../assets/images/baners/bulsMob.png';
-import approved from '../assets/images/baners/approved.png';
-import approvedMob from '../assets/images/baners/approvedMob.png';
+
 import {CurrencyType} from '../redux/types/userTypes.ts';
+import d1 from '../assets/images/baners/d1.png';
+import d2 from '../assets/images/baners/d2.png';
+import d3 from '../assets/images/baners/d3.png';
+import d4 from '../assets/images/baners/d4.png';
+import d5 from '../assets/images/baners/d5.png';
+import d6 from '../assets/images/baners/d6.png';
+import d7 from '../assets/images/baners/d7.png';
+import d8 from '../assets/images/baners/d8.png';
+import d9 from '../assets/images/baners/d9.png';
+
+import m1 from '../assets/images/baners/m1.png';
+import m2 from '../assets/images/baners/m2.png';
+import m3 from '../assets/images/baners/m3.png';
+import m4 from '../assets/images/baners/m4.png';
+import m5 from '../assets/images/baners/m5.png';
+import m6 from '../assets/images/baners/m6.png';
+import m7 from '../assets/images/baners/m7.png';
+import m8 from '../assets/images/baners/m8.png';
+import m9 from '../assets/images/baners/m9.png';
 
 export const howItWorksData: HowItWorksDataType[] = [
 	{
@@ -40,115 +42,115 @@ export const howItWorksData: HowItWorksDataType[] = [
 		description: 'Get unique upsell offers',
 	},
 ];
-export const advantagesData: AdvantagesDataType[] = [
-	{
-		description:
-			"The best price - only here! We've got the deal for you! Get discounts and bonuses that you can't get anywhere else",
-		image: specialOffer,
-		title: 'Exclusive discounts and bonuses',
-	},
-	{
-		description:
-			'Book your perfect vacation. Unique deals on hotels, tours and activities',
-		image: fly,
-		title: 'The best vacations at the best prices!',
-	},
-	{
-		description:
-			'Make friends, travel, socialize, find fellow travelers and create better memories',
-		image: family,
-		title: 'Find those who are on the same page with you!',
-	},
-	{
-		description:
-			'Find and order any services in seconds. Rent a car, yacht, equipment, photographers, guides and much more',
-		image: mobilePhone,
-		title: 'Everything you need is just a couple clicks away!',
-	},
-	{
-		description:
-			'Your favorite services - in one place! Choose, download and use the best services',
-		image: mediaPhone,
-		title: 'Download the partner app',
-	},
-	{
-		description:
-			'Shopping with maximum benefits. Buy exclusive products with the best conditions',
-		image: presents,
-		title: "Marketplace - it's got everything!",
-	},
-	{
-		description:
-			'Give the gift of experiences, not things! Discounts on restaurants, travel, entertainment and more',
-		image: onePresent,
-		title: 'Gift Certificates',
-	},
-	{
-		description:
-			'Prizes, bonuses, discounts, Enter the drawings and claim your rewards!',
-		image: buls,
-		title: 'Drawings and promotions',
-	},
-	{
-		description:
-			'We select proven options for you. No need to take risks anymore - only trusted partners and services',
-		image: approved,
-		title: 'Quality assurance of choice',
-	},
-];
+
 export const advantagesDataMobile: AdvantagesDataType[] = [
 	{
 		description:
 			"The best price - only here! We've got the deal for you! Get discounts and bonuses that you can't get anywhere else",
-		image: specialOfferMobile,
+		image: m1,
 		title: 'Exclusive discounts and bonuses',
 	},
 	{
 		description:
 			'Book your perfect vacation. Unique deals on hotels, tours and activities',
-		image: flyMob,
+		image: m2,
 		title: 'The best vacations at the best prices!',
 	},
 	{
 		description:
 			'Make friends, travel, socialize, find fellow travelers and create better memories',
-		image: familyMob,
+		image: m3,
 		title: 'Find those who are on the same page with you!',
 	},
 	{
 		description:
 			'Find and order any services in seconds. Rent a car, yacht, equipment, photographers, guides and much more',
-		image: mobilePhoneMob,
+		image: m4,
 		title: 'Everything you need is just a couple clicks away!',
 	},
 	{
 		description:
 			'Your favorite services - in one place! Choose, download and use the best services',
-		image: mediaPhoneMob,
+		image: m5,
 		title: 'Download the partner app',
 	},
 	{
 		description:
 			'Shopping with maximum benefits. Buy exclusive products with the best conditions',
-		image: presentsMob,
+		image: m6,
 		title: "Marketplace - it's got everything!",
 	},
 	{
 		description:
 			'Give the gift of experiences, not things! Discounts on restaurants, travel, entertainment and more',
-		image: onePresentMob,
+		image: m7,
 		title: 'Gift Certificates',
 	},
 	{
 		description:
 			'Prizes, bonuses, discounts, Enter the drawings and claim your rewards!',
-		image: bulsMob,
+		image: m8,
 		title: 'Drawings and promotions',
 	},
 	{
 		description:
 			'We select proven options for you. No need to take risks anymore - only trusted partners and services',
-		image: approvedMob,
+		image: m9,
+		title: 'Quality assurance of choice',
+	},
+];
+export const advantagesData: AdvantagesDataType[] = [
+	{
+		description:
+			"The best price - only here! We've got the deal for you! Get discounts and bonuses that you can't get anywhere else",
+		image: d1,
+		title: 'Exclusive discounts and bonuses',
+	},
+	{
+		description:
+			'Book your perfect vacation. Unique deals on hotels, tours and activities',
+		image: d2,
+		title: 'The best vacations at the best prices!',
+	},
+	{
+		description:
+			'Make friends, travel, socialize, find fellow travelers and create better memories',
+		image: d3,
+		title: 'Find those who are on the same page with you!',
+	},
+	{
+		description: 'Everything you need is just a couple clicks away!',
+		image: d4,
+		title: 'Everything you need is just a couple clicks away!',
+	},
+	{
+		description:
+			'Your favorite services - in one place! Choose, download and use the best services',
+		image: d5,
+		title: 'Download the partner app',
+	},
+	{
+		description:
+			'Shopping with maximum benefits. Buy exclusive products with the best conditions',
+		image: d6,
+		title: "Marketplace - it's got everything!",
+	},
+	{
+		description:
+			'Give the gift of experiences, not things! Discounts on restaurants, travel, entertainment and more',
+		image: d7,
+		title: 'Gift Certificates',
+	},
+	{
+		description:
+			'Prizes, bonuses, discounts, Enter the drawings and claim your rewards!',
+		image: d8,
+		title: 'Drawings and promotions',
+	},
+	{
+		description:
+			'We select proven options for you. No need to take risks anymore - only trusted partners and services',
+		image: d9,
 		title: 'Quality assurance of choice',
 	},
 ];

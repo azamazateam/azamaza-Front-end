@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './ServiceProposeCard.module.css';
-import Button from '../../Buttons/ButtonYellow/Button.tsx';
+import Button from '../../Buttons/Button/Button.tsx';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 import {ServiceProposeType} from '../../../redux/slices/proposeSlice.ts';
@@ -27,7 +27,7 @@ const ServiceProposeCard: React.FC<Props> = ({card}) => {
 				>
 					{/*<img src={card.image} alt={card.title} />*/}
 				</div>
-				<div className={s.discount}>{card.discount}</div>
+				{card.discount && <div className={s.discount}>{card.discount}</div>}
 			</div>
 		</div>
 	);

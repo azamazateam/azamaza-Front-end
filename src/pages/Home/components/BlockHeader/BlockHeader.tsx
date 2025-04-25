@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './BlockHeader.module.css';
 import SwiperControls from '../../../../components/Sliders/SwiperControls/SwiperControls.tsx';
+import {useTranslation} from 'react-i18next';
 
 type Props = {
 	title: string;
@@ -14,12 +15,13 @@ const BlockHeader: React.FC<Props> = ({
 	showMore,
 	navigateButtons,
 }) => {
+	const {t} = useTranslation();
 	return (
 		<>
 			<div className={s.topRow}>
 				<div className={s.title}>{title}</div>
 				<div className={s.buttonsPanel}>
-					{showMore && <div className={s.showMore}>Show More</div>}
+					{showMore && <div className={s.showMore}>{t('Show More')}</div>}
 					{navigateButtons && <SwiperControls />}
 				</div>
 			</div>

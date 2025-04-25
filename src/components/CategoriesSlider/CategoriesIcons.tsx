@@ -96,42 +96,42 @@ const CategoriesIcons: React.FC<Props> = ({id, color}) => {
 				>
 					<path
 						d="M12.9167 10.8333C15.9082 10.8333 18.3333 10.0871 18.3333 9.16667C18.3333 8.24619 15.9082 7.5 12.9167 7.5C9.92512 7.5 7.5 8.24619 7.5 9.16667C7.5 10.0871 9.92512 10.8333 12.9167 10.8333Z"
-						stroke={color ?? '#006CE4'}
+						stroke={color ?? ''}
 						strokeWidth="1.25"
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
 					<path
 						d="M18.3333 12.9165C18.3333 13.8373 15.9083 14.5832 12.9167 14.5832C9.925 14.5832 7.5 13.8373 7.5 12.9165"
-						stroke={color ?? '#006CE4'}
+						stroke={color ?? ''}
 						strokeWidth="1.25"
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
 					<path
 						d="M18.3333 9.16663V16.5C18.3333 17.5125 15.9083 18.3333 12.9167 18.3333C9.925 18.3333 7.5 17.5125 7.5 16.5V9.16663"
-						stroke={color ?? '#006CE4'}
+						stroke={color ?? ''}
 						strokeWidth="1.25"
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
 					<path
 						d="M7.08366 4.99996C10.0752 4.99996 12.5003 4.25377 12.5003 3.33329C12.5003 2.41282 10.0752 1.66663 7.08366 1.66663C4.09212 1.66663 1.66699 2.41282 1.66699 3.33329C1.66699 4.25377 4.09212 4.99996 7.08366 4.99996Z"
-						stroke={color ?? '#006CE4'}
+						stroke={color ?? ''}
 						strokeWidth="1.25"
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
 					<path
 						d="M5.00033 9.16667C3.42366 8.975 1.97533 8.47917 1.66699 7.5M5.00033 13.3333C3.42366 13.1417 1.97533 12.6458 1.66699 11.6667"
-						stroke={color ?? '#006CE4'}
+						stroke={color ?? ''}
 						strokeWidth="1.25"
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
 					<path
 						d="M5.00033 17.4999C3.42366 17.3083 1.97533 16.8116 1.66699 15.8333V3.33325M12.5003 4.99992V3.33325"
-						stroke={color ?? '#006CE4'}
+						stroke={color ?? ''}
 						strokeWidth="1.25"
 						strokeLinecap="round"
 						strokeLinejoin="round"

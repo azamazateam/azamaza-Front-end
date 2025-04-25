@@ -1,11 +1,11 @@
 import React, {ReactNode, useState} from 'react';
 import Select, {SingleValue} from 'react-select';
-import {BsCaretDown, BsSearch} from 'react-icons/bs';
+import {BsCaretDown, BsRepeat, BsSearch} from 'react-icons/bs';
 import {components} from 'react-select';
 export type Option = {value: string; label: string; icon: ReactNode};
 export type Options = Option[];
 import s from '../../SearchForm.module.css';
-import {options} from './selectData.tsx';
+import {options, rentOptions} from './selectData.tsx';
 import {useTranslation} from 'react-i18next';
 import {useFormikContext} from 'formik';
 
@@ -62,7 +62,12 @@ const ServiceSelect: React.FC<Props> = ({fieldName}) => {
 		return (
 			<components.Placeholder {...props}>
 				<div className={s.placeholder}>
-					<BsSearch size={18} />
+					{fieldName === 'rentService' ? (
+						<BsRepeat size={18} />
+					) : (
+						<BsSearch size={18} />
+					)}
+
 					{props.children}
 				</div>
 			</components.Placeholder>
@@ -112,11 +117,15 @@ const ServiceSelect: React.FC<Props> = ({fieldName}) => {
 				isClearable={false}
 				isSearchable={false}
 				onChange={onChangeFn}
-				options={options}
+				options={fieldName === 'rentService' ? rentOptions : options}
 				styles={customStyles}
 				menuPortalTarget={document.body}
 				value={value}
-				placeholder={t('A service, a meeting, an offer')}
+				placeholder={
+					fieldName === 'rentService'
+						? t('Rental type, services')
+						: t('A service, a meeting, an offer')
+				}
 				components={{
 					SingleValue,
 					Menu,

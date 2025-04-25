@@ -4,10 +4,18 @@ import {BsHeart, BsHeartFill} from 'react-icons/bs';
 type Props = {
 	active: boolean;
 	side: 'left' | 'right';
+	background?: string;
 };
-const FavoriteHeart: React.FC<Props> = ({active, side = 'right'}) => {
+const FavoriteHeart: React.FC<Props> = ({
+	active,
+	side = 'right',
+	background,
+}) => {
 	return (
-		<button className={`${s.container}`} style={{[side]: '8px'}}>
+		<button
+			className={`${s.container}`}
+			style={{[side]: '8px', background: background ? background : ''}}
+		>
 			{active ? (
 				<BsHeartFill fill={'#DE1E1E'} size={16} />
 			) : (

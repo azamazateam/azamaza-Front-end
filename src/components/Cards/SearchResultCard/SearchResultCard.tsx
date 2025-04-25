@@ -4,7 +4,7 @@ import s from './SearchResultCard.module.css';
 import FavoriteHeart from '../../FavoriteHeart/FavoriteHeart.tsx';
 import {useTranslation} from 'react-i18next';
 import {BsCheck} from 'react-icons/bs';
-import useChangeProduct from '../../../hooks/useChangeProduct.tsx';
+import useChangeService from '../../../hooks/useChangeService.tsx';
 import {ServicesType} from '../../../redux/types/commonTypes.ts';
 import CardLocation from '../commonCardComponents/CardLocation.tsx';
 import UserStatusInProduct from '../../UserStatusInProduct/UserStatusInProduct.tsx';
@@ -15,7 +15,7 @@ type Props = {
 
 const SearchResultCard: React.FC<Props> = ({service}) => {
 	const {t} = useTranslation();
-	const {handleClick} = useChangeProduct(service.id);
+	const {handleClick} = useChangeService(service.id);
 	return (
 		<div className={s.container} role={'button'} onClick={handleClick}>
 			<div className={s.imageContainer}>

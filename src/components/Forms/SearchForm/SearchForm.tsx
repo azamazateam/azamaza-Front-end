@@ -2,8 +2,8 @@ import React from 'react';
 import s from './SearchForm.module.css';
 import {Field, Form, Formik, FormikValues} from 'formik';
 import {useTranslation} from 'react-i18next';
-import Button from '../../Buttons/ButtonYellow/Button.tsx';
-import {BsClock, BsPeople} from 'react-icons/bs';
+import Button from '../../Buttons/Button/Button.tsx';
+import {BsClock, BsPeople, BsSearch} from 'react-icons/bs';
 import ServiceSelect from './components/ServiceSelect/ServiceSelect.tsx';
 import ResetButton from './components/ResetButton.tsx';
 import SearchLocationField from './components/SearchLocationField/SearchLocationField.tsx';
@@ -14,20 +14,24 @@ type SearchFormProps = {
 	title?: string;
 	showLocation?: boolean;
 	showService?: boolean;
+	showRentService?: boolean;
 	showDate?: boolean;
 	approximateTime?: boolean;
 	numberOfPeople?: boolean;
+	searchByName?: boolean;
 	onSubmitFn?: (values: FormikValues) => void;
 };
 
 const SearchForm: React.FC<SearchFormProps> = ({
 	showLocation = false,
 	showService = false,
+	showRentService = false,
 	showDate = false,
 	approximateTime = false,
 	numberOfPeople = false,
 	onSubmitFn,
 	title,
+	searchByName = false,
 }) => {
 	const {t} = useTranslation();
 	const isMobile = useMediaQuery({maxWidth: 600});
@@ -37,6 +41,8 @@ const SearchForm: React.FC<SearchFormProps> = ({
 		date: '',
 		approximateTime: '',
 		numberOfPeople: '',
+		searchText: '',
+		rentService: '',
 	};
 
 	const handleSubmit = (values: FormikValues) => {
@@ -49,7 +55,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
 
 	return (
 		<div className={`${s.container}`}>
-			<div className={s.title}>{title ?? ''}</div>
+			{title && <div className={s.title}>{title}</div>}
 			<Formik
 				enableReinitialize
 				initialValues={initialValues}
@@ -58,9 +64,11 @@ const SearchForm: React.FC<SearchFormProps> = ({
 				{({handleSubmit}) => (
 					<Form onSubmit={handleSubmit} className={s.formContainer}>
 						{showLocation && <SearchLocationField fieldName={'location'} />}
-						{showService && (
+						{(showService || showRentService) && (
 							<div className={s.fieldContainer}>
-								<ServiceSelect fieldName={'service'} />
+								<ServiceSelect
+									fieldName={showService ? 'service' : 'rentService'}
+								/>
 							</div>
 						)}
 						{showDate && <ChangeDateField fieldName={'date'} />}
@@ -81,6 +89,16 @@ const SearchForm: React.FC<SearchFormProps> = ({
 								<Field
 									name={'numberOfPeople'}
 									placeholder={t('Number of people')}
+								/>
+							</div>
+						)}
+						{searchByName && (
+							<div className={s.fieldContainer}>
+								<BsSearch size={18} className={s.fieldIconLeft} />
+								<ResetButton fieldName={'searchText'} />
+								<Field
+									name={'searchText'}
+									placeholder={t('Name of product or store')}
 								/>
 							</div>
 						)}

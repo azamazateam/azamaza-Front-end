@@ -120,6 +120,86 @@ import df2 from '../assets/images/Mock/Hotels/f2.jpg';
 import df3 from '../assets/images/Mock/Hotels/f3.jpg';
 import df4 from '../assets/images/Mock/Hotels/f4.jpg';
 import df5 from '../assets/images/Mock/Hotels/f5.jpg';
+/*===============Rent ===================*/
+import bic1 from '../assets/images/Mock/Rent/cards/bic1.jpg';
+import bic2 from '../assets/images/Mock/Rent/cards/bic2.jpg';
+import bic3 from '../assets/images/Mock/Rent/cards/bic3.jpg';
+import bic4 from '../assets/images/Mock/Rent/cards/bic4.jpg';
+import bic5 from '../assets/images/Mock/Rent/cards/bic5.jpg';
+import bic6 from '../assets/images/Mock/Rent/cards/bic6.jpg';
+import bic7 from '../assets/images/Mock/Rent/cards/bic7.jpg';
+import bic8 from '../assets/images/Mock/Rent/cards/bic8.jpg';
+import bic9 from '../assets/images/Mock/Rent/cards/bic9.jpg';
+import bic10 from '../assets/images/Mock/Rent/cards/bic10.jpg';
+import bic11 from '../assets/images/Mock/Rent/cards/bic11.jpg';
+import bic12 from '../assets/images/Mock/Rent/cards/bic12.jpg';
+import bic13 from '../assets/images/Mock/Rent/cards/bic13.jpg';
+import bic14 from '../assets/images/Mock/Rent/cards/bic14.jpg';
+import bic15 from '../assets/images/Mock/Rent/cards/bic15.jpg';
+
+import car1 from '../assets/images/Mock/Rent/cards/car1.jpg';
+import car2 from '../assets/images/Mock/Rent/cards/car2.jpg';
+import car3 from '../assets/images/Mock/Rent/cards/car3.jpg';
+import car4 from '../assets/images/Mock/Rent/cards/car4.jpg';
+import car5 from '../assets/images/Mock/Rent/cards/car5.jpg';
+import car6 from '../assets/images/Mock/Rent/cards/car6.jpg';
+import car7 from '../assets/images/Mock/Rent/cards/car7.jpg';
+import car8 from '../assets/images/Mock/Rent/cards/car8.jpg';
+import car9 from '../assets/images/Mock/Rent/cards/car9.jpg';
+import car10 from '../assets/images/Mock/Rent/cards/car10.jpg';
+import car11 from '../assets/images/Mock/Rent/cards/car11.jpg';
+import car12 from '../assets/images/Mock/Rent/cards/car12.jpg';
+import car13 from '../assets/images/Mock/Rent/cards/car13.jpg';
+import car14 from '../assets/images/Mock/Rent/cards/car14.jpg';
+import car15 from '../assets/images/Mock/Rent/cards/car15.jpg';
+
+import sky1 from '../assets/images/Mock/Rent/cards/sky1.jpg';
+import sky2 from '../assets/images/Mock/Rent/cards/sky2.jpg';
+import sky3 from '../assets/images/Mock/Rent/cards/sky3.jpg';
+import sky4 from '../assets/images/Mock/Rent/cards/sky4.jpg';
+import sky5 from '../assets/images/Mock/Rent/cards/sky5.jpg';
+import sky6 from '../assets/images/Mock/Rent/cards/sky6.jpg';
+import sky7 from '../assets/images/Mock/Rent/cards/sky7.jpg';
+import sky8 from '../assets/images/Mock/Rent/cards/sky8.jpg';
+import sky9 from '../assets/images/Mock/Rent/cards/sky9.jpg';
+import sky10 from '../assets/images/Mock/Rent/cards/sky10.jpg';
+import sky11 from '../assets/images/Mock/Rent/cards/sky11.jpg';
+import sky12 from '../assets/images/Mock/Rent/cards/sky12.jpg';
+import sky13 from '../assets/images/Mock/Rent/cards/sky13.jpg';
+import sky14 from '../assets/images/Mock/Rent/cards/sky14.jpg';
+import sky15 from '../assets/images/Mock/Rent/cards/sky15.jpg';
+
+import moto1 from '../assets/images/Mock/Rent/cards/moto1.jpg';
+import moto2 from '../assets/images/Mock/Rent/cards/moto2.jpg';
+import moto3 from '../assets/images/Mock/Rent/cards/moto3.jpg';
+import moto4 from '../assets/images/Mock/Rent/cards/moto4.jpg';
+import moto5 from '../assets/images/Mock/Rent/cards/moto5.jpg';
+import moto6 from '../assets/images/Mock/Rent/cards/moto6.jpg';
+import moto7 from '../assets/images/Mock/Rent/cards/moto7.jpg';
+import moto8 from '../assets/images/Mock/Rent/cards/moto8.jpg';
+import moto9 from '../assets/images/Mock/Rent/cards/moto9.jpg';
+import moto10 from '../assets/images/Mock/Rent/cards/moto10.jpg';
+import moto11 from '../assets/images/Mock/Rent/cards/moto11.jpg';
+import moto12 from '../assets/images/Mock/Rent/cards/moto12.jpg';
+import moto13 from '../assets/images/Mock/Rent/cards/moto13.jpg';
+import moto14 from '../assets/images/Mock/Rent/cards/moto14.jpg';
+import moto15 from '../assets/images/Mock/Rent/cards/moto15.jpg';
+
+import scooter1 from '../assets/images/Mock/Rent/cards/scooter1.jpg';
+import scooter2 from '../assets/images/Mock/Rent/cards/scooter2.jpg';
+import scooter3 from '../assets/images/Mock/Rent/cards/scooter3.jpg';
+import scooter4 from '../assets/images/Mock/Rent/cards/scooter4.jpg';
+import scooter5 from '../assets/images/Mock/Rent/cards/scooter5.jpg';
+import scooter6 from '../assets/images/Mock/Rent/cards/scooter6.jpg';
+import scooter7 from '../assets/images/Mock/Rent/cards/scooter7.jpg';
+import scooter8 from '../assets/images/Mock/Rent/cards/scooter8.jpg';
+import scooter9 from '../assets/images/Mock/Rent/cards/scooter9.jpg';
+import scooter10 from '../assets/images/Mock/Rent/cards/scooter10.jpg';
+import scooter11 from '../assets/images/Mock/Rent/cards/scooter11.jpg';
+import scooter12 from '../assets/images/Mock/Rent/cards/scooter12.jpg';
+import scooter13 from '../assets/images/Mock/Rent/cards/scooter13.jpg';
+import scooter14 from '../assets/images/Mock/Rent/cards/scooter14.jpg';
+import scooter15 from '../assets/images/Mock/Rent/cards/scooter15.jpg';
 
 export const servicesListData: ServicesType[] = [
 	// 🏔️ Excursion
@@ -571,6 +651,322 @@ export const servicesListData: ServicesType[] = [
 		views: '5s69',
 		oldPrice: 130,
 		newPrice: 110,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	// Rent
+	{
+		id: 425945555675,
+		specialStatus: null,
+		hot: 1,
+		favorite: 0,
+		image: [bic1, bic2, bic3, bic4, bic5],
+		name: 'Take a ride',
+		serviceName: 'rent',
+		categoryName: 'bicycle',
+		rating: 8.6,
+		views: '2 120',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 42545945555675,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [bic6, bic7, bic8, bic9, bic10],
+		name: 'Bike rental',
+		serviceName: 'rent',
+		categoryName: 'bicycle',
+		rating: 9.6,
+		views: '2 120',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 425945555455,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [bic11, bic12, bic13, bic14, bic15],
+		name: 'Spica rent',
+		serviceName: 'rent',
+		categoryName: 'bicycle',
+		rating: 7.6,
+		views: '2 120',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 425945555455,
+		specialStatus: null,
+		hot: 1,
+		favorite: 1,
+		image: [car1, car2, car3, car4, car5],
+		name: 'Avello rental',
+		serviceName: 'rent',
+		categoryName: 'car',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 425945555455,
+		specialStatus: null,
+		hot: 1,
+		favorite: 1,
+		image: [car6, car7, car8, car9, car10],
+		name: 'SIXT Kenning',
+		serviceName: 'rent',
+		categoryName: 'car',
+		rating: 6.6,
+		views: '1 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 425945555455,
+		specialStatus: null,
+		hot: 1,
+		favorite: 1,
+		image: [car11, car12, car13, car14, car15],
+		name: 'AVIS',
+		serviceName: 'rent',
+		categoryName: 'car',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 55,
+		specialStatus: null,
+		hot: 1,
+		favorite: 1,
+		image: [sky1, sky2, sky3, sky4, sky5],
+		name: 'Snowy Mountain',
+		serviceName: 'rent',
+		categoryName: 'skyEquipment',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 5538678321,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [sky6, sky7, sky8, sky9, sky10],
+		name: 'Ski equipment from Sola',
+		serviceName: 'rent',
+		categoryName: 'skyEquipment',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 532657685,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [sky11, sky12, sky13, sky14, sky15],
+		name: 'Skis from Manufacturer',
+		serviceName: 'rent',
+		categoryName: 'skyEquipment',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 52325,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [moto1, moto2, moto3, moto4, moto5],
+		name: 'Garage',
+		serviceName: 'rent',
+		categoryName: 'motorcycle',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 54325,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [moto6, moto7, moto8, moto9, moto10],
+		name: 'Motobike rent 77',
+		serviceName: 'rent',
+		categoryName: 'motorcycle',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 53725,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [moto11, moto12, moto13, moto14, moto15],
+		name: 'Moto rent',
+		serviceName: 'rent',
+		categoryName: 'motorcycle',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 53925,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [scooter1, scooter2, scooter3, scooter4, scooter5],
+		name: 'Lime-S',
+		serviceName: 'rent',
+		categoryName: 'scooter',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 53925,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [scooter6, scooter7, scooter8, scooter9, scooter10],
+		name: 'Scooter rental',
+		serviceName: 'rent',
+		categoryName: 'scooter',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
+		location: 'Szechenyi Istvan ter 5-6',
+		description: 'High-end editorial photography for models and influencers.',
+		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],
+		specialOpportunity: [
+			{id: 'sp12', name: 'Free rescheduling', icon: 'BsArrowRepeat'},
+			{id: 'sp13', name: 'No prepayment required', icon: 'BsCreditCard'},
+		],
+	},
+	{
+		id: 53925,
+		specialStatus: null,
+		hot: 0,
+		favorite: 0,
+		image: [scooter11, scooter12, scooter13, scooter14, scooter15],
+		name: 'Scooterize',
+		serviceName: 'rent',
+		categoryName: 'scooter',
+		rating: 8.6,
+		views: '3 420',
+		oldPrice: 10,
+		newPrice: 5,
 		location: 'Szechenyi Istvan ter 5-6',
 		description: 'High-end editorial photography for models and influencers.',
 		serviceOptions: [{id: 'opt10', name: 'Makeup included', icon: 'BsBrush'}],

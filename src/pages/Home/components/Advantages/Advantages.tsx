@@ -19,7 +19,7 @@ const Advantages: React.FC = () => {
 	const isMobile = useMediaQuery({maxWidth: 600});
 	const advantage = useSelector((state: RootState) => state.homePage.advantage);
 	useEffect(() => {
-		dispatch(setAdvantage(isMobile ? advantagesData : advantagesDataMobile));
+		dispatch(setAdvantage(!isMobile ? advantagesData : advantagesDataMobile));
 	}, []);
 	const {t} = useTranslation();
 	return (

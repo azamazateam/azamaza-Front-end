@@ -4,6 +4,17 @@
 	/*min-height: 75vh;*/
 	/*margin-bottom: 30px;*/
 }
+.imageContainer {
+	width: 100%;
+
+	text-align: center;
+	overflow: hidden;
+	& img {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+}
 .infoContainer {
 	margin-top: 24px;
 	width: 100%;

@@ -7,13 +7,16 @@ import {Provider} from 'react-redux';
 import {store} from './redux/store.ts';
 import {BrowserRouter} from 'react-router-dom';
 import ScrollToTop from './assets/utils/ScrollToTop.tsx';
+import {SwiperProvider} from './components/Sliders/SwiperContext.tsx';
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<BrowserRouter>
 			<ScrollToTop />
 			<Provider store={store}>
-				<App />
+				<SwiperProvider>
+					<App />
+				</SwiperProvider>
 			</Provider>
 		</BrowserRouter>
 	</StrictMode>,

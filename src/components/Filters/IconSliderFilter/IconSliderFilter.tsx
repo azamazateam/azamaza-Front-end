@@ -1,14 +1,18 @@
 import React from 'react';
 import s from './IconSliderFilter.module.css';
 import IconSliderElement from './IconSliderElement.tsx';
-
-import {IconSliderFilterType} from '../../../redux/slices/filtersSlice.ts';
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../redux/store.ts';
 
-type Props = {
+/*type Props = {
 	filterData: IconSliderFilterType[] | null;
-};
-const IconSliderFilter: React.FC<Props> = ({filterData}) => {
+};*/
+const IconSliderFilter: React.FC = () => {
+	const iconsSliderFilter = useSelector(
+		(state: RootState) => state.filters.iconsSliderFilter,
+	);
+
 	return (
 		<div className={s.container}>
 			<Swiper
@@ -16,7 +20,7 @@ const IconSliderFilter: React.FC<Props> = ({filterData}) => {
 				spaceBetween={12}
 				slidesPerView="auto"
 			>
-				{filterData?.map((foodData) => (
+				{iconsSliderFilter?.map((foodData) => (
 					<SwiperSlide key={foodData.id} style={{width: 'auto'}}>
 						<IconSliderElement data={foodData} />
 					</SwiperSlide>

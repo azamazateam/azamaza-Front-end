@@ -60,7 +60,7 @@ const Home: React.FC = () => {
 					<div className={`${s.containerMainTitle} __container`}>
 						<MainTitle />
 					</div>
-					<div className={s.container}>
+					<div className={s.container24}>
 						<SearchForm
 							onSubmitFn={handleSearch}
 							showLocation
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
 							title={isMobile ? undefined : t('We work with the best partners')}
 						/>
 					</div>
-					<div className={s.container32}>
+					<div className={s.container}>
 						<Advantages />
 					</div>
 					<div className={s.container32}>

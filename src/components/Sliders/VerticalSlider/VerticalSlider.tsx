@@ -1,8 +1,7 @@
 import React, {ReactNode} from 'react';
 import {Autoplay, FreeMode} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {setSwiperInstance} from '../../../redux/slices/swiperSlice.ts';
-import {useDispatch} from 'react-redux';
+import {useSwiperContext} from '../SwiperContext.tsx';
 
 type Props = {
 	children: ReactNode[] | ReactNode;
@@ -19,11 +18,11 @@ const VerticalSlider: React.FC<Props> = ({
 	maxWidth,
 	loop = true,
 }) => {
-	const dispatch = useDispatch();
+	const {setSwiper} = useSwiperContext();
 	return (
 		<div>
 			<Swiper
-				onSwiper={(swiper) => dispatch(setSwiperInstance(swiper))}
+				onSwiper={(swiper) => setSwiper(swiper)}
 				/*centeredSlides={true}*/
 				loop={loop}
 				spaceBetween={spaceBetween ? spaceBetween : 20}

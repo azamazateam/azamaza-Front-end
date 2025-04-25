@@ -22,13 +22,18 @@
 	letter-spacing: -0.408px;
 	outline: none;
 	-webkit-tap-highlight-color: transparent;
-
 	&.active {
 		background-color: var(--Color-Blue);
 	}
 	&.active .icon svg,
 	&.active .name {
 		color: var(--Color-White, #ffffff);
+	}
+	& .icon svg {
+		stroke: var(--Color-Blue, #006ce4) ;
+	}
+	&.active .icon svg {
+		stroke: var(--Color-White, #ffffff) ;
 	}
 }
 .icon,

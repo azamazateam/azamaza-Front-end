@@ -3,7 +3,7 @@ import s from './VerticalCard.module.css';
 import FavoriteHeart from '../../FavoriteHeart/FavoriteHeart.tsx';
 import TopHotLabel from '../../TopHotLabel/TopHotLabel.tsx';
 import {useTranslation} from 'react-i18next';
-import useChangeProduct from '../../../hooks/useChangeProduct.tsx';
+import useChangeService from '../../../hooks/useChangeService.tsx';
 import {ServicesType} from '../../../redux/types/commonTypes.ts';
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
 };
 const VerticalCard: React.FC<Props> = ({card}) => {
 	const {t} = useTranslation();
-	const {handleClick} = useChangeProduct(card.id);
+	const {handleClick} = useChangeService(card.id);
 
 	const image = Array.isArray(card.image) ? card.image[0] : card.image;
 	return (

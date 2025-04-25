@@ -24,12 +24,11 @@ import {serviceProposeData} from '../../../mocks/serviceProposeData.ts';
 
 const Photography: React.FC = () => {
 	const dispatch = useDispatch();
+	const {t} = useTranslation();
 	const popularCard = useSelector(
 		(state: RootState) => state.homePage.mostPopularService,
 	);
-	const iconsSliderFilter = useSelector(
-		(state: RootState) => state.filters.iconsSliderFilter,
-	);
+
 	const azamazaSelections = useSelector(
 		(state: RootState) => state.azamazaSelectionsData.azamazaSelections,
 	);
@@ -55,7 +54,7 @@ const Photography: React.FC = () => {
 		dispatch(setProposeList(proposeListPhotography));
 	}, [dispatch]);
 	//const popularPartnersIcons =useSelector((state:RootState)=>state)
-	const {t} = useTranslation();
+
 	return (
 		<>
 			<ServiceHead
@@ -81,7 +80,7 @@ const Photography: React.FC = () => {
 				</div>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
-				<IconSliderFilter filterData={iconsSliderFilter} />
+				<IconSliderFilter />
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<AzamazaSelections

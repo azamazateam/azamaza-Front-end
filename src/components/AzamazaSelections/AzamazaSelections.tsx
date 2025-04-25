@@ -3,7 +3,7 @@ import BlockHeader from '../../pages/Home/components/BlockHeader/BlockHeader.tsx
 import FilterOfferCard from '../Cards/FilterOfferCard/FilterOfferCard.tsx';
 import s from '../../pages/Services/Service.module.css';
 import {AzamazaSelection} from '../../redux/slices/azamazaSelectionsSlice.ts';
-import Button from '../Buttons/ButtonYellow/Button.tsx';
+import Button from '../Buttons/Button/Button.tsx';
 
 type Props = {
 	data: AzamazaSelection[] | null;

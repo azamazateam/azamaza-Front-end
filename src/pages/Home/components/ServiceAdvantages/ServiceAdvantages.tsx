@@ -20,7 +20,7 @@ const ServiceAdvantages: React.FC = () => {
 	useEffect(() => {
 		dispatch(
 			setServiceAdvantage(
-				isMobile ? serviceAdvantagesData : serviceAdvantagesDataMobile,
+				!isMobile ? serviceAdvantagesData : serviceAdvantagesDataMobile,
 			),
 		);
 	}, [dispatch]);

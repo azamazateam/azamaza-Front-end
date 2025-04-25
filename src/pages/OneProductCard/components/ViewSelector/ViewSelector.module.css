@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    height: 40px;
+    border-radius: 16px 16px 0 0;
+    border-bottom: 1px solid var(--Color-Grey-500, #434447);
+    background: #FFF;
+    overflow: hidden;
+    & button {
+        font-size: 14px;
+        border-radius: 16px 16px 0 0;
+    }
+}

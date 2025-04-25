@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import s from './CalendarPopup.module.css';
 import MyCalendar from '../MyCalendar.tsx';
 import PopupHeadLeft from '../../Forms/SearchForm/popups/SearchLocationPopup/PopupHeadLeft.tsx';
-import Button from '../../Buttons/ButtonYellow/Button.tsx';
+import Button from '../../Buttons/Button/Button.tsx';
 import {useTranslation} from 'react-i18next';
 import CalendarTypeSelector from '../CalendarTypeSelector/CalendarTypeSelector.tsx';
 import FlexiblePlans from '../FlexiblePlans/FlexiblePlans.tsx';

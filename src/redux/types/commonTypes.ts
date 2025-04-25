@@ -16,6 +16,7 @@ export type ServicesType = {
 	image: string | string[];
 	name: string;
 	serviceName: string;
+	categoryName?: string;
 	rating: number;
 	views: string;
 	oldPrice: number;
@@ -24,4 +25,33 @@ export type ServicesType = {
 	serviceOptions: ServiceOptionsType[] | null;
 	location: string;
 	specialOpportunity: ServiceOptionsType[] | null;
+};
+export type ProductType = {
+	id: string;
+	favorite: 1 | 0;
+	images: string[];
+	categoryName: string;
+	name: string;
+	description: string;
+	rating: number;
+	views: string;
+	oldPrice: string;
+	newPrice: string;
+	currency: string;
+	discount: string;
+	features: ProductFeaturesType[] | null;
+	reviews: ProductReviewsType | null;
+};
+export type ProductFeaturesType = {
+	id: string;
+	name: string;
+	options: ProductFeaturesOptionsType[];
+};
+export type ProductFeaturesOptionsType = {
+	id: string;
+	value: string;
+	label: string;
+};
+export type ProductReviewsType = {
+	id: string;
 };

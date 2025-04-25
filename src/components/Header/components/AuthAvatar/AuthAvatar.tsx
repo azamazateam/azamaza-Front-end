@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import s from './AuthAvatar.module.css';
 import {useTranslation} from 'react-i18next';
-import Button from '../../../Buttons/ButtonYellow/Button.tsx';
+import Button from '../../../Buttons/Button/Button.tsx';
 import fakeProfile from '../../../../assets/images/fakeProfile.jpg';
 import {useMediaQuery} from 'react-responsive';
 import {useDispatch, useSelector} from 'react-redux';

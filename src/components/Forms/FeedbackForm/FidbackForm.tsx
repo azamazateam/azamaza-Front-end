@@ -2,7 +2,7 @@ import React from 'react';
 import s from './FeedbackForm.module.css';
 import {useTranslation} from 'react-i18next';
 import {Field, Form, Formik, FormikHelpers, FormikValues} from 'formik';
-import Button from '../../Buttons/ButtonYellow/Button.tsx';
+import Button from '../../Buttons/Button/Button.tsx';
 import {validationFeedbackForm} from '../../../assets/utils/validationSchema.ts';
 
 const FeedbackForm: React.FC = () => {

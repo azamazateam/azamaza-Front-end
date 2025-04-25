@@ -2,6 +2,7 @@ import React, {ReactNode} from 'react';
 import {Autoplay, FreeMode, Pagination} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import './sliderHorizontal.css';
+import {useSwiperContext} from '../SwiperContext.tsx';
 
 type Props = {
 	children: ReactNode[] | ReactNode;
@@ -10,7 +11,6 @@ type Props = {
 	freeMode?: boolean;
 	autoplay?: boolean;
 	speed?: number;
-	loop?: boolean;
 };
 const HorizontalSlider: React.FC<Props> = ({
 	children,
@@ -19,12 +19,13 @@ const HorizontalSlider: React.FC<Props> = ({
 	autoplay,
 	speed,
 	slidesPerView = 'auto',
-	loop = true,
 }) => {
+	const {setSwiper} = useSwiperContext();
 	return (
 		<div>
 			<Swiper
-				loop={loop}
+				onSwiper={(swiper) => setSwiper(swiper)}
+				loop={false}
 				spaceBetween={20}
 				slidesPerView={slidesPerView}
 				modules={[Autoplay, FreeMode, Pagination]}
