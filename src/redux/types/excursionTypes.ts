@@ -1,6 +1,6 @@
 import {IconsBrandsDataType, ServicesType} from './commonTypes.ts';
 
 export interface ExcursionStateType {
-	alsoOrderWith: ServicesType[];
+	alsoOrderWith: ServicesType[] | null;
 	popularPartnersIcons: IconsBrandsDataType[] | null;
 }

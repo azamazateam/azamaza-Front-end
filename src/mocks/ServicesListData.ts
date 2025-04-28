@@ -201,6 +201,80 @@ import scooter13 from '../assets/images/Mock/Rent/cards/scooter13.jpg';
 import scooter14 from '../assets/images/Mock/Rent/cards/scooter14.jpg';
 import scooter15 from '../assets/images/Mock/Rent/cards/scooter15.jpg';
 
+import cult1 from '../assets/images/Mock/Excursion/cult1.jpg';
+import cult2 from '../assets/images/Mock/Excursion/cult2.jpg';
+import cult3 from '../assets/images/Mock/Excursion/cult3.jpg';
+import cult4 from '../assets/images/Mock/Excursion/cult4.jpg';
+import cult5 from '../assets/images/Mock/Excursion/cult5.jpg';
+import cult6 from '../assets/images/Mock/Excursion/cult6.jpg';
+import cult7 from '../assets/images/Mock/Excursion/cult7.jpg';
+import cult8 from '../assets/images/Mock/Excursion/cult8.jpg';
+import cult9 from '../assets/images/Mock/Excursion/cult9.jpg';
+import cult10 from '../assets/images/Mock/Excursion/cult10.jpg';
+import cult11 from '../assets/images/Mock/Excursion/cult11.jpg';
+import cult12 from '../assets/images/Mock/Excursion/cult12.jpg';
+import cult13 from '../assets/images/Mock/Excursion/cult13.jpg';
+import cult14 from '../assets/images/Mock/Excursion/cult14.jpg';
+import cult15 from '../assets/images/Mock/Excursion/cult15.jpg';
+
+import romAct1 from '../assets/images/Mock/Excursion/romAct1.jpg';
+import romAct2 from '../assets/images/Mock/Excursion/romAct2.jpg';
+import romAct3 from '../assets/images/Mock/Excursion/romAct3.jpg';
+import romAct4 from '../assets/images/Mock/Excursion/romAct4.jpg';
+import romAct5 from '../assets/images/Mock/Excursion/romAct5.jpg';
+import romAct6 from '../assets/images/Mock/Excursion/romAct6.jpg';
+import romAct7 from '../assets/images/Mock/Excursion/romAct7.jpg';
+import romAct8 from '../assets/images/Mock/Excursion/romAct8.jpg';
+import romAct9 from '../assets/images/Mock/Excursion/romAct9.jpg';
+import romAct10 from '../assets/images/Mock/Excursion/romAct10.jpg';
+import romAct11 from '../assets/images/Mock/Excursion/romAct11.jpg';
+import romAct12 from '../assets/images/Mock/Excursion/romAct12.jpg';
+import romAct13 from '../assets/images/Mock/Excursion/romAct13.jpg';
+import romAct14 from '../assets/images/Mock/Excursion/romAct14.jpg';
+import romAct15 from '../assets/images/Mock/Excursion/romAct15.jpg';
+
+import festAndNight1 from '../assets/images/Mock/Excursion/festAndNight1.jpg';
+import festAndNight2 from '../assets/images/Mock/Excursion/festAndNight2.jpg';
+import festAndNight3 from '../assets/images/Mock/Excursion/festAndNight3.jpg';
+import festAndNight4 from '../assets/images/Mock/Excursion/festAndNight4.jpg';
+import festAndNight5 from '../assets/images/Mock/Excursion/festAndNight5.jpg';
+import festAndNight6 from '../assets/images/Mock/Excursion/festAndNight6.jpg';
+import festAndNight7 from '../assets/images/Mock/Excursion/festAndNight7.jpg';
+import festAndNight8 from '../assets/images/Mock/Excursion/festAndNight8.jpg';
+import festAndNight9 from '../assets/images/Mock/Excursion/festAndNight9.jpg';
+import festAndNight10 from '../assets/images/Mock/Excursion/festAndNight10.jpg';
+import festAndNight11 from '../assets/images/Mock/Excursion/festAndNight11.jpg';
+import festAndNight12 from '../assets/images/Mock/Excursion/festAndNight12.jpg';
+import festAndNight13 from '../assets/images/Mock/Excursion/festAndNight13.jpg';
+import festAndNight14 from '../assets/images/Mock/Excursion/festAndNight14.jpg';
+import festAndNight15 from '../assets/images/Mock/Excursion/festAndNight15.jpg';
+
+import sports1 from '../assets/images/Mock/Excursion/sports1.jpg';
+import sports2 from '../assets/images/Mock/Excursion/sports2.jpg';
+import sports3 from '../assets/images/Mock/Excursion/sports3.jpg';
+import sports4 from '../assets/images/Mock/Excursion/sports4.jpg';
+import sports5 from '../assets/images/Mock/Excursion/sports5.jpg';
+import sports6 from '../assets/images/Mock/Excursion/sports6.jpg';
+import sports7 from '../assets/images/Mock/Excursion/sports7.jpg';
+import sports8 from '../assets/images/Mock/Excursion/sports8.jpg';
+import sports9 from '../assets/images/Mock/Excursion/sports9.jpg';
+import sports10 from '../assets/images/Mock/Excursion/sports10.jpg';
+import sports11 from '../assets/images/Mock/Excursion/sports11.jpg';
+import sports12 from '../assets/images/Mock/Excursion/sports12.jpg';
+import sports13 from '../assets/images/Mock/Excursion/sports13.jpg';
+import sports14 from '../assets/images/Mock/Excursion/sports14.jpg';
+import sports15 from '../assets/images/Mock/Excursion/sports15.jpg';
+
+import gastro1 from '../assets/images/Mock/Excursion/gastro1.jpg';
+import gastro2 from '../assets/images/Mock/Excursion/gastro2.jpg';
+import gastro3 from '../assets/images/Mock/Excursion/gastro3.jpg';
+import gastro4 from '../assets/images/Mock/Excursion/gastro4.jpg';
+import gastro5 from '../assets/images/Mock/Excursion/gastro5.jpg';
+import gastro6 from '../assets/images/Mock/Excursion/gastro6.jpg';
+import gastro7 from '../assets/images/Mock/Excursion/gastro7.jpg';
+import gastro8 from '../assets/images/Mock/Excursion/gastro8.jpg';
+import gastro9 from '../assets/images/Mock/Excursion/gastro9.jpg';
+import gastro10 from '../assets/images/Mock/Excursion/gastro10.jpg';
 export const servicesListData: ServicesType[] = [
 	// 🏔️ Excursion
 	{
@@ -318,6 +392,318 @@ export const servicesListData: ServicesType[] = [
 		views: '1450',
 		oldPrice: 120,
 		newPrice: 85,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 10411,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [cult1, cult2, cult3, cult4, cult5],
+		name: 'Museum of Painting',
+		serviceName: 'excursion',
+		categoryName: 'cultural',
+		rating: 9.7,
+		views: '11450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 1041111,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [cult6, cult7, cult8, cult9, cult10],
+		name: 'Modern Art',
+		serviceName: 'excursion',
+		categoryName: 'cultural',
+		rating: 9.7,
+		views: '21450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 1041111,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [cult11, cult12, cult13, cult14, cult15],
+		name: 'Old Quarter',
+		serviceName: 'excursion',
+		categoryName: 'cultural',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 10411112,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [romAct1, romAct2, romAct3, romAct4, romAct5],
+		name: 'Romantic walk',
+		serviceName: 'excursion',
+		categoryName: 'romanticActive',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 104111121,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [romAct6, romAct7, romAct8, romAct9, romAct10],
+		name: 'Mountain descent',
+		serviceName: 'excursion',
+		categoryName: 'romanticActive',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 1041111212,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [romAct11, romAct12, romAct13, romAct14, romAct15],
+		name: 'Skywalking',
+		serviceName: 'excursion',
+		categoryName: 'romanticActive',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 11,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [gastro1, gastro2, gastro3, gastro4, gastro5],
+		name: 'Gastrotour in 1 day',
+		serviceName: 'excursion',
+		categoryName: 'gastro',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 1122,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [gastro6, gastro7, gastro8, gastro9, gastro10],
+		name: 'Taste of Barcelona',
+		serviceName: 'excursion',
+		categoryName: 'gastro',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 1122,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [
+			festAndNight1,
+			festAndNight2,
+			festAndNight3,
+			festAndNight4,
+			festAndNight5,
+		],
+		name: 'Costume Festival',
+		serviceName: 'excursion',
+		categoryName: 'festAndNight',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 11223,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [
+			festAndNight6,
+			festAndNight7,
+			festAndNight8,
+			festAndNight9,
+			festAndNight10,
+		],
+		name: 'Oktoberfest',
+		serviceName: 'excursion',
+		categoryName: 'festAndNight',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 112232435,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [
+			festAndNight11,
+			festAndNight12,
+			festAndNight13,
+			festAndNight14,
+			festAndNight15,
+		],
+		name: 'Until the morning',
+		serviceName: 'excursion',
+		categoryName: 'festAndNight',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 1122324356,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [sports1, sports2, sports3, sports4, sports5],
+		name: 'Football matches',
+		serviceName: 'excursion',
+		categoryName: 'sports',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 1122324356,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [sports6, sports7, sports8, sports9, sports10],
+		name: 'UNou Camp Stadium',
+		serviceName: 'excursion',
+		categoryName: 'sports',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
+		location: 'Dubai, UAE',
+		description:
+			'Dune bashing, camel rides, and traditional dinner in the desert.',
+		serviceOptions: [{id: 'opt4', name: 'Meals included', icon: 'BsCupHot'}],
+		specialOpportunity: [
+			{id: 'sp5', name: 'Free cancellation', icon: 'BsCalendarX'},
+		],
+	},
+	{
+		id: 1122324356,
+		specialStatus: null,
+		hot: 0,
+		favorite: 1,
+		image: [sports11, sports12, sports13, sports14, sports15],
+		name: 'Tour De France',
+		serviceName: 'excursion',
+		categoryName: 'sports',
+		rating: 8.7,
+		views: '1450',
+		oldPrice: 125,
+		newPrice: 50,
 		location: 'Dubai, UAE',
 		description:
 			'Dune bashing, camel rides, and traditional dinner in the desert.',

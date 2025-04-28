@@ -1,11 +1,10 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {ExcursionStateType} from '../types/excursionTypes.ts';
-import {servicesListData} from '../../mocks/ServicesListData.ts';
 import {excursionBrandsIconData} from '../../mocks/iconsBrandsData.ts';
 import {ServicesType} from '../types/commonTypes.ts';
 
 const initialState: ExcursionStateType = {
-	alsoOrderWith: servicesListData,
+	alsoOrderWith: null,
 	popularPartnersIcons: excursionBrandsIconData,
 };
 const excursionSlice = createSlice({

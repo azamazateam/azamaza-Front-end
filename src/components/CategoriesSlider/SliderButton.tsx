@@ -11,6 +11,7 @@ type Props = {
 	disabled: boolean;
 	callbackAll?: () => void;
 	iconColor?: string;
+	closePopup?: () => void;
 };
 const SliderButton: React.FC<Props> = ({
 	name,
@@ -19,14 +20,13 @@ const SliderButton: React.FC<Props> = ({
 	disabled,
 	iconColor,
 	callbackAll,
+	closePopup,
 }) => {
 	const {t} = useTranslation();
 	return disabled ? (
 		<NavLink
 			to={link}
-			onClick={(event) => {
-				console.log(event);
-			}}
+			onClick={closePopup}
 			className={({isActive}) => `${s.slideButton} ${isActive ? s.active : ''}`}
 		>
 			<div className={s.icon} style={{color: iconColor ?? ''}}>

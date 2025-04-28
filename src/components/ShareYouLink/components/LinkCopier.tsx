@@ -35,7 +35,11 @@ const LinkCopier: React.FC = () => {
 		<div className={s.linkCopierContainer}>
 			<div className={s.row}>
 				<div className={s.input}>
-					<input type="text" value={'http://azamaza.com/referral...'} />
+					<input
+						type="text"
+						value={'http://azamaza.com/referral...'}
+						readOnly
+					/>
 				</div>
 				<div className={s.button}>
 					<Button color={'yellow'} type={'button'} text={'Copy'} />

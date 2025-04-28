@@ -9,7 +9,7 @@ import image5 from '../assets/images/Mock/Photography/Filter/5.jpg';
 import image6 from '../assets/images/Mock/Photography/Filter/6.jpg';
 import image7 from '../assets/images/Mock/Photography/Filter/7.jpg';
 import image8 from '../assets/images/Mock/Photography/Filter/8.jpg';
-
+/*===== Rent ===========*/
 import rent1 from '../assets/images/Mock/Rent/filter/1.png';
 import rent2 from '../assets/images/Mock/Rent/filter/2.png';
 import rent3 from '../assets/images/Mock/Rent/filter/3.png';
@@ -17,6 +17,20 @@ import rent4 from '../assets/images/Mock/Rent/filter/4.png';
 import rent5 from '../assets/images/Mock/Rent/filter/5.png';
 import rent6 from '../assets/images/Mock/Rent/filter/6.png';
 /*=========Marketplaces==========*/
+/*=========Restaurants==========*/
+import res1 from '../assets/images/Mock/Restaurants/filter/1.png';
+import res2 from '../assets/images/Mock/Restaurants/filter/2.png';
+import res3 from '../assets/images/Mock/Restaurants/filter/3.png';
+import res4 from '../assets/images/Mock/Restaurants/filter/4.png';
+/*========= Excursions  ==========*/
+import ex1 from '../assets/images/Mock/Excursion/filter/ex1.jpg';
+import ex2 from '../assets/images/Mock/Excursion/filter/ex2.jpg';
+import ex3 from '../assets/images/Mock/Excursion/filter/ex3.jpg';
+import ex4 from '../assets/images/Mock/Excursion/filter/ex4.jpg';
+import ex5 from '../assets/images/Mock/Excursion/filter/ex5.jpg';
+import ex6 from '../assets/images/Mock/Excursion/filter/ex6.jpg';
+import ex7 from '../assets/images/Mock/Excursion/filter/ex7.jpg';
+import ex8 from '../assets/images/Mock/Excursion/filter/ex8.jpg';
 
 export const foodFilterData: IconSliderFilterType[] = [
 	{
@@ -26,22 +40,22 @@ export const foodFilterData: IconSliderFilterType[] = [
 	},
 	{
 		id: 'thgtdfgertfyjujkl9803',
-		icon: 'https://s3-alpha-sig.figma.com/img/763c/2f63/16b29bd037d68f7997f00ab975dece07?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fNLUIp9HlbbSDPbtq8V9I8Jw2PA3UpqiuPXy~SS8uJUFWKui62Gn~Hb~R7kxs8VYJQKVhZGakHA9fKxAJQfdkPIeRF0X6n5nVse0pK7rqXO-riP4xGPOq984kJuDJqhZcZW0WDSoG-BOWvicIQojCvGl5fTmgmherGuK3G7mqKQJzfbwq~pxjkwDRl~CMhvbCLH4JLGtnn~jvRGP82keVQ0Tu-c1~pC19FjnKG286fa1jpyHw9L3uGD~KJdhHDiNQB6UZTK-PfIlMagjSVxkfdHtxaThe24~6sDY2gwnHu7MKyOhBl8yUi8z8lMF3Og1uJfLeeo6GWmhHw0mqX5qgQ__',
+		icon: res1,
 		text: 'European food',
 	},
 	{
 		id: '12werwerterefsdvdfs3',
-		icon: 'https://s3-alpha-sig.figma.com/img/4f7e/579e/3106edcc8ed873c98a4c83b55c0a5e0c?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sXGkXuY6jjAHEiuYv0PG-OaJMcluFs8971i978k5JCoHXJjIk1~J07we-sUpUeTCDTi6weQ~Mp~5zZtdC9vhWadmfzIJlHTC~5-6gqIThxgt2aG24A~ti0pHhOb5up7l026K~lbmvVCHGDOEXGLXAb4ymsrcXDRncBiTUQsybmp-E2nrJcLahYX6sNFsvlOA3WggdJjoYiwylzBXmpm3EY7jBBQdeNj3PIiAzf1zkExYRn547x26iOU96J7DUzIsjcf~lfOH7VcKJoc94w7qtIP25zIJAl2P81DAbK-MQIn9TxV7nxM1sfRtmpPIXAEqv3JO3bA74cjvTlA38f1Iww__',
+		icon: res2,
 		text: 'Asian food',
 	},
 	{
 		id: 'sdfsertetdgbbdcbcvbdfsdfrwer4',
-		icon: 'https://s3-alpha-sig.figma.com/img/6619/efa2/63ed4704f46f5779bae5e01dae7b07e9?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dqeQG0vwkUMhtdu1idcU71dbG9CwdALwXrUXCd~-PxqMTqL2Rwrla1UaDOifYn1ZjHh6E8i5Uu-LlVzBvbyTF5ckT9ibggs-3DxZj5yWr0NO4e7Z~2qB2HlZzr49WKrXwKcMgqN1LapUrrPqgUXxI5ZBpkJjlvqLmptJ3YMX4BGRHv4CzGSHta6CCRfwsJX4wFRgmAZCxf~pkwMY92lsM0YGPGmhhWyxbsrtLsY7yexR7zr7aMXLkwwplyY~qY08fDKyCb2yJ4c5l8tvp~PCYELkged1POYg-ICciYugHPat9efNowX-1n7xIfeB1tN4GMnuAjwjvwoD6uo6Gwr39w__',
+		icon: res3,
 		text: 'French food',
 	},
 	{
 		id: '12sdfsdftycvbcvbcvdgfswdj543',
-		icon: 'https://s3-alpha-sig.figma.com/img/f428/eabc/7abc470742889e789c13dc605c78a697?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BK6Eh5Qu-dlM-DtyUq7AkNAFa79s5GrNPslgetj6lsKIHuY6r8SwvJDqSdQs-BWJjhhyLrj0-ks6UNrQjE8hKByb5fj25DDk-gLcaAUsV-IW5ryQmSXx~Ug~1ESfBxU5sINmzeQNOdVTOs6TctuxLPFSEmvyPihhiQ76AP0xqNgtEOlKlxF7TNd4GgAaJI80SvvXaF~hMIMDhLX6aQJop46ufMploQ2S~-k3QXallDRPFvepxGSmiRoIZcaYf-1~Nd2Jm5yvHo7b4fGopsHxqktXMa6sapPpyNsmtt3AxhGwUU1~RVo7YRLZPSym47gw~oGNF8~otLob0X6vT6k1Qw__',
+		icon: res4,
 		text: 'American food',
 	},
 ];
@@ -144,5 +158,47 @@ export const rentFilterData: IconSliderFilterType[] = [
 		id: 'rtrrfgxvcbnksdas4567457',
 		icon: rent6,
 		text: 'For outdoor activities',
+	},
+];
+export const excursionFilterData: IconSliderFilterType[] = [
+	{
+		id: '1werwersdas',
+		icon: ex1,
+		text: 'Culture',
+	},
+	{
+		id: '21weas',
+		icon: ex2,
+		text: 'Architecture and cities',
+	},
+	{
+		id: '3890s',
+		icon: ex3,
+		text: 'Romance weekends',
+	},
+	{
+		id: '41we235has',
+		icon: ex4,
+		text: 'Active recreation',
+	},
+	{
+		id: '5rtrrfgxvcbnksdas',
+		icon: ex5,
+		text: 'Gastronomic tours',
+	},
+	{
+		id: '6rtrrfgxvcbnksdas4567457',
+		icon: ex6,
+		text: 'Sports',
+	},
+	{
+		id: '6rtrrfgxv1cbnksdas45674457',
+		icon: ex7,
+		text: 'Festivals and events',
+	},
+	{
+		id: '6rtrrfgxvc2bnksda4s4567457',
+		icon: ex8,
+		text: 'Evening and night tours',
 	},
 ];

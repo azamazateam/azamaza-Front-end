@@ -18,6 +18,11 @@ import h6 from '../assets/images/AzaSelections/h6.jpg';
 import r1 from '../assets/images/AzaSelections/r1.png';
 import r2 from '../assets/images/AzaSelections/r2.png';
 import r3 from '../assets/images/AzaSelections/r3.png';
+/*============ Excursion  ===============*/
+import e1 from '../assets/images/AzaSelections/e1.jpg';
+import e2 from '../assets/images/AzaSelections/e2.jpg';
+import e3 from '../assets/images/AzaSelections/e3.jpg';
+
 export const azamazaSelectionsData: AzamazaSelection[] = [
 	{
 		id: '/l;jhkghjtyui',
@@ -193,6 +198,42 @@ export const azamazaSelectionsData: AzamazaSelection[] = [
 		image: r3,
 		title: '100 best by reviews and ratings',
 		serviceName: 'rent',
+		actionOffers: null,
+		price: null,
+		periodOffers: null,
+		location: null,
+		description:
+			'A selection of photographers and photo studios voted for by our users, this is an independent seal of quality',
+	},
+	{
+		id: '123',
+		image: e1,
+		title: 'Best and verified offers for you',
+		serviceName: 'excursion',
+		actionOffers: null,
+		price: null,
+		periodOffers: null,
+		location: null,
+		description:
+			'We have selected the best and proven offers for you, take advantage of unique offers and services from our partners',
+	},
+	{
+		id: '1234',
+		image: e2,
+		title: 'New offers on Azamazau',
+		serviceName: 'excursion',
+		actionOffers: null,
+		price: null,
+		periodOffers: null,
+		location: null,
+		description:
+			"We've put together a new offering for you on our platform! Don't miss your chance to take advantage of them",
+	},
+	{
+		id: '12345',
+		image: e3,
+		title: '100 best by reviews and ratings',
+		serviceName: 'excursion',
 		actionOffers: null,
 		price: null,
 		periodOffers: null,

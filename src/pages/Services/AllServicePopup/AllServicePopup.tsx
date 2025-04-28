@@ -44,6 +44,7 @@ const AllServicePopup: React.FC = () => {
 							key={`popup${category.name}`}
 							name={category.name}
 							icon={category.icon}
+							closePopup={closePopup}
 							link={
 								category.disabled === 0
 									? `/service${category.link}`

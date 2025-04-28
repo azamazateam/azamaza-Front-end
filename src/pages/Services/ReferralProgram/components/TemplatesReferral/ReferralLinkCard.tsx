@@ -20,7 +20,7 @@ const ReferralLinkCard: React.FC<Props> = ({card, position}) => {
 					<div className={s.description}>{card.description}</div>
 				)}
 				<div className={`${s.inputContainer} ${s[position]}`}>
-					<input value={card.link} />
+					<input value={card.link} readOnly />
 					<Button type={'button'} text={'Copy'} color={'blue'} />
 				</div>
 				<div className={`${s.buttonContainer} ${s[position]}`}>

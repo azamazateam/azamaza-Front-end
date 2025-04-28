@@ -1,82 +1,88 @@
 import React, {useEffect} from 'react';
-import ServiceHead from '../components/ServiceHead/ServiceHead.tsx';
 import s from '../Service.module.css';
 import {useTranslation} from 'react-i18next';
-import CategoriesSlider from '../../../components/CategoriesSlider/CategoriesSlider.tsx';
-import excursions from '../../../assets/images/serviceBackgrounds/excursion.png';
-import ServicePropose from '../components/ServicePropose/ServicePropose.tsx';
-import UniqueOffersForYou from '../../../components/UniqueOffersForYou/UniqueOffersForYou.tsx';
 import CardsSliderRecommend from '../../../components/Sliders/CardsSliderRecomend/CardsSliderRecommend.tsx';
-import SearchForm from '../../../components/Forms/SearchForm/SearchForm.tsx';
-import {useDispatch, useSelector} from 'react-redux';
-import {RootState} from '../../../redux/store.ts';
-import PopularPartnersBrands from '../../../components/PopularPartnersBrands/PopularPartnersBrands.tsx';
-import {serviceProposeData} from '../../../mocks/serviceProposeData.ts';
+import {useDispatch} from 'react-redux';
+import BasicUniquePage from '../BasicUniquePage.tsx';
+import background from '../../../assets/images/serviceBackgrounds/excursion.png';
+import {azamazaSelectionsData} from '../../../mocks/azamazaSelectionsData.ts';
+import {uniqueOffers} from '../../../mocks/userData.ts';
+import {setAzamazaSelection} from '../../../redux/slices/azamazaSelectionsSlice.ts';
+import {setIconsSliderFilter} from '../../../redux/slices/filtersSlice.ts';
+import {excursionFilterData} from '../../../mocks/iconSliderFilterData.ts';
+import {setUniqueOfferForYou} from '../../../redux/slices/userSlice.ts';
+import useServiceFilter from '../../../hooks/useServiceFilter.tsx';
 import {setProposeList} from '../../../redux/slices/proposeSlice.ts';
+import {serviceProposeData} from '../../../mocks/serviceProposeData.ts';
 
 const Excursion: React.FC = () => {
 	const dispatch = useDispatch();
 	const {t} = useTranslation();
-	const tours = useSelector(
-		(state: RootState) => state.excursionPage.alsoOrderWith,
-	);
-	const popularPartnersIcons = useSelector(
-		(state: RootState) => state.excursionPage.popularPartnersIcons,
-	);
-	const uniqueOfferForYou = useSelector(
-		(state: RootState) => state.user.uniqueOfferForYou,
-	);
-	const proposeList = useSelector(
-		(state: RootState) => state.proposeData.proposeList,
-	);
+	const {serviceFilter} = useServiceFilter();
+
 	useEffect(() => {
-		const proposeListExcursion = serviceProposeData.filter(
-			(p) => p.serviceName === 'excursion',
+		const selectionData = azamazaSelectionsData.filter(
+			(i) => i.serviceName === 'excursion',
 		);
-		dispatch(setProposeList(proposeListExcursion));
+		dispatch(setAzamazaSelection(selectionData ?? null));
+		dispatch(setIconsSliderFilter(excursionFilterData));
+		dispatch(setUniqueOfferForYou(uniqueOffers));
+		dispatch(setProposeList(serviceProposeData));
 	}, [dispatch]);
 	return (
 		<>
-			<ServiceHead
-				size={342}
-				title={t('History, adventure, and discounts - together!')}
-				background={excursions ?? 'transparent'}
+			<BasicUniquePage
+				background={background}
+				searchFormSettings={{
+					showDate: true,
+					approximateTime: true,
+					showLocation: true,
+					numberOfPeople: true,
+					onSubmitFn: () => console.log('onSubmitExcursion'),
+				}}
+				azaSelectionsDescription={t('We have selected the best deals for you')}
+				locationButtonText={t('Near the current location')}
+				mainTitle={t('History, adventure, and discounts - together!')}
 			/>
-			<div className={s.container24}>
-				<CategoriesSlider />
-			</div>
-			<div className={`${s.container24} ${s.padding}`}>
-				<ServicePropose data={proposeList} />
-			</div>
-			<div className={`${s.container24} ${s.padding}`}>
-				<SearchForm
-					showLocation
-					showDate
-					approximateTime
-					numberOfPeople
-					onSubmitFn={() => console.log('onSubmitExcursion')}
-				/>
-			</div>
-			<div className={`${s.container32} ${s.padding}`}>
-				<PopularPartnersBrands
-					data={popularPartnersIcons}
-					title={t('Choose the best!')}
-				/>
-			</div>
-			<div className={`${s.container32} ${s.padding}`}>
-				<UniqueOffersForYou data={uniqueOfferForYou} />
-			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<CardsSliderRecommend
-					title={t('Also order with this')}
-					data={tours}
+					title={t('Cultural and city tours')}
+					data={serviceFilter('excursion', 'cultural')}
 					isShowMore
 				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<CardsSliderRecommend
-					title={t('Similar options')}
-					data={tours}
+					title={t('Romantic and active tours')}
+					data={serviceFilter('excursion', 'romanticActive')}
+					isShowMore
+				/>
+			</div>
+			<div className={`${s.container32} ${s.padding}`}>
+				<CardsSliderRecommend
+					title={t('Gastronomic tours')}
+					data={serviceFilter('excursion', 'gastro')}
+					isShowMore
+				/>
+			</div>
+			<div className={`${s.container32} ${s.padding}`}>
+				<CardsSliderRecommend
+					title={t('Festivals and night tours')}
+					data={serviceFilter('excursion', 'festAndNight')}
+					isShowMore
+				/>
+			</div>
+			<div className={`${s.container32} ${s.padding}`}>
+				<CardsSliderRecommend
+					title={t('Sports excursions')}
+					data={serviceFilter('excursion', 'sports')}
+					isShowMore
+				/>
+			</div>
+			<div className={`${s.container32} ${s.padding}`}>
+				<CardsSliderRecommend
+					title={t('Also order with this')}
+					data={serviceFilter()}
 					isShowMore
 				/>
 			</div>

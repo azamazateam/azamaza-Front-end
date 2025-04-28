@@ -4,22 +4,27 @@ import FilterOfferCard from '../Cards/FilterOfferCard/FilterOfferCard.tsx';
 import s from '../../pages/Services/Service.module.css';
 import {AzamazaSelection} from '../../redux/slices/azamazaSelectionsSlice.ts';
 import Button from '../Buttons/Button/Button.tsx';
+import {useTranslation} from 'react-i18next';
 
 type Props = {
 	data: AzamazaSelection[] | null;
-	title: string;
 	description: string;
 	buttonText?: string;
+	title?: string;
 };
 const AzamazaSelections: React.FC<Props> = ({
 	data,
-	title,
 	description,
 	buttonText,
+	title,
 }) => {
+	const {t} = useTranslation();
 	return (
 		<div>
-			<BlockHeader title={title} description={description} />
+			<BlockHeader
+				title={title ? title : t('Azamaza selections')}
+				description={description}
+			/>
 			<div className={s.selectionCardsContainer}>
 				{data?.map((selection) => (
 					<FilterOfferCard key={selection.id} data={selection} />

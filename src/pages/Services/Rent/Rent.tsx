@@ -1,18 +1,9 @@
 import React, {useEffect} from 'react';
 import s from '../Service.module.css';
-import ServiceHead from '../components/ServiceHead/ServiceHead.tsx';
 import background from '../../../assets/images/serviceBackgrounds/rent.png';
-import CategoriesSlider from '../../../components/CategoriesSlider/CategoriesSlider.tsx';
-import ServicePropose from '../components/ServicePropose/ServicePropose.tsx';
-import SearchForm from '../../../components/Forms/SearchForm/SearchForm.tsx';
-import LocationBlueButton from '../../../components/Buttons/NextPositionButton/LocationBlueButton.tsx';
-import IconSliderFilter from '../../../components/Filters/IconSliderFilter/IconSliderFilter.tsx';
-import AzamazaSelections from '../../../components/AzamazaSelections/AzamazaSelections.tsx';
-import UniqueOffersForYou from '../../../components/UniqueOffersForYou/UniqueOffersForYou.tsx';
 import CardsSliderRecommend from '../../../components/Sliders/CardsSliderRecomend/CardsSliderRecommend.tsx';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {useTranslation} from 'react-i18next';
-import {RootState} from '../../../redux/store.ts';
 import {azamazaSelectionsData} from '../../../mocks/azamazaSelectionsData.ts';
 import {uniqueOffers} from '../../../mocks/userData.ts';
 import {serviceProposeData} from '../../../mocks/serviceProposeData.ts';
@@ -21,23 +12,13 @@ import {setIconsSliderFilter} from '../../../redux/slices/filtersSlice.ts';
 import {rentFilterData} from '../../../mocks/iconSliderFilterData.ts';
 import {setUniqueOfferForYou} from '../../../redux/slices/userSlice.ts';
 import {setProposeList} from '../../../redux/slices/proposeSlice.ts';
+import BasicUniquePage from '../BasicUniquePage.tsx';
+import useServiceFilter from '../../../hooks/useServiceFilter.tsx';
 
 const Rent: React.FC = () => {
 	const dispatch = useDispatch();
 	const {t} = useTranslation();
-	const popularCard = useSelector(
-		(state: RootState) => state.homePage.mostPopularService,
-	);
-
-	const azamazaSelections = useSelector(
-		(state: RootState) => state.azamazaSelectionsData.azamazaSelections,
-	);
-	const uniqueOfferForYou = useSelector(
-		(state: RootState) => state.user.uniqueOfferForYou,
-	);
-	const proposeList = useSelector(
-		(state: RootState) => state.proposeData.proposeList,
-	);
+	const {serviceFilter} = useServiceFilter();
 	useEffect(() => {
 		const selectionData = azamazaSelectionsData.filter(
 			(i) => i.serviceName === 'rent',
@@ -55,66 +36,43 @@ const Rent: React.FC = () => {
 	}, [dispatch]);
 	return (
 		<>
-			<ServiceHead
-				size={342}
-				title={t('Everything for rent in one place')}
+			<BasicUniquePage
+				mainTitle={t('Everything for rent in one place')}
 				background={background}
+				searchFormSettings={{
+					showDate: true,
+					showLocation: true,
+					showRentService: true,
+					onSubmitFn: () => console.log('onSubmitRent'),
+				}}
+				locationButtonText={t('Near the current location')}
+				azaSelectionsDescription={t('We have selected the best deals for you')}
 			/>
-			<div className={s.container24}>
-				<CategoriesSlider />
-			</div>
-			<div className={`${s.container24} ${s.padding}`}>
-				<ServicePropose data={proposeList} />
-			</div>
-			<div className={`${s.container24} ${s.padding}`}>
-				<SearchForm
-					showDate
-					showLocation
-					showRentService
-					onSubmitFn={() => console.log('onSubmitPhotography')}
-				/>
-				<div className={s.container12}>
-					<LocationBlueButton text={t('Near the current location')} />
-				</div>
-			</div>
-			<div className={`${s.container32} ${s.padding}`}>
-				<IconSliderFilter />
-			</div>
-			<div className={`${s.container32} ${s.padding}`}>
-				<AzamazaSelections
-					data={azamazaSelections}
-					title={t('Azamaza selections')}
-					description={t('We have selected the best deals for you')}
-				/>
-			</div>
-			<div className={`${s.container32} ${s.padding}`}>
-				<UniqueOffersForYou data={uniqueOfferForYou} />
-			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<CardsSliderRecommend
 					title={t('Car rental services')}
-					data={popularCard.filter((c) => c?.categoryName === 'car')}
+					data={serviceFilter('rent', 'car')}
 					isShowMore
 				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<CardsSliderRecommend
 					title={t('Ski equipment rental services')}
-					data={popularCard.filter((c) => c?.categoryName === 'skyEquipment')}
+					data={serviceFilter('rent', 'skyEquipment')}
 					isShowMore
 				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<CardsSliderRecommend
 					title={t('Motorcycle rental services')}
-					data={popularCard.filter((c) => c?.categoryName === 'motorcycle')}
+					data={serviceFilter('rent', 'motorcycle')}
 					isShowMore
 				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<CardsSliderRecommend
 					title={t('Scooter rental services')}
-					data={popularCard.filter((c) => c?.categoryName === 'scooter')}
+					data={serviceFilter('rent', 'scooter')}
 					isShowMore
 				/>
 			</div>
@@ -122,14 +80,14 @@ const Rent: React.FC = () => {
 				<CardsSliderRecommend
 					isShowMore
 					title={t('Bicycle rental services')}
-					data={popularCard.filter((c) => c?.categoryName === 'bicycle')}
+					data={serviceFilter('rent', 'bicycle')}
 				/>
 			</div>
 			<div className={`${s.container32} ${s.padding}`}>
 				<CardsSliderRecommend
 					isShowMore
 					title={t('Also order with this')}
-					data={popularCard}
+					data={serviceFilter('rent')}
 				/>
 			</div>
 		</>

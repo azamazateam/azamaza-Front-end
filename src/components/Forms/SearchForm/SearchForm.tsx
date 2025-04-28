@@ -10,7 +10,7 @@ import SearchLocationField from './components/SearchLocationField/SearchLocation
 import ChangeDateField from './components/ChangeDateField/ChangeDateField.tsx';
 import {useMediaQuery} from 'react-responsive';
 
-type SearchFormProps = {
+export type SearchFormProps = {
 	title?: string;
 	showLocation?: boolean;
 	showService?: boolean;
