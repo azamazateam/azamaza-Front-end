@@ -3,6 +3,8 @@
 	/*margin-top: 32px;*/
 	padding-left: 16px;
 	cursor: pointer;
+	outline:none;
+	-webkit-tap-highlight-color: transparent;
 }
 /* CategoriesSlider.module.css */
 .slideContainer:focus,

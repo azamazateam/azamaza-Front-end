@@ -18,6 +18,7 @@ const CategoriesSlider: React.FC = () => {
 	const dispatch = useDispatch();
 	const isMobile = useMediaQuery({maxWidth: 600});
 	const location = useLocation();
+	const [swiperInstance, setSwiperInstance] = useState<any>(null);
 	const handleOpenCategoriesPopup = () => {
 		dispatch(setIsOpenPopup(true));
 	};
@@ -35,7 +36,7 @@ const CategoriesSlider: React.FC = () => {
 			</div>
 		</SwiperSlide>
 	);
-	const [swiperInstance, setSwiperInstance] = useState<any>(null);
+
 	useEffect(() => {
 		if (!swiperInstance) return;
 
@@ -51,6 +52,7 @@ const CategoriesSlider: React.FC = () => {
 			}
 		}
 	}, [swiperInstance, location.pathname]);
+
 	return (
 		<div className={s.container}>
 			<Swiper
