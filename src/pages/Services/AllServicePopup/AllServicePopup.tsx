@@ -51,7 +51,6 @@ const AllServicePopup: React.FC = () => {
 							}
 							disabled={category.link !== null}
 							iconColor={'#64666B'}
-							callback={closePopup}
 						/>
 					))}
 			</div>
