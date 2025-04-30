@@ -16,6 +16,7 @@ import PlaceOrder from '../../components/PlaceOrder/PlaceOrder.tsx';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../redux/store.ts';
 import {ServicesType} from '../../redux/types/commonTypes.ts';
+import {servicesListData} from '../../mocks/ServicesListData.ts';
 
 const OneServiceCard: React.FC = () => {
 	const {id} = useParams();
@@ -24,12 +25,10 @@ const OneServiceCard: React.FC = () => {
 	const mostPopularServices = useSelector(
 		(state: RootState) => state.homePage.mostPopularService,
 	);
-	const alsoOrderWith = useSelector(
-		(state: RootState) => state.excursionPage.alsoOrderWith,
-	);
+
 	useEffect(() => {
 		if (id) {
-			const foundedService = alsoOrderWith?.find(
+			const foundedService = servicesListData?.find(
 				(service) => service.id === +id,
 			);
 			setService(foundedService ?? null);
