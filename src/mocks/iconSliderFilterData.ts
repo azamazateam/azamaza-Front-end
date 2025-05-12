@@ -17,6 +17,11 @@ import rent4 from '../assets/images/Mock/Rent/filter/4.png';
 import rent5 from '../assets/images/Mock/Rent/filter/5.png';
 import rent6 from '../assets/images/Mock/Rent/filter/6.png';
 /*=========Marketplaces==========*/
+import mark1 from '../assets/images/Mock/Marketplaces/filters/1.png';
+import mark2 from '../assets/images/Mock/Marketplaces/filters/2.png';
+import mark3 from '../assets/images/Mock/Marketplaces/filters/3.png';
+import mark4 from '../assets/images/Mock/Marketplaces/filters/4.png';
+import mark5 from '../assets/images/Mock/Marketplaces/filters/5.png';
 /*=========Restaurants==========*/
 import res1 from '../assets/images/Mock/Restaurants/filter/1.png';
 import res2 from '../assets/images/Mock/Restaurants/filter/2.png';
@@ -104,27 +109,27 @@ export const photographyFilterData: IconSliderFilterType[] = [
 export const marketplacesFilterData: IconSliderFilterType[] = [
 	{
 		id: '12укекуе3asasdas',
-		icon: 'https://s3-alpha-sig.figma.com/img/c226/cb4b/0d28595af9649648f290c4f8b05c5b28?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PCqCXUtkgIdoyWToz8klVYfLMgISQDEhnWHvQiWVr-5GlC19NL~GB-gzverCmYoThOTW7Qp5fHNOWvEK9Im5y~H-BxHfR5UR9VeW7lTwmPZvKdDF9BumWD9LMdxhJsaGHDewF7rz~5AYhMyp7QhIOiT05DahdDflbBHVvewgMSOgu4UnhcLzZa6l8J0wirw241A7IHBGC-4TP7YCRSzt9uj7dIQ1cVzbq4mnupLZGnyny5r~Ci2i3g4xhHmcIZrwbn4p0BdPie69YBmiQMgbq5GBAd5y0EAtqdMh1JkFUMMNVj6RtnVp2X1TivU1Ri2iktEe-TnPGC8E-OQ-8gYbUQ__',
+		icon: mark1,
 		text: 'Fashion and style',
 	},
 	{
 		id: '12ssfd3asasdas',
-		icon: 'https://s3-alpha-sig.figma.com/img/d595/58ef/cd9b349dd5a3343f983224735f07eb1f?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=EloRoKdhbrVZZ9KmPuSshfiABzNebJNSp5M1lhspe5HEjoQoHhFi91Ne2~1ALiIxdyB5YvuN58MoO9KMa5HShyhwP7P6ukC0CBMILqeVBLriVa7P7pdbxHEB6Fe3JrpstLSqAQeRVufKlkJ-m4ywOrIibOwWQxUREqKhLH9PMkyNpeKPDfar4rAG4YK2ELGW3OJPt1KAPb79uCncups-dyEWF0KDVJ-CNRyVkuTRsw4lkVjXGIv7HJjtTXLZ-Kg0RuaDbnfSoL0IYDiZuINpgZ1yoDWjp1ip2q0ALAo3UGoux0asF5MecmhqCclixyv1FBkN5LDzYGCQnFvhyuEpzQ__',
+		icon: mark2,
 		text: 'Travel products',
 	},
 	{
 		id: '12sdf3asasdas',
-		icon: 'https://s3-alpha-sig.figma.com/img/8c5b/f102/872bfd0820c91b002b4d28f4e4a8d197?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UAiDTt8FFlPpT7o4HiACfU0Bm8XLjXCv13Wynx~x9Y0FBGUARvWiEtnOBAp~eaTw5hT-AFWwj63mgMpgZTFdh26wUsufzcn7MeTBl9eiqY5g1AeVssMd7haW4Ku7XB74cwkBNUbq2ddJX~D7FdMENOcYkQNtcBhsZ1rx-zIN6vEHSg~cPZO3pBrtpjpQrzW54HINHwLfyvcN2NIKxBssvMLggApFBj3O3JQ378yle7JLRT-G4rZIIgybAmNgCP1ETZ7oL4eJsMLBpOidSVIwdlL5-9vCz-3lJeltlGGLyzB9jYM4SrJRqhWrTwUdcfwPiNA~HvQz2ozfIM2ni7ABpw__',
+		icon: mark3,
 		text: 'Electronics & Gadgets',
 	},
 	{
 		id: '1we23asasdas',
-		icon: 'https://s3-alpha-sig.figma.com/img/97ec/77ed/1d0170797a38e179a210ce1025e452d0?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Kw0NOJrvpUV-0~JBWfqhgnitPMOGGys4dHVHeFXZiskSDia~t5JZuxSKaP52TB~H0ANWDnCm8A0KWcZiWPH1Z2rCgnP0Sj91x5fmx3o~I46S0Ip1b1fV8ljiLCWWMurhfgt5UN0iHlMNg6nyJKo-ZJjrs9ouETWdUOJIa74mpA0zMLFfTCHQoxDFAZmEf~1o~myrkKyMs1fQ-cSMZU5YyM2G2pzcZe7Es49w9mOblfMnQqkjAPvpnNEPmU7FMwwuBajbXAY6cx1pSYUjVYgVBNfb-ByqXC9KulZDWXCY8uK7yxYdzo~V~Fao3kCjSDOu3aYa4zxVkeu4Zz98G5~2uA__',
+		icon: mark4,
 		text: 'Beauty & Health',
 	},
 	{
 		id: '1rweew23asasdas',
-		icon: 'https://s3-alpha-sig.figma.com/img/e2e0/6585/5060b5dbf3737a82aa4ca47692b8b638?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K1alOKo3FymQYBZD86F2Jlg4K8ovNQCt-MxxqxrKZ8sXWVi-f79Dy1i2dwo-okblm242Bc7Sch~cgifVATZisH3R7nLwWezFd8DrPTsg9uw3EkyWUy4TH3oDjWBRov42V27HvC8Ll~kHUvXAExgJdVV~UbwXa5lNEUA7Xu2e3GUZNexIlqlOd2J5wK7vxxFCHxQLqXPuGgB4p61hcdsgrLbbJ8~6mtDtRIYt9vu9rUE6Z-QwFrXcIiKOcgro2r9MRWfa2VwFyWpkPWKJNMfdJEVvjl09lnR7t4PisJigGpCY1vINzYuRZcOZSRtneu043nSMYR6iVPg2MCVtXgdSpg__',
+		icon:mark5,
 		text: 'Furniture & accessories',
 	},
 ];

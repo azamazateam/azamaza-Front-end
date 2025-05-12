@@ -45,7 +45,7 @@ const Marketplaces: React.FC = () => {
 		dispatch(setIconsSliderFilter(marketplacesFilterData));
 		dispatch(setUniqueOfferForYou(uniqueOffersMarketplaces ?? null));
 		dispatch(setProductCards(productsListData ?? null));
-	}, []);
+	}, [dispatch]);
 	return (
 		<>
 			<ServiceHead
